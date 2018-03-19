@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang=En>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.">
+<meta name="keywords" content="Tricks,Error bar,grouped bar,Notes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to place errorbars on a grouped bar graph in MATLAB">
+<meta property="og:url" content="http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/index.html">
+<meta property="og:site_name" content="Jian Chen">
+<meta property="og:description" content="Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.">
+<meta property="og:locale" content="English">
+<meta property="og:image" content="http://jianchen.info/images/errorbar/WX20161212-171137.png">
+<meta property="og:image" content="http://jianchen.info/images/errorbar/GG01Dec16a_rt_visual-field.tif">
+<meta property="og:updated_time" content="2018-03-19T02:01:14.745Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to place errorbars on a grouped bar graph in MATLAB">
+<meta name="twitter:description" content="Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.">
+<meta name="twitter:image" content="http://jianchen.info/images/errorbar/WX20161212-171137.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>How to place errorbars on a grouped bar graph in MATLAB</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/merge-behavioral-data-into-eeg/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&text=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&is_video=false&description=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=How to place errorbars on a grouped bar graph in MATLAB&body=Check out this article: http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&name=How to place errorbars on a grouped bar graph in MATLAB&description=&lt;p&gt;Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.&lt;/p&gt;"><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        How to place errorbars on a grouped bar graph in MATLAB
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Jian Chen</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2016-12-12T06:20:16.000Z" itemprop="datePublished">2016-12-12</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Error-bar/">Error bar</a>, <a class="tag-link" href="/tags/Notes/">Notes</a>, <a class="tag-link" href="/tags/Tricks/">Tricks</a>, <a class="tag-link" href="/tags/grouped-bar/">grouped bar</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
+<a id="more"></a>
+<p>We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example:</p>
+<p><img src="/images/errorbar/WX20161212-171137.png" alt="20161212-171137"></p>
+<p>The error bars are located in the center of each grouped bars, rather than the individual bar in each grouped bars.</p>
+<p>Here is the note I made, the main code is from the link below:</p>
+<p><em><a href="https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b" target="_blank" rel="noopener">https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b</a></em></p>
+<p><a href="http://www.jianchen.info/wp-content/uploads/2016/12/GG01Dec16a_rt_visual-field.tif" target="_blank" rel="noopener"><img src="/images/errorbar/GG01Dec16a_rt_visual-field.tif" alt="MATLAB Handle Graphics"></a></p>
+<hr>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Data set:</span><br><span class="line"></span><br><span class="line">mm: <span class="number">4</span> by <span class="number">6</span> matrix; ci: <span class="number">4</span> by <span class="number">6</span> matrix</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mm =</span><br><span class="line"></span><br><span class="line">[<span class="number">0.2081</span> <span class="number">0.3440</span> <span class="number">0.3470</span> <span class="number">0.7018</span> <span class="number">0.8422</span> <span class="number">0.9874</span></span><br><span class="line"><span class="number">0.2628</span> <span class="number">0.3043</span> <span class="number">0.4032</span> <span class="number">0.7287</span> <span class="number">0.8462</span> <span class="number">1.1055</span></span><br><span class="line"><span class="number">0.2928</span> <span class="number">0.3139</span> <span class="number">0.4176</span> <span class="number">0.7241</span> <span class="number">0.8319</span> <span class="number">1.0483</span></span><br><span class="line"><span class="number">0.2287</span> <span class="number">0.2538</span> <span class="number">0.3665</span> <span class="number">0.4895</span> <span class="number">0.8999</span> <span class="number">1.1309</span>]</span><br><span class="line"></span><br><span class="line">ci =</span><br><span class="line"></span><br><span class="line">[<span class="number">0.0176</span> <span class="number">0.0473</span> <span class="number">0.0443</span> <span class="number">0.0724</span> <span class="number">0.0855</span> <span class="number">0.0931</span></span><br><span class="line"><span class="number">0.0312</span> <span class="number">0.0201</span> <span class="number">0.0407</span> <span class="number">0.0621</span> <span class="number">0.0604</span> <span class="number">0.0874</span></span><br><span class="line"><span class="number">0.0291</span> <span class="number">0.0330</span> <span class="number">0.0403</span> <span class="number">0.0756</span> <span class="number">0.0732</span> <span class="number">0.0847</span></span><br><span class="line"><span class="number">0.0228</span> <span class="number">0.0150</span> <span class="number">0.0264</span> <span class="number">0.0598</span> <span class="number">0.0922</span> <span class="number">0.0861</span>]</span><br></pre></td></tr></table></figure>
+<p>The code example</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">figure;</span><br><span class="line">h = bar(mm');</span><br><span class="line">set(h,<span class="string">'BarWidth'</span>,<span class="number">0.8</span>);    <span class="comment">% The bars will now touch each other</span></span><br><span class="line">set(gca,<span class="string">'fontsize'</span>, <span class="number">18</span>);</span><br><span class="line">set(get(gca,<span class="string">'YLabel'</span>),<span class="string">'String'</span>,<span class="string">'RT in Seconds'</span>)</span><br><span class="line">lh = legend(<span class="string">'Valid Left'</span>, <span class="string">'Invalid left'</span>, <span class="string">'Valid right'</span>, <span class="string">'Invalid right'</span>);</span><br><span class="line">set(lh,<span class="string">'Location'</span>,<span class="string">'BestOutside'</span>,<span class="string">'Orientation'</span>,<span class="string">'horizontal'</span>)</span><br><span class="line">hold on;</span><br><span class="line"></span><br><span class="line"><span class="comment">% Aligning errorbar to individual bar within groups</span></span><br><span class="line"><span class="comment">% Based on barweb.m by Bolu Ajiboye from MATLAB File Exchange</span></span><br><span class="line">groupwidth = min(<span class="number">0.8</span>, <span class="number">4</span>/(<span class="number">4</span>+<span class="number">1.5</span>));</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">4</span></span><br><span class="line">x = (<span class="number">1</span>:<span class="number">6</span>) - groupwidth/<span class="number">2</span> + (<span class="number">2</span>*<span class="built_in">i</span><span class="number">-1</span>) * groupwidth / (<span class="number">2</span>*<span class="number">4</span>);</span><br><span class="line">errorbar(x,mm(<span class="built_in">i</span>,:),ci(<span class="built_in">i</span>,:),<span class="string">'k'</span>, <span class="string">'linestyle'</span>, <span class="string">'none'</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&text=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&is_video=false&description=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=How to place errorbars on a grouped bar graph in MATLAB&body=Check out this article: http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&title=How to place errorbars on a grouped bar graph in MATLAB"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/how-to-place-errorbars-on-grouped-bar-graph-in-matlab/&name=How to place errorbars on a grouped bar graph in MATLAB&description=&lt;p&gt;Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.&lt;/p&gt;"><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Jian Chen
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-37473492-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
