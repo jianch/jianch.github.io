@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang=En>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="RainCloud plot is arising as a very informative method to present raw data, basically, it combines boxplot, volin plot, and scatter plot together, in a visually pleasure way.  The RainClould plot req">
+<meta name="keywords" content="R,ggplot2,RainCloud,DataVisualization">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Visualization, the RainCloud Plot in R">
+<meta property="og:url" content="http://jianchen.info/RainCloud_Plot_in_R/index.html">
+<meta property="og:site_name" content="Jian Chen">
+<meta property="og:description" content="RainCloud plot is arising as a very informative method to present raw data, basically, it combines boxplot, volin plot, and scatter plot together, in a visually pleasure way.  The RainClould plot req">
+<meta property="og:locale" content="English">
+<meta property="og:image" content="http://jianchen.info/images/raincloud/raincloud.tiff">
+<meta property="og:updated_time" content="2018-08-13T06:56:19.901Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Data Visualization, the RainCloud Plot in R">
+<meta name="twitter:description" content="RainCloud plot is arising as a very informative method to present raw data, basically, it combines boxplot, volin plot, and scatter plot together, in a visually pleasure way.  The RainClould plot req">
+<meta name="twitter:image" content="http://jianchen.info/images/raincloud/raincloud.tiff">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Data Visualization, the RainCloud Plot in R</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_201806.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com">Literature</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/Karamazov/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/RainCloud_Plot_in_R/&text=Data Visualization, the RainCloud Plot in R"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/RainCloud_Plot_in_R/&is_video=false&description=Data Visualization, the RainCloud Plot in R"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Data Visualization, the RainCloud Plot in R&body=Check out this article: http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/RainCloud_Plot_in_R/&name=Data Visualization, the RainCloud Plot in R&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#set-work-directory-and-load-the-data"><span class="toc-number">1.</span> <span class="toc-text">set work directory and load the data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#read-data"><span class="toc-number">2.</span> <span class="toc-text">read data</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#here-I-read-a-csv-file"><span class="toc-number"></span> <span class="toc-text">here I read a csv file</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#define-function-of-geom-flat-volin"><span class="toc-number">1.</span> <span class="toc-text">define function of geom_flat_volin</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Data Visualization, the RainCloud Plot in R
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Jian Chen</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-08-13T01:08:17.000Z" itemprop="datePublished">2018-08-13</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/DataVisualization/">DataVisualization</a>, <a class="tag-link" href="/tags/R/">R</a>, <a class="tag-link" href="/tags/RainCloud/">RainCloud</a>, <a class="tag-link" href="/tags/ggplot2/">ggplot2</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><br></p>
+<p><a href="https://micahallen.org/2018/03/15/introducing-raincloud-plots/" target="_blank" rel="noopener">RainCloud plot</a> is arising as a very informative method to present raw data, basically, it combines boxplot, volin plot, and scatter plot together, in a visually pleasure way. </p>
+<p>The RainClould plot requires some basic packages like <em>ggplot2</em>, so we need to load them first.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## load packages</span></span><br><span class="line"><span class="keyword">library</span>(ggplot2)</span><br><span class="line"><span class="keyword">library</span>(plyr)</span><br><span class="line"><span class="keyword">library</span>(scales)</span><br></pre></td></tr></table></figure>
+<p>Then we set up the working directory and load the test data</p>
+<p>`R</p>
+<h2 id="set-work-directory-and-load-the-data"><a href="#set-work-directory-and-load-the-data" class="headerlink" title="set work directory and load the data"></a>set work directory and load the data</h2><p>setwd(‘/to/whenever/the/data/is’)</p>
+<h2 id="read-data"><a href="#read-data" class="headerlink" title="read data"></a>read data</h2><h1 id="here-I-read-a-csv-file"><a href="#here-I-read-a-csv-file" class="headerlink" title="here I read a csv file"></a>here I read a csv file</h1><p>test &lt;- read.csv(‘example.csv’,header = T, sep = ‘,’)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">A very important function used in raincloud plot is **geom_flat_volin**, which is not a standard function in _ggplot2_, therefore we need to define it beforehand.</span><br><span class="line"></span><br><span class="line">The following function is extracted from the following web page: [https://gist.github.com/dgrtwo/eb7750e74997891d7c20][2]. Or, you can just source this function via the following code:</span><br><span class="line"></span><br><span class="line">```R</span><br><span class="line">source(&quot;https://gist.githubusercontent.com/benmarwick/2a1bb0133ff568cbe28d/raw/fb53bd97121f7f9ce947837ef1a4c65a73bffb3f/geom_flat_violin.R&quot;)`</span><br></pre></td></tr></table></figure></p>
+<p>The function definition (copy and paste them into your code</p>
+<p>=#=========================== function definition ===========================</p>
+<h2 id="define-function-of-geom-flat-volin"><a href="#define-function-of-geom-flat-volin" class="headerlink" title="define function of geom_flat_volin"></a>define function of geom_flat_volin</h2><p>#devtools::install_github(repo = “IndrajeetPatil/ggstatsplot”)</p>
+<p>“%||%” &lt;- function(a, b) {<br>  if (!is.null(a))<br>    a<br>  else<br>    b<br>}</p>
+<p>geom_flat_violin &lt;-<br>  function(mapping = NULL,<br>           data = NULL,<br>           stat = “ydensity”,<br>           position = “dodge”,<br>           trim = TRUE,<br>           scale = “area”,<br>           show.legend = NA,<br>           inherit.aes = TRUE,<br>           …) {<br>    ggplot2::layer(<br>      data = data,<br>      mapping = mapping,<br>      stat = stat,<br>      geom = GeomFlatViolin,<br>      position = position,<br>      show.legend = show.legend,<br>      inherit.aes = inherit.aes,<br>      params = list(trim = trim,<br>                    scale = scale,<br>                    …)<br>    )<br>  }</p>
+<p>GeomFlatViolin &lt;-<br>  ggproto(<br>    “GeomFlatViolin”,<br>    Geom,<br>    setup_data = function(data, params) {<br>      data$width &lt;- data$width %||%<br>        params$width %||% (resolution(data$x, FALSE) * 0.9)</p>
+<pre><code>  # ymin, ymax, xmin, and xmax define the bounding rectangle for each group
+  data %&gt;%
+    dplyr::group_by(.data = ., group) %&gt;%
+    dplyr::mutate(
+      .data = .,
+      ymin = min(y),
+      ymax = max(y),
+      xmin = x,
+      xmax = x + width / 2
+    )
+},
+
+draw_group = function(data, panel_scales, coord)
+{
+  # Find the points for the line to go all the way around
+  data &lt;- base::transform(data,
+                          xminv = x,
+                          xmaxv = x + violinwidth * (xmax - x))
+
+  # Make sure it&apos;s sorted properly to draw the outline
+  newdata &lt;-
+    base::rbind(
+      dplyr::arrange(.data = base::transform(data, x = xminv), y),
+      dplyr::arrange(.data = base::transform(data, x = xmaxv), -y)
+    )
+
+  # Close the polygon: set first and last point the same
+  # Needed for coord_polar and such
+  newdata &lt;- rbind(newdata, newdata[1,])
+
+  ggplot2:::ggname(&quot;geom_flat_violin&quot;,
+                   GeomPolygon$draw_panel(newdata, panel_scales, coord))
+},
+
+draw_key = draw_key_polygon,
+
+default_aes = ggplot2::aes(
+  weight = 1,
+  colour = &quot;grey20&quot;,
+  fill = &quot;white&quot;,
+  size = 0.5,
+  alpha = NA,
+  linetype = &quot;solid&quot;
+),
+
+required_aes = c(&quot;x&quot;, &quot;y&quot;)
+</code></pre><p>  )</p>
+<p>#=========================== function definition ===========================</p>
+<p>Now let’s do the plot! </p>
+<p>First we make a data frame as what usually use in ggplot2. </p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## make data frame</span></span><br><span class="line">df &lt;- data.frame(rt = c(test$subi_att,test$subi_unatt),</span><br><span class="line">				 condition = c(rep(<span class="string">'Attended'</span>,length(test$subi_att)),rep(<span class="string">'Unattended'</span>,length(test$subi_unatt)))</span><br><span class="line">				 )</span><br><span class="line"></span><br><span class="line">Then is the plot.</span><br><span class="line"></span><br><span class="line">```R</span><br><span class="line">ggplot(data = df, aes(y = rt, x = condition, fill = condition)) +</span><br><span class="line">  geom_flat_violin(position = position_nudge(x = .2, y = 0), alpha = .5) +</span><br><span class="line">  geom_boxplot(width = .1,  outlier.shape = NA, alpha = 0.5) +</span><br><span class="line">  geom_point(aes(y = rt, color = condition), position = position_jitter(width = .15), size = .8, alpha = 0.8) +</span><br><span class="line"></span><br><span class="line">  labs(x="Condition",y="Response Time (s)") + theme(legend.position="none") + </span><br><span class="line">  theme(axis.title = element_text(family = "Times New Roman")) + </span><br><span class="line">  theme(axis.text=element_text(size=10, family = "Times New Roman")) + </span><br><span class="line">  theme(legend.title = element_text(family = "Times New Roman")) + </span><br><span class="line">  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + </span><br><span class="line">  theme(panel.background = element_blank()) +</span><br><span class="line">  #theme(panel.border = element_rect(color = 'black',fill=NA, size = 1)) + </span><br><span class="line">  theme(axis.line = element_line(colour = 'black', size = 0.5)) + </span><br><span class="line">  theme(axis.ticks = element_line(colour = "black", size = 0.4)) + </span><br><span class="line">  scale_y_continuous(limits = c(.2,.8), expand = c(0,0), oob = rescale_none) +    ## y axis starts from non-zero point</span><br><span class="line">  scale_x_discrete(expand = c(0.2,0.2))</span><br><span class="line">ggsave('plot.tiff')</span><br></pre></td></tr></table></figure>
+<p>We then will see the figure. </p>
+<p><img src="/images/raincloud/raincloud.tiff" alt=""></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_201806.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com">Literature</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#set-work-directory-and-load-the-data"><span class="toc-number">1.</span> <span class="toc-text">set work directory and load the data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#read-data"><span class="toc-number">2.</span> <span class="toc-text">read data</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#here-I-read-a-csv-file"><span class="toc-number"></span> <span class="toc-text">here I read a csv file</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#define-function-of-geom-flat-volin"><span class="toc-number">1.</span> <span class="toc-text">define function of geom_flat_volin</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/RainCloud_Plot_in_R/&text=Data Visualization, the RainCloud Plot in R"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/RainCloud_Plot_in_R/&is_video=false&description=Data Visualization, the RainCloud Plot in R"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Data Visualization, the RainCloud Plot in R&body=Check out this article: http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization, the RainCloud Plot in R"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/RainCloud_Plot_in_R/&name=Data Visualization, the RainCloud Plot in R&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    
+
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 Jian Chen
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_201806.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com">Literature</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+<div id="disqus_thread"></div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-59160435-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'jianchen';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
