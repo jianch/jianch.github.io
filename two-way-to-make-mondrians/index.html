@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang=En>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="There are plenty of ways to generate continuous flash stimuli (CFS) in the research of consciousness, for newbies, some example code might be extremely uesful, here I share some codes I wrote or colle">
+<meta name="keywords" content="CFS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATLAB code to generate CFS (Mondrian)">
+<meta property="og:url" content="http://jianchen.info/two-way-to-make-mondrians/index.html">
+<meta property="og:site_name" content="Jian Chen">
+<meta property="og:description" content="There are plenty of ways to generate continuous flash stimuli (CFS) in the research of consciousness, for newbies, some example code might be extremely uesful, here I share some codes I wrote or colle">
+<meta property="og:locale" content="English">
+<meta property="og:image" content="http://jianchen.info/images/cfs/mondrian1.bmp%20%7C%20100*100">
+<meta property="og:image" content="http://jianchen.info/images/cfs/mondrian2.bmp%20%7C%20100*100">
+<meta property="og:image" content="http://jianchen.info/images/cfs/cfsDemo.png">
+<meta property="og:updated_time" content="2019-05-05T11:25:33.616Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MATLAB code to generate CFS (Mondrian)">
+<meta name="twitter:description" content="There are plenty of ways to generate continuous flash stimuli (CFS) in the research of consciousness, for newbies, some example code might be extremely uesful, here I share some codes I wrote or colle">
+<meta name="twitter:image" content="http://jianchen.info/images/cfs/mondrian1.bmp%20%7C%20100*100">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>MATLAB code to generate CFS (Mondrian)</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_JianChen.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com">Literature</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/RainCloud_Plot_in_R/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/two-way-to-make-mondrians/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/two-way-to-make-mondrians/&text=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/two-way-to-make-mondrians/&is_video=false&description=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=MATLAB code to generate CFS (Mondrian)&body=Check out this article: http://jianchen.info/two-way-to-make-mondrians/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/two-way-to-make-mondrians/&name=MATLAB code to generate CFS (Mondrian)&description=&lt;p&gt;There are plenty of ways to generate continuous flash stimuli (CFS) in the research of consciousness, for newbies, some example code might be extremely uesful, here I share some codes I wrote or collected in the past. Hope this is useful.&lt;/p&gt;"><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#METHOD-1"><span class="toc-number">1.</span> <span class="toc-text">METHOD 1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#METHOD-2"><span class="toc-number">2.</span> <span class="toc-text">METHOD 2</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        MATLAB code to generate CFS (Mondrian)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Jian Chen</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2019-05-05T04:26:54.000Z" itemprop="datePublished">2019-05-05</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/CFS/">CFS</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>There are plenty of ways to generate continuous flash stimuli (CFS) in the research of consciousness, for newbies, some example code might be extremely uesful, here I share some codes I wrote or collected in the past. Hope this is useful.</p>
+<a id="more"></a>
+<h1 id="METHOD-1"><a href="#METHOD-1" class="headerlink" title="METHOD 1"></a>METHOD 1</h1><p>The basic thought behind this method is to continuously present multiple pre-made Mondrian images.</p>
+<p><img src="/images/cfs/mondrian1.bmp%20%7C%20100*100" alt=""><br>example1</p>
+<p><img src="/images/cfs/mondrian2.bmp%20%7C%20100*100" alt=""><br>example 2</p>
+<p>The code to generate Mondrian figures is shown below:</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">%% code to make mondrian figures</span></span><br><span class="line"></span><br><span class="line">path = <span class="string">'/Users/JIANCHEN/Desktop/Mondrian/method1'</span>;</span><br><span class="line"></span><br><span class="line">cd(path);</span><br><span class="line"></span><br><span class="line">fignum = <span class="number">10</span>; <span class="comment">% number of figs to generate</span></span><br><span class="line">Msize = [<span class="number">500</span>,<span class="number">500</span>];  <span class="comment">% figure dimensions</span></span><br><span class="line">psize = [<span class="number">40</span>,<span class="number">30</span>]; <span class="comment">% size of patches</span></span><br><span class="line">marg  = max(psize); <span class="comment">% maximum size of patches</span></span><br><span class="line">pnum  = <span class="number">4000</span>;  <span class="comment">% number of patches in the given area</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span> : fignum</span><br><span class="line">    pcenter = <span class="built_in">ceil</span>(<span class="built_in">rand</span>(pnum,<span class="number">2</span>)*Msize(<span class="number">1</span>));</span><br><span class="line">    p = <span class="built_in">round</span>(<span class="built_in">rand</span>(<span class="number">1</span>,pnum)*(psize(<span class="number">2</span>)-psize(<span class="number">1</span>)+psize(<span class="number">1</span>))/<span class="number">2</span>);</span><br><span class="line">    color = <span class="built_in">round</span>(<span class="built_in">rand</span>(pnum*<span class="number">1.2</span>,<span class="number">3</span>));</span><br><span class="line">    ind = <span class="built_in">find</span>(sum(color,<span class="number">2</span>)==<span class="number">0</span>);</span><br><span class="line">    color(ind,:) = [];</span><br><span class="line">    a = <span class="built_in">zeros</span>(Msize(<span class="number">1</span>)+marg,Msize(<span class="number">2</span>)+marg);</span><br><span class="line">    <span class="keyword">for</span> n = <span class="number">1</span>:pnum</span><br><span class="line">        c = pcenter(n,:);</span><br><span class="line">        <span class="keyword">for</span> m = <span class="number">1</span>:<span class="number">3</span></span><br><span class="line">            a(c(<span class="number">1</span>)-p(n)+marg/<span class="number">2</span>:c(<span class="number">1</span>)+p(n)+marg/<span class="number">2</span>,c(<span class="number">2</span>)-p(n)+marg/<span class="number">2</span>:c(<span class="number">2</span>)+p(n)+marg/<span class="number">2</span>,m) = color(n,m);</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    center0 = <span class="built_in">size</span>(a)/<span class="number">2</span>;</span><br><span class="line">    center0(<span class="number">3</span>) = [];</span><br><span class="line">    lu = center0-Msize/<span class="number">2</span>;</span><br><span class="line">    rd = center0+Msize/<span class="number">2</span>;</span><br><span class="line">    b = a(lu(<span class="number">1</span>):rd(<span class="number">1</span>),lu(<span class="number">2</span>):rd(<span class="number">2</span>),:);</span><br><span class="line">    imwrite(b,[num2str(i),<span class="string">'.bmp'</span>]); <span class="comment">% save figures</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">~~</span><br></pre></td></tr></table></figure>
+<p>After generating these Mondrian figures, you just need to present them briefly to get the effect of a CFS.</p>
+<hr>
+<h1 id="METHOD-2"><a href="#METHOD-2" class="headerlink" title="METHOD 2"></a>METHOD 2</h1><p>The second method is from Dr. Bryan Paton, his code demonstrates an elegant way to generate CFS in the MATLAB. </p>
+<p><img src="/images/cfs/cfsDemo.png" alt=""><br>Effect of code</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% CFS</span></span><br><span class="line"><span class="comment">% Date: 30/12/2014</span></span><br><span class="line"><span class="comment">% Author: Bryan Paton</span></span><br><span class="line"><span class="comment">% History: </span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">% Start Experiment</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'\nContinuous Flash Suppression\n'</span>);</span><br><span class="line"></span><br><span class="line">Screen(<span class="string">'Preference'</span>, <span class="string">'SkipSyncTests'</span>, <span class="number">2</span>); <span class="comment">%Skip screen test on LCD monitor</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">% % Collect participant number</span></span><br><span class="line"><span class="comment">% fprintf('\n');</span></span><br><span class="line"><span class="comment">% partNum = input('Participant Number: ', 's');</span></span><br><span class="line"><span class="comment">% fprintf('\n');</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">% Set up experiment parameters</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Initialise experiment...'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Seed random number generator stream with a fixed seed and use the</span></span><br><span class="line"><span class="comment">% Mersenne Twister algorithm, note this only works in 2011a onwards</span></span><br><span class="line">randSeed = <span class="number">100</span>;</span><br><span class="line">rng(randSeed, <span class="string">'twister'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">% Set up Mondrian Parameters</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% List of Mondrian colours</span></span><br><span class="line">mondColours = &#123;[<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>], [<span class="number">255</span>, <span class="number">64</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>], [<span class="number">255</span>, <span class="number">255</span>, <span class="number">0</span>], [<span class="number">255</span>, <span class="number">0</span>, <span class="number">255</span>], [<span class="number">0</span>, <span class="number">255</span>, <span class="number">255</span>]&#125;;</span><br><span class="line">alphaRange = [<span class="number">100</span>, <span class="number">200</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">% Mondrian pattern settings</span></span><br><span class="line">mondrianRadiusMinorRange = [<span class="number">15</span> <span class="number">35</span>]; <span class="comment">% 1/2 Height of Mondrian element in pixels</span></span><br><span class="line">mondrianRadiusMajorRange = [<span class="number">15</span> <span class="number">35</span>]; <span class="comment">% 1/2 Width of Mondrian element in pixels</span></span><br><span class="line">xOffsetRange = [<span class="number">-185</span>, <span class="number">185</span>]; <span class="comment">% Range of pixel eccentricities that serve as the origin of the Mondrian elements</span></span><br><span class="line">yOffsetRange = [<span class="number">-185</span>, <span class="number">185</span>]; <span class="comment">% Range of pixel eccentricities that serve as the origin of the Mondrian elements</span></span><br><span class="line">numElements = <span class="number">500</span>; <span class="comment">% Number of Mondrian elements to draw                   </span></span><br><span class="line">rightOffset = <span class="number">350</span>; <span class="comment">% Drawing offset for the right side</span></span><br><span class="line">leftOffset = -rightOffset; <span class="comment">% Drawing offset for the left side</span></span><br><span class="line">mondRefresh = <span class="number">0.1</span>; <span class="comment">% Mondrian refresh period in seconds, frequency = 1/period</span></span><br><span class="line">borderWidth = <span class="number">30</span>; <span class="comment">% Width of the fusion surround in pixels</span></span><br><span class="line">stimQuadCoords = [<span class="number">-97</span>, <span class="number">-97</span>; <span class="number">97</span>, <span class="number">-97</span>; <span class="number">97</span>, <span class="number">97</span>; <span class="number">-97</span>, <span class="number">97</span>]; <span class="comment">% Q1, Q2, Q3, Q4 clockwise</span></span><br><span class="line">gaborDim = <span class="number">128</span>; <span class="comment">% Dimensions, x &amp; y of gabor patch, also the same size of the face texture (pow 2)</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'\nDone.\n'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">% Set up Screen and bailout if there is a problem</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Set up Screen...'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span></span><br><span class="line">    <span class="comment">% Find relevant screen number, min for Windows in multiple monitor</span></span><br><span class="line">    <span class="comment">% setups gives you the first or primary screen</span></span><br><span class="line">    screenList = Screen(<span class="string">'Screens'</span>);</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">length</span>(screenList) &gt; <span class="number">1</span></span><br><span class="line">        screenNumber = min(Screen(<span class="string">'Screens'</span>)) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        screenNumber = min(Screen(<span class="string">'Screens'</span>));</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">% Screen dimensions</span></span><br><span class="line">    rect = Screen(<span class="string">'Rect'</span>, screenNumber);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">% Screen parameters</span></span><br><span class="line">    xMax = rect(<span class="number">1</span>, <span class="number">3</span>);</span><br><span class="line">    yMax = rect(<span class="number">1</span>, <span class="number">4</span>);</span><br><span class="line">    </span><br><span class="line">    oldVisualDebugLevel = Screen(<span class="string">'Preference'</span>, <span class="string">'VisualDebugLevel'</span>, <span class="number">3</span>);</span><br><span class="line">    oldSupressAllWarnings = Screen(<span class="string">'Preference'</span>, <span class="string">'SuppressAllWarnings'</span>, <span class="number">1</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">% Open window with 50% grey and set up for Alpha channel blending</span></span><br><span class="line">    drawWindow = Screen(<span class="string">'OpenWindow'</span>, screenNumber, <span class="number">127</span>);</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">% Determine max priority level for later drawing</span></span><br><span class="line">    priorityLvl = MaxPriority(drawWindow);</span><br><span class="line">    </span><br><span class="line">    HideCursor;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">catch</span></span><br><span class="line">    </span><br><span class="line">    ShowCursor; </span><br><span class="line">    Screen(<span class="string">'CloseAll'</span>);</span><br><span class="line">    Screen(<span class="string">'Preference'</span>, <span class="string">'VisualDebugLevel'</span>, oldVisualDebugLevel);</span><br><span class="line">    Screen(<span class="string">'Preference'</span>, <span class="string">'SuppressAllWarnings'</span>, oldSupressAllWarnings);</span><br><span class="line">    psychrethrow(psychlasterror);</span><br><span class="line">    </span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Done.\n'</span>);</span><br><span class="line">    </span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Set up remaining parameters...'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Set up stimuli</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% Load face texture</span></span><br><span class="line">faceData = imread(<span class="string">'faceLarge.png'</span>);</span><br><span class="line">stimTextures(<span class="number">1</span>) =  Screen(<span class="string">'MakeTexture'</span>, drawWindow, faceData, <span class="number">1</span>); <span class="comment">% optimise for power of 2 texture</span></span><br><span class="line">faceSize(<span class="number">1</span>) = <span class="built_in">size</span>(faceData, <span class="number">1</span>);</span><br><span class="line">faceSize(<span class="number">2</span>) = <span class="built_in">size</span>(faceData, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Create procedural (GSL shader) gabor texture</span></span><br><span class="line">stimTextures(<span class="number">2</span>) = CreateProceduralGabor(drawWindow, gaborDim, gaborDim, [], [<span class="number">0.5</span> <span class="number">0.5</span> <span class="number">0.5</span> <span class="number">0.0</span>], <span class="number">1</span>, <span class="number">0.5</span>);</span><br><span class="line">stimTextures(<span class="number">3</span>) = <span class="number">0</span>; <span class="comment">% Dummy, as stimulus 3 is blank</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">% Set up onscreen text options</span></span><br><span class="line">Screen(<span class="string">'TextSize'</span>, drawWindow, <span class="number">14</span>);</span><br><span class="line">Screen(<span class="string">'TextFont'</span>, drawWindow, <span class="string">'Helvetica'</span>);</span><br><span class="line">Screen(<span class="string">'TextColor'</span>, drawWindow, [<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>]);</span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Done.\n'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"></span><br><span class="line">trialRunning = <span class="number">1</span>;</span><br><span class="line">mondSide = <span class="number">1</span>;</span><br><span class="line">stimType = <span class="number">1</span>;</span><br><span class="line">stimQuad = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">% Get first timestamp for screen flip in seconds</span></span><br><span class="line">timeStamp = Screen(<span class="string">'Flip'</span>, drawWindow);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Mondrian loop</span></span><br><span class="line"><span class="keyword">while</span> trialRunning == <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">% Set max priority for drawing</span></span><br><span class="line">    Priority(priorityLvl);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> mondSide == <span class="number">1</span></span><br><span class="line">        <span class="comment">% Draw stimulus on left, Mondrian on right</span></span><br><span class="line">        DrawMondrian(drawWindow, numElements, (xMax / <span class="number">2</span>) + rightOffset + xOffsetRange, (yMax / <span class="number">2</span>) + yOffsetRange, ...</span><br><span class="line">            mondrianRadiusMinorRange, mondrianRadiusMajorRange, mondColours, alphaRange);</span><br><span class="line">        </span><br><span class="line">        DrawStimulus(drawWindow, stimType, stimTextures(stimType), (xMax / <span class="number">2</span>) + leftOffset + stimQuadCoords(stimQuad, <span class="number">1</span>) - (faceSize(<span class="number">1</span>) ./ <span class="number">2</span>), ...</span><br><span class="line">            (yMax / <span class="number">2</span>) + stimQuadCoords(stimQuad, <span class="number">2</span>) - (faceSize(<span class="number">2</span>) ./ <span class="number">2</span>), faceSize(<span class="number">1</span>), faceSize(<span class="number">2</span>)); </span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">% Draw stimulus on right, Mondrian on left</span></span><br><span class="line">        DrawMondrian(drawWindow, numElements, (xMax / <span class="number">2</span>) + leftOffset + xOffsetRange, (yMax / <span class="number">2</span>) + yOffsetRange, ...</span><br><span class="line">            mondrianRadiusMinorRange, mondrianRadiusMajorRange, mondColours, alphaRange);</span><br><span class="line">        </span><br><span class="line">        DrawStimulus(drawWindow, stimType, stimTextures(stimType), (xMax / <span class="number">2</span>) + leftOffset + stimQuadCoords(stimQuad, <span class="number">1</span>) - (faceSize(<span class="number">1</span>) ./ <span class="number">2</span>), ...</span><br><span class="line">            (yMax / <span class="number">2</span>) + stimQuadCoords(stimQuad, <span class="number">2</span>) - (faceSize(<span class="number">2</span>) ./ <span class="number">2</span>), faceSize(<span class="number">1</span>), faceSize(<span class="number">2</span>));</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">% Draw fusion surround for each eye and fixation cross</span></span><br><span class="line">    DrawSurround(drawWindow, (xMax / <span class="number">2</span>) + leftOffset, (yMax / <span class="number">2</span>), borderWidth);</span><br><span class="line">    DrawSurround(drawWindow, (xMax / <span class="number">2</span>) + rightOffset, (yMax / <span class="number">2</span>), borderWidth);</span><br><span class="line">    </span><br><span class="line">    Screen(<span class="string">'DrawingFinished'</span>, drawWindow);</span><br><span class="line"></span><br><span class="line">    timeStamp = Screen(<span class="string">'Flip'</span>, drawWindow,  timeStamp + mondRefresh);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">%WaitSecs(mondRefresh);</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">% Reset priority to default</span></span><br><span class="line">    Priority(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> KbCheck</span><br><span class="line">        trialRunning = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">%%</span></span><br><span class="line"><span class="comment">% Tidy up and quit</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Clean up...'</span>);</span><br><span class="line"></span><br><span class="line">ShowCursor; </span><br><span class="line"></span><br><span class="line"><span class="comment">% Close window</span></span><br><span class="line">Screen(<span class="string">'CloseAll'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">% Restore preferences</span></span><br><span class="line">Screen(<span class="string">'Preference'</span>, <span class="string">'VisualDebugLevel'</span>, oldVisualDebugLevel);</span><br><span class="line">Screen(<span class="string">'Preference'</span>, <span class="string">'SuppressAllWarnings'</span>, oldSupressAllWarnings);</span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">'Done.\n'</span>);</span><br><span class="line">fprintf(<span class="string">'All finished.\nThank You.\n'</span>);</span><br></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_JianChen.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com">Literature</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#METHOD-1"><span class="toc-number">1.</span> <span class="toc-text">METHOD 1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#METHOD-2"><span class="toc-number">2.</span> <span class="toc-text">METHOD 2</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/two-way-to-make-mondrians/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/two-way-to-make-mondrians/&text=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/two-way-to-make-mondrians/&is_video=false&description=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=MATLAB code to generate CFS (Mondrian)&body=Check out this article: http://jianchen.info/two-way-to-make-mondrians/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/two-way-to-make-mondrians/&title=MATLAB code to generate CFS (Mondrian)"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/two-way-to-make-mondrians/&name=MATLAB code to generate CFS (Mondrian)&description=&lt;p&gt;There are plenty of ways to generate continuous flash stimuli (CFS) in the research of consciousness, for newbies, some example code might be extremely uesful, here I share some codes I wrote or collected in the past. Hope this is useful.&lt;/p&gt;"><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    
+
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 Jian Chen
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_JianChen.pdf">CV</a></li>
+         
+          <li><a href="/publication/">Publication</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com">Literature</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+<div id="disqus_thread"></div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-59160435-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'jianchen';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
