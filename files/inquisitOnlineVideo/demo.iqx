@@ -1,0 +1,21 @@
+﻿<html videoDemo>
+/ items = ("demo.html")
+/ size = (100%, 100%) 
+/ erase = true(255, 255, 255)
+/ showborders = false
+/ showscrollbars = false
+</html>
+
+<trial videoDemo>
+/ stimulustimes = [500=videoDemo]
+/ trialduration = 50000
+/ ontrialend= [trial.videoDemo.resetstimulusframes();]
+</trial>
+
+<block videoDemo>
+/ trials = [1=videoDemo]
+</block>
+
+<expt>
+/ blocks = [1=videoDemo]
+</expt>
