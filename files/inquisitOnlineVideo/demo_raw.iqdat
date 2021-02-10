@@ -1,3 +1,0 @@
-date	time	group	subject	build	blocknum	trialnum	blockcode	trialcode	pretrialpause	posttrialpause	trialduration	trialtimeout	response	correct	latency	stimulusnumber1	stimulusitem1	stimulusonset1
-040620	12:19:24	1	1	5.0.14.0	1	1	videoDemo	videoDemo	0	0	50000	0	Ctrl+'Q'	1	4559	1	demo.html	556
-040620	12:22:28	1	1	5.0.14.0	1	1	videoDemo	videoDemo	0	0	50000	0	Ctrl+'Q'	1	6956	1	demo.html	495
