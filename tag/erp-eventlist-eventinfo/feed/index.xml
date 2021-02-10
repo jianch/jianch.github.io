@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ERP.EVENTLIST.eventinfo &#8211; Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/tag/erp-eventlist-eventinfo/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 03:06:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>ERP.EVENTLIST.eventinfo &#8211; Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Merge Behavioral Data into EEG</title>
+		<link>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[EEG]]></category>
+		<category><![CDATA[EEG.event]]></category>
+		<category><![CDATA[ERP]]></category>
+		<category><![CDATA[ERP.EVENTLIST.eventinfo]]></category>
+		<category><![CDATA[ERPLAB]]></category>
+		<category><![CDATA[Event]]></category>
+		<category><![CDATA[EVENTLIST]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=94</guid>
+
+					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
+										<content:encoded><![CDATA[
+<p>An example code of how I merge behavioral data into EEG</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
+
+
+
+<p></p>
+
+
+
+<p>Code:</p>
+
+
+
+<p></p>
+
+
+
+<pre class="wp-block-code"><code>%% merge behavioral data into EEG
+
+% Sometimes, it's hard to lively send behavioral data to EEG system, i.e.
+
+% oral response. Here is a code example to merge behavioral result into EEG
+
+% data.
+
+% Author: Jian Chen
+
+% saturn.jian.chen@gmail.com
+
+% 13/Dec/2016
+
+%+++++++++++++%
+
+%% load EEG data first, finish 'channel location', 're-reference'
+
+% get event data via 'event = EEG.event'
+
+event = EEG.event;
+
+event\_back = event;
+
+%% load behavioral data
+
+fid = fopen('YourResponse\_acc.txt');  % here is a vector with length of 540
+
+acc = textscan(fid,'%d');
+
+fclose(fid);
+
+%% set the latency between target code and inserted code
+
+time = 100;
+
+%% creat response event
+
+for i = 2 : 2 : length(event)
+
+Nevent(i/2).bepoch    = event(i).bepoch;
+
+Nevent(i/2).bini      = event(i).bini;
+
+Nevent(i/2).binlabel  = event(i).binlabel;
+
+Nevent(i/2).codelabel = event(i).codelabel;
+
+Nevent(i/2).duration  = event(i).duration;
+
+Nevent(i/2).enable    = event(i).enable;
+
+Nevent(i/2).flag      = event(i).flag;
+
+Nevent(i/2).item      = event(i).item + 1;
+
+Nevent(i/2).latency   = event(i).latency + time;
+
+Nevent(i/2).type      = acc{1}(i/2);
+
+end
+
+%% add new events to original event list
+
+for i = 1:length(Nevent)
+
+event(2*i+i+1:end+1) = event(2*i+i:end); % move rows down
+
+event(2\*i+i) = Nevent(i); % insert response mark
+
+end
+
+%% save event in case of overwrite
+
+save event\_merge.mat event
+
+%% if the EEG data was currently loaded, simply replace the EEG.event with event, then operate as normal
+
+EEG.event = event;
+
+%replace ERPLAB event if you are using ERPLAB plugin
+
+ERP.EVENTLIST.eventinfo = event;</code></pre>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

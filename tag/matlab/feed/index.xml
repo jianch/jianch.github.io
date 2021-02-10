@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MATLAB &#8211; Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/tag/matlab/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>MATLAB &#8211; Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Replace MATLAB with Octave in MacOS</title>
+		<link>http://jianch.github.io/jianch.github.io/2020/09/03/replace-matlab-with-octave-in-macos/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2020/09/03/replace-matlab-with-octave-in-macos/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
+				<category><![CDATA[SideProject]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[Octave]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=147</guid>
+
+					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there...]]></description>
+										<content:encoded><![CDATA[
+<p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
+
+
+
+<p>Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all.</p>
+
+
+
+<p>So, I decide to replace MATLAB with Octave in my research.&nbsp;</p>
+
+
+
+<p><strong>1, unisntall MATLAB from your system</strong><br>OMG, so relief. Such a huge and unresponsive app! My computer will thank me for this.</p>
+
+
+
+<p><strong>2, MATLAB -&gt; Octave&nbsp;</strong><br>Follow instructions on this webpage, you will find it’s pretty easy to install Octave in your mac.<br><a href="https://wiki.octave.org/Octave_for_macOS" target="_blank" rel="noreferrer noopener">https://wiki.octave.org/Octave_for_macOS</a></p>
+
+
+
+<p><strong>3, PsychToolbox -&gt; PsychToolbox</strong><br>PsychToolbox supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="http://psychtoolbox.org/download" target="_blank" rel="noreferrer noopener">http://psychtoolbox.org/download</a></p>
+
+
+
+<p><strong>4, EEGLAB -&gt; EEGLAB</strong><br>EEGLAB supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="https://sccn.ucsd.edu/wiki/Running/_EEGLAB/_on/_Octave" target="_blank" rel="noreferrer noopener">https://sccn.ucsd.edu/wiki/Running\_EEGLAB\_on\_Octave</a></p>
+
+
+
+<p>I feel happy and I love open source.&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2020/09/03/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tips to get USB keyboard index in Matlab while using KbQueueCheck</title>
+		<link>http://jianch.github.io/jianch.github.io/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 22 Nov 2016 03:00:03 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Index]]></category>
+		<category><![CDATA[KbCheck]]></category>
+		<category><![CDATA[KbQueueCheck]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[Psychtoolbox]]></category>
+		<category><![CDATA[Tricks]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=81</guid>
+
+					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“...]]></description>
+										<content:encoded><![CDATA[
+<p>A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard?</p>
+
+
+
+<p>Credit: Jacob M. Paul in our lab.</p>
+
+
+
+<p>[Linux enviroment]</p>
+
+
+
+<p><strong>1. Check if the keyboard was recognized by the system.</strong></p>
+
+
+
+<p><em>Steps: Plug in your USB keyboard -&gt; Open Terminal -&gt; Input “</em>lsusb<em>“ -&gt; Plug off the USB keyboard -&gt; Input “</em>lsusb<em>“ again in Terminal</em></p>
+
+
+
+<p>Check if there were changes in the list. Here we can recognize a change of “Itron Technology tOne”, which is our USB keyboard. This means that the keyboard can be recognized by the system.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p><strong>2 Get index in MATLAB</strong></p>
+
+
+
+<p><em>Steps: Plug off the USB keyboard -&gt; Open MATLAB -&gt; Input “[id names info] = GetKeyboardIndeces()”</em></p>
+
+
+
+<p>MATLAB will give out some ids etc… Note that there are only 3, 4, 5 and 7 for now.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p><em>Steps: Plug in the USB keyboard -&gt; Reopen MATLAB (important) -&gt; Input “[id names info] = GetKeyboardIndeces() again”</em></p>
+
+
+
+<p>Note that there are extra id: 8, 9, and 10.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p><strong>3 Try these three indices in KbQueueCheck.</strong></p>
+
+
+
+<p>Here, the keyboard index for our USB keyboard is 10.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sublime Text 2 with MATLAB Syntax &#8211; Windows</title>
+		<link>http://jianch.github.io/jianch.github.io/2016/01/07/sublime-text-2-with-matlab-syntax-windows/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2016/01/07/sublime-text-2-with-matlab-syntax-windows/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 07 Jan 2016 02:56:00 +0000</pubDate>
+				<category><![CDATA[SideProject]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=76</guid>
+
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or...]]></description>
+										<content:encoded><![CDATA[
+<p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
+
+
+
+<p>Here is the solution:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/sublime/sublime_matlab.png" alt="sublime\_matlab"/></figure>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>Select <strong>Preferences -> Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;string>m&lt;/string></code></pre>
+
+
+
+<p>Save the file and close it. Next, open Objective-C++.tmLanguage and do the same thing to Line 8:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;string>M&lt;/string></code></pre>
+
+
+
+<p>Save and close that file as well.</p>
+
+
+
+<p>Finally, just to make sure your Open all with current extension as… command worked, go to Packages/User and check for the existence of a file called MATLAB.sublime-settings. Open it as a JSON file, and double-check that its contents are as follows:</p>
+
+
+
+<pre class="wp-block-code"><code>{
+     "extensions";
+     &#91;
+         "m"
+     ]
+}</code></pre>
+
+
+
+<p>If for some reason the file doesn’t exist, create it with the above contents and save it.</p>
+
+
+
+<p>Preference &#8211; User &#8211; above contents &#8211; save it as ‘MATLAB.sublime-settings</p>
+
+
+
+<p>You should now be able to open any .m file and have the syntax automatically set to MATLAB.</p>
+
+
+
+<p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/01/07/sublime-text-2-with-matlab-syntax-windows/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>A MATLAB Toolbox for Face Research</title>
+		<link>http://jianch.github.io/jianch.github.io/2015/12/07/a-matlab-toolbox-for-face-research/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2015/12/07/a-matlab-toolbox-for-face-research/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2015 02:24:20 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[face research]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[toolbox]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=47</guid>
+
+					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file...]]></description>
+										<content:encoded><![CDATA[
+<p>This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work.</p>
+
+
+
+<p></p>
+
+
+
+<p>Here is the source code:  </p>
+
+
+
+<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Pupil_face</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip" class="wp-block-file__button" download>Download</a></div>
+
+
+
+<p></p>
+
+
+
+<p>How to use:</p>
+
+
+
+<p>Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file (3 arrow) in the current directory. Remember to connect to the internet as I use some online face analysis tools. After computation, just go to the output_face folder to pick up processed face images (3 arrow).</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="598" height="229" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/2.jpg 598w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/2-300x115.jpg 300w" sizes="(max-width: 598px) 100vw, 598px" /></figure>
+
+
+
+<p>Run the pupil_face.m file, then it will automatically recognise the pupil position and resize the face to a grayscale pupil-distance constant face. Remember to connect to the Internet cause I use some online source.</p>
+
+
+
+<p>Results showing as below:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="380" height="381" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1.png 380w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1-300x301.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1-150x150.png 150w" sizes="(max-width: 380px) 100vw, 380px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1001" height="531" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3.jpg 1001w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3-300x159.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3-768x407.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3-850x451.jpg 850w" sizes="(max-width: 1001px) 100vw, 1001px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1001" height="531" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4.jpg 1001w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4-300x159.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4-768x407.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4-850x451.jpg 850w" sizes="(max-width: 1001px) 100vw, 1001px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="638" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-300x187.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-768x478.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-850x529.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="731" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-300x214.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-768x548.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-850x607.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6.png 1091w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/07/a-matlab-toolbox-for-face-research/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>EEG Toolbox for lazy people</title>
+		<link>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[BP]]></category>
+		<category><![CDATA[EEG]]></category>
+		<category><![CDATA[EEGKiller]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[Neuroscan]]></category>
+		<category><![CDATA[toolbox]]></category>
+		<category><![CDATA[Tsinghua]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=41</guid>
+
+					<description><![CDATA[Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely. Download and try it!]]></description>
+										<content:encoded><![CDATA[
+<p>Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely.</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
+
+
+
+<p>Download and try it!</p>
+
+
+
+<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

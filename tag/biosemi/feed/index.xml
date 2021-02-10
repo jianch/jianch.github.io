@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Biosemi &#8211; Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/tag/biosemi/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 03:36:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>Biosemi &#8211; Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
+		<link>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Biosemi]]></category>
+		<category><![CDATA[EEG]]></category>
+		<category><![CDATA[Linux]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=122</guid>
+
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins...]]></description>
+										<content:encoded><![CDATA[
+<p>Here are the basic steps I used to process BioSemi EEG data.</p>
+
+
+
+<p><strong>1 load raw data</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/809C496A-8039-4D2E-9B13-70B6B7721A10.png" alt=""/></figure>
+
+
+
+<p><strong>2 channel location</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/030CC12C-9735-43A2-AD38-53EBF6240A46.png" alt=""/></figure>
+
+
+
+<p><strong>3 re-reference</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3135436B-A01A-4FED-9B9E-E426C7FA3CB4.png" alt=""/></figure>
+
+
+
+<p><strong>4 filtering</strong>&nbsp;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later)</p>
+
+
+
+<p><strong>5 Create EEG event list (ERPLAB from now on)</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F18A0B75-3355-4EBE-B7CA-E62720858371.png" alt=""/></figure>
+
+
+
+<p><strong>6 Assign bins (how to operate on bins? see&nbsp;<a href="https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial" target="_blank" rel="noreferrer noopener">here</a>)</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/43ABAD39-3E41-4BA7-9607-34EA61FE7D74.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/8A8EC18C-86E4-4AB8-8242-1E6D23716321.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/4AC21F49-0134-4FE3-83E1-12B663C404DF.png" alt=""/></figure>
+
+
+
+<p><strong>7 extract bin-based epoch</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/B1B02461-7F46-4AB1-8371-AF769E9F3E26.png" alt=""/></figure>
+
+
+
+<p><strong>8 artifact rejection</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/40120CE4-073E-4CEF-A35D-98DDB2DDD429.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/9234B231-7612-41D2-9349-5682C3027FD8.png" alt=""/></figure>
+
+
+
+<p><strong>-&gt; choose channel around the eye. -&gt; update and then reject</strong></p>
+
+
+
+<p><strong>9 compute average erps</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/289AC38D-87CF-4234-9B90-D5C01D010D9A.png" alt=""/></figure>
+
+
+
+<p><strong>10 filter if you don’t do it in step 4</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/CD5AD34D-B8EC-4825-B5A8-90EA5C31611D.png" alt=""/></figure>
+
+
+
+<p><strong>11 bin operations if necessary&nbsp;</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/1E8272A4-A250-4471-945D-2D764439AE61.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3FA48AA1-9212-4A49-A8B4-73CEFFB13B38.png" alt=""/></figure>
+
+
+
+<p><strong>12 Plot ERPs</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/AB81310E-9BC5-422B-95FD-B3718883494D.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F1F2CFBD-3018-4E77-B960-35EEFB103226.png" alt=""/></figure>
+
+
+
+<p><strong>13 Save figures if you want</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/14A0D60A-40B2-4697-9F30-84312AFCEEBF.png" alt=""/></figure>
+
+
+
+<p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
+		<link>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[64-bit]]></category>
+		<category><![CDATA[ActiView]]></category>
+		<category><![CDATA[Biosemi]]></category>
+		<category><![CDATA[EEG]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=60</guid>
+
+					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series...]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>Biosemi is a lazy EEG company…</p>
+
+
+
+<p>Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release.</p>
+
+
+
+<p>A big problem is, who still use a 32-bit system?</p>
+
+
+
+<p>My lab currently builds a series of experimental equipment based on Ubuntu 14.04 LTS (which is 64-bit Linux). I got a lot of problems when we decided to run Biosemi Actiview on Ubuntu.</p>
+
+
+
+<p>Here is the solution for sharing.<br></p>
+
+
+
+<p>1, Firstly, you need to install Alien. Open a command window, input:</p>
+
+
+
+<pre class="wp-block-code"><code>sudo apt-get install alien fakeroot</code></pre>
+
+
+
+<p><em>Reference: INSTALL 32BIT SOFTWARE ON 64BIT UBUNTU. <a rel="noreferrer noopener" href="http://psgplacement.blogspot.com.au/2013/09/installing-i386-32-bit-rpm-files-in-amd.html" target="_blank">http://psgplacement.blogspot.com.au/2013/09/installing-i386-32-bit-rpm-files-in-amd.html</a></em></p>
+
+
+
+<p></p>
+
+
+
+<p>2, Run following on command to install the 32-bit compatibility libraries</p>
+
+
+
+<pre class="wp-block-code"><code>sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0</code></pre>
+
+
+
+<p>3, Then we need to convert the rpm to tgz (tar.gz) format.<br><em>Straightforward conversion from rpm to deb format can cause issues if the package was meant for i386 and you are trying to install in amd64 bit. It will say architecture is incompatible like “&lt;filename.rpm> is for architecture i386 ; the package cannot be built on this system”. This is because the package is built for i386 but we are trying to install in amd 64 bit. To overcome this, we need to first perform the conversion from rpm to tgz.</em></p>
+
+
+
+<pre class="wp-block-code"><code>sudo alien --to-tgz labview85-rte-8.5-1.i386.rpm
+sudo alien --to-tgz labview-rte-aal-1.1-1.i386.rpm</code></pre>
+
+
+
+<p>4, The above step gives us tgz file. This can be then converted to deb format by using alien command again.</p>
+
+
+
+<pre class="wp-block-code"><code>sudo alien --to-deb labview85-rte-8.5.tgz
+sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
+
+
+
+<p>5, Then the usual procedure to install deb can be used</p>
+
+
+
+<pre class="wp-block-code"><code>sudo dpkg -i *.deb</code></pre>
+
+
+
+<p>6, Then add to the lib</p>
+
+
+
+<pre class="wp-block-code"><code>export LD_LIBRARY_PATH=/usr/local/lib/LABVIEW-8.5</code></pre>
+
+
+
+<p>7, Then run the Actiview in the hosting folder</p>
+
+
+
+<pre class="wp-block-code"><code>./Actiview707-Linux</code></pre>
+
+
+
+<p></p>
+
+
+
+<p>Tips:</p>
+
+
+
+<p>To run the program, probably you need to follow the following steps:</p>
+
+
+
+<p>1, enter into sudo su mode</p>
+
+
+
+<p>2, locate to the Actiview folder,</p>
+
+
+
+<p>3, add the library,</p>
+
+
+
+<p>4, run the program,</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

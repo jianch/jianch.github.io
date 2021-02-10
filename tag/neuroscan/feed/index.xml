@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Neuroscan &#8211; Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/tag/neuroscan/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 02:42:38 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>Neuroscan &#8211; Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>EEG Toolbox for lazy people</title>
+		<link>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[BP]]></category>
+		<category><![CDATA[EEG]]></category>
+		<category><![CDATA[EEGKiller]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[Neuroscan]]></category>
+		<category><![CDATA[toolbox]]></category>
+		<category><![CDATA[Tsinghua]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=41</guid>
+
+					<description><![CDATA[Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely. Download and try it!]]></description>
+										<content:encoded><![CDATA[
+<p>Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely.</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
+
+
+
+<p>Download and try it!</p>
+
+
+
+<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

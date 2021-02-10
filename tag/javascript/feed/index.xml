@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Javascript &#8211; Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 03:47:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>Javascript &#8211; Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Change the space between paragraphs in Qualtrics</title>
+		<link>http://jianch.github.io/jianch.github.io/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 12 Nov 2019 03:47:26 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Padding]]></category>
+		<category><![CDATA[Qualtrics]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=139</guid>
+
+					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even...]]></description>
+										<content:encoded><![CDATA[
+<p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
+
+
+
+<p>One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph.</p>
+
+
+
+<pre class="wp-block-code"><code>jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-bottom", "0px");
+jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px");</code></pre>
+
+
+
+<p>Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chrome Extension for the library of the University of Melbourne</title>
+		<link>http://jianch.github.io/jianch.github.io/2015/12/10/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2015/12/10/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 10 Dec 2015 02:49:00 +0000</pubDate>
+				<category><![CDATA[SideProject]]></category>
+		<category><![CDATA[Chrome Extension]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[library]]></category>
+		<category><![CDATA[UniMelb]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=70</guid>
+
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob)....]]></description>
+										<content:encoded><![CDATA[
+<p><em>This extension is no longer working since the university introduces new systems in. </em></p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this?</p>
+
+
+
+<p>Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>Here is the method:</p>
+
+
+
+<p>I add “ezp.lib.unimelb.edu.au” to the end of the target database address after I found a paper in Google Scholar, then it will redirect to the library login page.</p>
+
+
+
+<p>For example, one of the paper’s addresses is:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>http://www.sciencedirect.com/science/article/pii/S0006899315008550</td></tr></tbody></table></figure>
+
+
+
+<p>I modified it in the address bar as:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550</td></tr></tbody></table></figure>
+
+
+
+<p>Then the browser will jump to the library website directly, you only need to login for one time.</p>
+
+
+
+<p>I spent one more day to create a Chrome Extension to do this job on a click. This is the first time I developed Chrome extension and it is also the first time I used Javascript.</p>
+
+
+
+<p>Here is the extension file, download it and install in to the chrome (How to install? OK, just drag the crx file into any chrome page, it will install automatically).</p>
+
+
+
+<p><a href="https://jianchen.info/files/ezp_crx.zip">ezp.crx</a></p>
+
+
+
+<p>or install from Chrome Webstore.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib</td></tr></tbody></table></figure>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>Here are instructions:</p>
+
+
+
+<ul><li>Download and install the chrome extension. you can either download from this website or search in the chrome extension market.</li></ul>
+
+
+
+<p>You should see this extension in your chrome after installation.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/chromeExtension/chrome1.jpg" alt=""/></figure>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<ul><li>try a paper, as you can tell, you need to login to read it</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/chromeExtension/chrome2.jpg" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/chromeExtension/chrome3.jpg" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/chromeExtension/chrome4.jpg" alt=""/></figure>
+
+
+
+<ul><li>click the extension and it will take you to the university library login page</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/chromeExtension/chrome5.jpg" alt=""/></figure>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>That’s it!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/10/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

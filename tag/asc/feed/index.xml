@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>asc &#8211; Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/tag/asc/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 03:34:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>asc &#8211; Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Load Eyelink data into R (in a very fast way)</title>
+		<link>http://jianch.github.io/jianch.github.io/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/</link>
+					<comments>http://jianch.github.io/jianch.github.io/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2017 03:33:52 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[asc]]></category>
+		<category><![CDATA[edf]]></category>
+		<category><![CDATA[Eyelink]]></category>
+		<category><![CDATA[Eyetracking]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=120</guid>
+
+					<description><![CDATA[These scripts are adapted from Dr. Jason Forte’s work in our lab. R]]></description>
+										<content:encoded><![CDATA[
+<p>These scripts are adapted from Dr. Jason Forte’s work in our lab.</p>
+
+
+
+<p></p>
+
+
+
+<p>R</p>
+
+
+
+<pre class="wp-block-code"><code>## eyelink data analysis 
+setwd('/Users/JianChen/Dropbox/PhD/Exp1/')
+filenameASC = 'xxxxxx.asc'
+dataEyelink
+# extract all numeric lines &amp;amp; replace blink (.) with 0.0\. Hack: sed
+# ''s/\.//g'' gets rid of all decimal points. We correct for that in the line dataEyelink$samples$V2 &amp;amp; V3
+# system command in this case = sed -n '/^\&#91;0-9]/p' PH12J17a.asc | sed 's/ \./0.0/g' | sed 's/\.//g' &amp;gt; tmp.txt
+system(paste("sed -n '/^\&#91;0-9]/p'", filenameASC, " | sed 's/\\./0.0/g' "," | sed 's/\\.//g' &amp;gt; tmp.txt"))
+# read samples into data structure
+dataEyelink$samples &amp;lt;- read.table('tmp.txt')
+# correct for above hack to resote pixel values....
+dataEyelink$samples$V2 &amp;lt;- dataEyelink$samples$V2 / 10
+dataEyelink$samples$V3 &amp;lt;- dataEyelink$samples$V3 / 10
+# extract gaze event for "EFIX" &amp;amp; remove "EFIX R" (Here I tracked right eye)
+system(paste("sed -n -e '/^EFIX/p' ", filenameASC, " | sed 's/EFIX R //g' &amp;gt; tmp.txt"))
+# read fixations into data structure
+dataEyelink$fixations &amp;lt;- read.table('tmp.txt')
+
+# extract gaze event for "ESACC" &amp;amp; remove "ESACC R"
+system(paste("sed -n -e '/^ESACC/p' ", filenameASC, " | sed 's/ESACC R //g' &amp;gt; tmp.txt"))
+# read saccades into data structure
+dataEyelink$saccades &amp;lt;- read.table('tmp.txt')
+
+# extract gaze event for "EBLINK" &amp;amp; remove "EBLINK R"
+system(paste("sed -n -e '/^EBLINK/p' ", filenameASC," | sed 's/EBLINK R //g' &amp;gt; tmp.txt"))
+# read blinks into data structure
+dataEyelink$blinks &amp;lt;- read.table('tmp.txt')
+
+# extract trigger event for "SYNCTIMEON" &amp;amp; "SYNCTIMEOFF" convert "SYNCTIMEON" to 1 &amp;amp; "SYNCTIMEOFF" to 0 and remove MSG
+system(paste("sed -n -e '/SYNCTIMEON/p' -e '/SYNCTIMEOFF/p' ", filenameASC, " | sed 's/SYNCTIMEON/1/g' | sed 's/SYNCTIMEOFF/0/g' | sed 's/MSG //g' &amp;gt; tmp.txt"))
+# read triggers into data structure
+dataEyelink$triggers &amp;lt;- read.table('tmp.txt')
+
+system('rm tmp.txt')</code></pre>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
