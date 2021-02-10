@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title>How to place errorbars on a grouped bar graph in MATLAB &#8211; Jian Chen</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Jian Chen &raquo; Feed" href="http://jianch.github.io/jianch.github.io/feed/">
+<link rel="alternate" type="application/rss+xml" title="Jian Chen &raquo; Comments Feed" href="http://jianch.github.io/jianch.github.io/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Jian Chen &raquo; How to place errorbars on a grouped bar graph in MATLAB Comments Feed" href="http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/jianch.github.io\/jianch.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="http://jianch.github.io/jianch.github.io/wp-includes/css/dist/block-library/style.min.css?ver=5.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/css/font-awesome.min.css?ver=5.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="ecocoded-style-css" href="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/style.css?ver=5.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="ecocoded-google-fonts-css" href="//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700&#038;ver=5.6.1" type="text/css" media="all">
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="http://jianch.github.io/jianch.github.io/wp-json/">
+<link rel="alternate" type="application/json" href="http://jianch.github.io/jianch.github.io/wp-json/wp/v2/posts/89">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://jianch.github.io/jianch.github.io/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://jianch.github.io/jianch.github.io/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.6.1">
+<link rel="canonical" href="http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/">
+<link rel="shortlink" href="http://jianch.github.io/jianch.github.io/?p=89">
+<link rel="alternate" type="application/json+oembed" href="http://jianch.github.io/jianch.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjianch.github.io%2Fjianch.github.io%2Fhow-to-place-errorbars-on-a-grouped-bar-graph-in-matlab%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://jianch.github.io/jianch.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjianch.github.io%2Fjianch.github.io%2Fhow-to-place-errorbars-on-a-grouped-bar-graph-in-matlab%2F&#038;format=xml">
+<link rel="pingback" href="http://jianch.github.io/jianch.github.io/xmlrpc.php">
+		<style type="text/css">body, .site, .swidgets-wrap h3, .post-data-text { background: ; }
+			.site-title a, .site-description { color: ; }
+			.sheader { background-color:  !important; }
+			.main-navigation ul li a, .main-navigation ul li .sub-arrow, .super-menu .toggle-mobile-menu,.toggle-mobile-menu:before, .mobile-menu-active .smenu-hide { color: ; }
+			#smobile-menu.show .main-navigation ul ul.children.active, #smobile-menu.show .main-navigation ul ul.sub-menu.active, #smobile-menu.show .main-navigation ul li, .smenu-hide.toggle-mobile-menu.menu-toggle, #smobile-menu.show .main-navigation ul li, .primary-menu ul li ul.children li, .primary-menu ul li ul.sub-menu li, .primary-menu .pmenu, .super-menu { border-color: ; border-bottom-color: ; }
+			#secondary .widget h3, #secondary .widget h3 a, #secondary .widget h4, #secondary .widget h1, #secondary .widget h2, #secondary .widget h5, #secondary .widget h6, #secondary .widget h4 a { color: ; }
+			#secondary .widget a, #secondary a, #secondary .widget li a , #secondary span.sub-arrow{ color: ; }
+			#secondary, #secondary .widget, #secondary .widget p, #secondary .widget li, .widget time.rpwe-time.published { color: ; }
+			#secondary .swidgets-wrap, #secondary .widget ul li, .featured-sidebar .search-field { border-color: ; }
+			.site-info, .footer-column-three input.search-submit, .footer-column-three p, .footer-column-three li, .footer-column-three td, .footer-column-three th, .footer-column-three caption { color: ; }
+			footer#colophon h3, footer#colophon h3 *, footer#colophon h4, footer#colophon h4 *, footer#colophon h5, footer#colophon h5 *, footer#colophon h6, footer#colophon h6 *, footer#colophon h1, footer#colophon h1 *, footer#colophon h2, footer#colophon h2 *, footer#colophon h4, footer#colophon h4 *, footer#colophon h3 a { color: ; }
+			.footer-column-three a, .footer-column-three li a, .footer-column-three .widget a, .footer-column-three .sub-arrow, .site-footer a, .site-info a, .site-footer * a, .site-footer a { color: ; }
+			.footer-column-three h3:after { background: ; }
+			.site-info, .widget ul li, .footer-column-three input.search-field, .footer-column-three input.search-submit { border-color: ; }
+			.site-footer { background-color: ; }
+			.content-wrapper h2.entry-title a, .content-wrapper h2.entry-title a:hover, .content-wrapper h2.entry-title a:active, .content-wrapper h2.entry-title a:focus, .archive .page-header h1, .blogposts-list h2 a, .blogposts-list h2 a:hover, .blogposts-list h2 a:active, .search-results h1.page-title { color: ; }
+			.blog .entry-meta{ color: ; }
+			.blogposts-list p { color: ; }
+			.page-numbers li a, .blogposts-list .blogpost-button, span.page-numbers.dots, .page-numbers.current { background: ; }
+			.archive .page-header h1, .search-results h1.page-title, .blogposts-list.fbox, span.page-numbers.dots, .page-numbers li a, .page-numbers.current { border-color: ; }
+			.blogposts-list .post-data-divider { background: ; }
+			.page .comments-area .comment-author, .page .comments-area .comment-author a, .page .comments-area .comments-title, .page .content-area h1, .page .content-area h2, .page .content-area h3, .page .content-area h4, .page .content-area h5, .page .content-area h6, .page .content-area th, .single  .comments-area .comment-author, .single .comments-area .comment-author a, .single .comments-area .comments-title, .single .content-area h1, .single .content-area h2, .single .content-area h3, .single .content-area h4, .single .content-area h5, .single .content-area h6, .single .content-area th, .search-no-results h1, .error404 h1 { color: ; }
+			.single .entry-meta, .page .entry-meta { color: ; }
+			.page .content-area p, .page article, .page .content-area table, .page .content-area dd, .page .content-area dt, .page .content-area address, .page .content-area .entry-content, .page .content-area li, .page .content-area ol, .single .content-area p, .single article, .single .content-area table, .single .content-area dd, .single .content-area dt, .single .content-area address, .single .entry-content, .single .content-area li, .single .content-area ol, .search-no-results .page-content p { color: ; }
+			.single .entry-content a, .page .entry-content a, .comment-content a, .comments-area .reply a, .logged-in-as a, .comments-area .comment-respond a { color: ; }
+			.comments-area p.form-submit input, .error404 input.search-submit, .search-no-results input.search-submit { background: ; }
+			.error404 .page-content p, .error404 input.search-submit, .search-no-results input.search-submit { color: ; }
+			.page .comments-area, .page article.fbox, .page article tr, .page .comments-area ol.comment-list ol.children li, .page .comments-area ol.comment-list .comment, .single .comments-area, .single article.fbox, .single article tr, .comments-area ol.comment-list ol.children li, .comments-area ol.comment-list .comment, .error404 main#main, .error404 .search-form label, .search-no-results .search-form label, .error404 input.search-submit, .search-no-results input.search-submit, .error404 main#main, .search-no-results section.fbox.no-results.not-found{ border-color: ; }
+			.single .post-data-divider, .page .post-data-divider { background: ; }
+			.single .comments-area p.form-submit input, .page .comments-area p.form-submit input, .comments-area p.form-submit input, .error404 input.search-submit, .search-no-results input.search-submit { color: ; }
+			.bottom-header-wrapper { padding-top: px; }
+			.bottom-header-wrapper { padding-bottom: px; }
+			.bottom-header-wrapper { background: ; }
+			.bottom-header-wrapper *{ color: ; }
+			.header-widget a, .header-widget li a, .header-widget i.fa { color: ; }
+			.header-widget, .header-widget p, .header-widget li, .header-widget .textwidget { color: ; }
+			.header-widget .widget-title, .header-widget h1, .header-widget h3, .header-widget h2, .header-widget h4, .header-widget h5, .header-widget h6{ color: ; }
+			.header-widget.swidgets-wrap, .header-widget ul li, .header-widget .search-field { border-color: ; }
+			.bottom-header-title, .bottom-header-paragraph{ color: ; }
+			#secondary .widget-title-lines:after, #secondary .widget-title-lines:before { background: ; }
+			.header-content-wrap { padding-top: px; }
+			.header-content-wrap { padding-bottom: px; }
+			.header-button-solid { border-color: ; }
+			.header-button-solid { color: ; }
+			#smobile-menu, .primary-menu ul li ul.children, .primary-menu ul li ul.sub-menu { background: ; }
+			#smobile-menu.show .toggle-mobile-menu:before, #smobile-menu *, .main-navigation ul.sub-menu li .sub-arrow, .main-navigation ul.sub-menu li a, .primary-menu ul li ul.children, .primary-menu ul li ul.sub-menu { color: ; }
+			.header-widgets-three, .header-widgets-wrapper .swidgets-wrap{ background: ; }
+			.sheader { background-color: ; }
+			#secondary .widget li, #secondary input.search-field, #secondary div#calendar_wrap, #secondary .tagcloud, #secondary .textwidget{ background: ; }
+			#secondary .swidget { border-color: ; }
+			article.blogposts-list { background: ; }
+			.blogposts-list .entry-content a{ color: ; }
+			.blogposts-list .entry-content a{ border-color: ; }
+			#secondary .widget *{ border-color: ; }
+			.error404 #primary .fbox, .single #primary .fbox, .page #primary .fbox { background: ; }
+			.page-numbers li a, .blogposts-list .blogpost-button, span.page-numbers.dots, .page-numbers.current, .page-numbers li a:hover { color: ; }
+			.page-numbers li a, .blogposts-list .blogpost-button, span.page-numbers.dots, .page-numbers.current, .page-numbers li a:hover { border-color: ; }</style>
+	<link rel="icon" href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg" sizes="32x32">
+<link rel="icon" href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-180x180.jpg">
+<meta name="msapplication-TileImage" content="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-270x270.jpg">
+</head>
+
+<body class="post-template-default single single-post postid-89 single-format-standard masthead-fixed">
+		<a class="skip-link screen-reader-text" href="#content"> Skip to content</a>
+	<div id="page" class="site ">
+
+		<header id="masthead" class="sheader site-header clearfix">
+			<nav id="primary-site-navigation" class="primary-menu main-navigation clearfix">
+
+				<a href="#" id="pull" class="smenu-hide toggle-mobile-menu menu-toggle" aria-controls="secondary-menu" aria-expanded="false">Menu</a>
+				<div class="top-nav-wrapper">
+					<div class="content-wrap">
+						<div class="logo-container"> 
+
+																<a class="logofont" href="http://jianch.github.io/jianch.github.io/" rel="home">Jian Chen</a>
+															</div>
+							<div class="center-main-menu"> 
+								<div class="menu-menu1-container"><ul id="primary-menu" class="pmenu">
+<li id="menu-item-104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104"><a href="http://jianchen.info/">Home</a></li>
+<li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102"><a href="https://jianchen.info/files/CV_JianChen.pdf">CV</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://jianch.github.io/jianch.github.io/research/">Research</a></li>
+<li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="http://saturninesaturn.weebly.com/writing">写作</a></li>
+<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="http://jianch.github.io/jianch.github.io/schizophrenia/">Schizophrenia</a></li>
+<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="http://jianch.github.io/jianch.github.io/homepage/">About Me</a></li>
+</ul></div>							</div>
+						</div>
+					</div>
+				</nav>
+
+				<div class="super-menu clearfix">
+					<div class="super-menu-inner">
+						
+
+														<a class="logofont" href="http://jianch.github.io/jianch.github.io/" rel="home">Jian Chen</a>
+														<a href="#" id="pull" class="toggle-mobile-menu menu-toggle" aria-controls="secondary-menu" aria-expanded="false"></a>
+						</div>
+					</div>
+					<div id="mobile-menu-overlay"></div>
+
+					<!-- Header bg start-->
+									<!-- Header bg start-->
+			</header>
+
+
+			<!-- Top widgets start -->
+			<div class="content-wrap">
+				<!-- Upper widgets -->
+				<div class="header-widgets-wrapper">
+					
+					
+									</div>
+			</div>
+
+
+			<div id="content" class="site-content clearfix">
+				<div class="content-wrap">
+	<div id="primary" class="featured-content content-area">
+		<main id="main" class="site-main">
+
+		<article id="post-89" class="posts-entry fbox post-89 post type-post status-publish format-standard hentry category-research tag-error-bar tag-notes tag-tricks">
+	<header class="entry-header">
+		<h1 class="entry-title">How to place errorbars on a grouped bar graph in MATLAB</h1>			<div class="entry-meta">
+				Posted on December 12, 2016			</div>
+				</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
+
+
+
+<p>We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1005" height="811" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png 1005w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-300x242.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-768x620.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-850x686.png 850w" sizes="(max-width: 1005px) 100vw, 1005px"></figure>
+
+
+
+<p>The error bars are located in the center of each grouped bars, rather than the individual bar in each grouped bars.</p>
+
+
+
+<p>Here is the note I made, the main code is from the link below:</p>
+
+
+
+<p><a href="https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b">https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b</a></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="732" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-300x214.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-768x549.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-850x607.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy.jpg 1188w" sizes="(max-width: 1024px) 100vw, 1024px"><figcaption>MATLAB Handle Graphics</figcaption></figure>
+
+
+
+<p></p>
+
+
+
+<p>Code example:</p>
+
+
+
+<pre class="wp-block-code"><code>Data set:
+
+mm: 4 by 6 matrix; ci: 4 by 6 matrix
+
+
+
+mm =
+
+&#91;0.2081 0.3440 0.3470 0.7018 0.8422 0.9874
+0.2628 0.3043 0.4032 0.7287 0.8462 1.1055
+0.2928 0.3139 0.4176 0.7241 0.8319 1.0483
+0.2287 0.2538 0.3665 0.4895 0.8999 1.1309]
+
+ci =
+
+&#91;0.0176 0.0473 0.0443 0.0724 0.0855 0.0931
+0.0312 0.0201 0.0407 0.0621 0.0604 0.0874
+0.0291 0.0330 0.0403 0.0756 0.0732 0.0847
+0.0228 0.0150 0.0264 0.0598 0.0922 0.0861]</code></pre>
+
+
+
+<pre class="wp-block-code"><code>figure;
+h = bar(mm');
+set(h,'BarWidth',0.8);    % The bars will now touch each other
+set(gca,'fontsize', 18);
+set(get(gca,'YLabel'),'String','RT in Seconds')
+lh = legend('Valid Left', 'Invalid left', 'Valid right', 'Invalid right');
+set(lh,'Location','BestOutside','Orientation','horizontal')
+hold on;
+
+% Aligning errorbar to individual bar within groups
+% Based on barweb.m by Bolu Ajiboye from MATLAB File Exchange
+groupwidth = min(0.8, 4/(4+1.5));
+for i = 1:4
+x = (1:6) - groupwidth/2 + (2*i-1) * groupwidth / (2*4);
+errorbar(x,mm(i,:),ci(i,:),'k', 'linestyle', 'none');
+end</code></pre>
+
+				<div class="post-tags">
+			<ul>
+<li><a href="http://jianch.github.io/jianch.github.io/tag/error-bar/" rel="tag">Error bar</a></li>
+<li><a href="http://jianch.github.io/jianch.github.io/tag/notes/" rel="tag">Notes</a></li>
+<li><a href="http://jianch.github.io/jianch.github.io/tag/tricks/" rel="tag">Tricks</a></li>
+</ul>		</div>
+	</div>
+<!-- .entry-content -->
+</article><!-- #post-89 -->
+
+<div id="disqus_thread"></div>
+
+		</main><!-- #main -->
+	</div>
+<!-- #primary -->
+
+
+<aside id="secondary" class="featured-sidebar widget-area">
+	<section id="search-4" class="fbox swidgets-wrap widget widget_search"><form role="search" method="get" class="search-form" action="http://jianch.github.io/jianch.github.io/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form></section><section id="tag_cloud-3" class="fbox swidgets-wrap widget widget_tag_cloud"><div class="sidebar-headline-wrapper">
+<div class="sidebarlines-wrapper"><div class="widget-title-lines"></div></div>
+<h4 class="widget-title">Tags</h4>
+</div>
+<div class="tagcloud">
+<a href="http://jianch.github.io/jianch.github.io/tag/64-bit/" class="tag-cloud-link tag-link-3 tag-link-position-1" style="font-size: 8pt;" aria-label="64-bit (1 item)">64-bit</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/actiview/" class="tag-cloud-link tag-link-4 tag-link-position-2" style="font-size: 8pt;" aria-label="ActiView (1 item)">ActiView</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/asc/" class="tag-cloud-link tag-link-43 tag-link-position-3" style="font-size: 8pt;" aria-label="asc (1 item)">asc</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/biosemi/" class="tag-cloud-link tag-link-5 tag-link-position-4" style="font-size: 12.581818181818pt;" aria-label="Biosemi (2 items)">Biosemi</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/bp/" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="BP (1 item)">BP</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/calibration/" class="tag-cloud-link tag-link-48 tag-link-position-6" style="font-size: 8pt;" aria-label="Calibration (1 item)">Calibration</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/chrome-extension/" class="tag-cloud-link tag-link-21 tag-link-position-7" style="font-size: 8pt;" aria-label="Chrome Extension (1 item)">Chrome Extension</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/crt/" class="tag-cloud-link tag-link-46 tag-link-position-8" style="font-size: 8pt;" aria-label="CRT (1 item)">CRT</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/database/" class="tag-cloud-link tag-link-24 tag-link-position-9" style="font-size: 8pt;" aria-label="database (1 item)">database</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/dynamic/" class="tag-cloud-link tag-link-28 tag-link-position-10" style="font-size: 8pt;" aria-label="dynamic (1 item)">dynamic</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/edf/" class="tag-cloud-link tag-link-45 tag-link-position-11" style="font-size: 8pt;" aria-label="edf (1 item)">edf</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eeg/" class="tag-cloud-link tag-link-6 tag-link-position-12" style="font-size: 22pt;" aria-label="EEG (6 items)">EEG</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eeg-event/" class="tag-cloud-link tag-link-36 tag-link-position-13" style="font-size: 8pt;" aria-label="EEG.event (1 item)">EEG.event</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eegkiller/" class="tag-cloud-link tag-link-13 tag-link-position-14" style="font-size: 8pt;" aria-label="EEGKiller (1 item)">EEGKiller</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eeglab/" class="tag-cloud-link tag-link-27 tag-link-position-15" style="font-size: 8pt;" aria-label="eeglab (1 item)">eeglab</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/erp/" class="tag-cloud-link tag-link-37 tag-link-position-16" style="font-size: 8pt;" aria-label="ERP (1 item)">ERP</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/erp-eventlist-eventinfo/" class="tag-cloud-link tag-link-38 tag-link-position-17" style="font-size: 8pt;" aria-label="ERP.EVENTLIST.eventinfo (1 item)">ERP.EVENTLIST.eventinfo</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/erplab/" class="tag-cloud-link tag-link-39 tag-link-position-18" style="font-size: 8pt;" aria-label="ERPLAB (1 item)">ERPLAB</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/error-bar/" class="tag-cloud-link tag-link-35 tag-link-position-19" style="font-size: 8pt;" aria-label="Error bar (1 item)">Error bar</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/event/" class="tag-cloud-link tag-link-41 tag-link-position-20" style="font-size: 8pt;" aria-label="Event (1 item)">Event</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eventlist/" class="tag-cloud-link tag-link-40 tag-link-position-21" style="font-size: 8pt;" aria-label="EVENTLIST (1 item)">EVENTLIST</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eyelink/" class="tag-cloud-link tag-link-44 tag-link-position-22" style="font-size: 15.636363636364pt;" aria-label="Eyelink (3 items)">Eyelink</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/eyetracking/" class="tag-cloud-link tag-link-42 tag-link-position-23" style="font-size: 12.581818181818pt;" aria-label="Eyetracking (2 items)">Eyetracking</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/face-research/" class="tag-cloud-link tag-link-10 tag-link-position-24" style="font-size: 8pt;" aria-label="face research (1 item)">face research</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/index/" class="tag-cloud-link tag-link-29 tag-link-position-25" style="font-size: 8pt;" aria-label="Index (1 item)">Index</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/javascript/" class="tag-cloud-link tag-link-22 tag-link-position-26" style="font-size: 12.581818181818pt;" aria-label="Javascript (2 items)">Javascript</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/kbcheck/" class="tag-cloud-link tag-link-31 tag-link-position-27" style="font-size: 8pt;" aria-label="KbCheck (1 item)">KbCheck</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/kbqueuecheck/" class="tag-cloud-link tag-link-30 tag-link-position-28" style="font-size: 8pt;" aria-label="KbQueueCheck (1 item)">KbQueueCheck</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/keyboard/" class="tag-cloud-link tag-link-47 tag-link-position-29" style="font-size: 8pt;" aria-label="Keyboard (1 item)">Keyboard</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/laser/" class="tag-cloud-link tag-link-49 tag-link-position-30" style="font-size: 8pt;" aria-label="Laser (1 item)">Laser</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/library/" class="tag-cloud-link tag-link-25 tag-link-position-31" style="font-size: 8pt;" aria-label="library (1 item)">library</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/linux/" class="tag-cloud-link tag-link-7 tag-link-position-32" style="font-size: 20.218181818182pt;" aria-label="Linux (5 items)">Linux</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/mac/" class="tag-cloud-link tag-link-14 tag-link-position-33" style="font-size: 18.181818181818pt;" aria-label="Mac (4 items)">Mac</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/matlab/" class="tag-cloud-link tag-link-9 tag-link-position-34" style="font-size: 20.218181818182pt;" aria-label="MATLAB (5 items)">MATLAB</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/neuroscan/" class="tag-cloud-link tag-link-15 tag-link-position-35" style="font-size: 8pt;" aria-label="Neuroscan (1 item)">Neuroscan</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/notes/" class="tag-cloud-link tag-link-34 tag-link-position-36" style="font-size: 8pt;" aria-label="Notes (1 item)">Notes</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/parallel-port/" class="tag-cloud-link tag-link-20 tag-link-position-37" style="font-size: 8pt;" aria-label="Parallel Port (1 item)">Parallel Port</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/psychtoolbox/" class="tag-cloud-link tag-link-32 tag-link-position-38" style="font-size: 8pt;" aria-label="Psychtoolbox (1 item)">Psychtoolbox</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/toolbox/" class="tag-cloud-link tag-link-11 tag-link-position-39" style="font-size: 12.581818181818pt;" aria-label="toolbox (2 items)">toolbox</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/tricks/" class="tag-cloud-link tag-link-33 tag-link-position-40" style="font-size: 15.636363636364pt;" aria-label="Tricks (3 items)">Tricks</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/trigger/" class="tag-cloud-link tag-link-19 tag-link-position-41" style="font-size: 8pt;" aria-label="Trigger (1 item)">Trigger</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/tsinghua/" class="tag-cloud-link tag-link-16 tag-link-position-42" style="font-size: 8pt;" aria-label="Tsinghua (1 item)">Tsinghua</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/ubuntu/" class="tag-cloud-link tag-link-8 tag-link-position-43" style="font-size: 8pt;" aria-label="Ubuntu (1 item)">Ubuntu</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/unimelb/" class="tag-cloud-link tag-link-23 tag-link-position-44" style="font-size: 8pt;" aria-label="UniMelb (1 item)">UniMelb</a>
+<a href="http://jianch.github.io/jianch.github.io/tag/windows/" class="tag-cloud-link tag-link-17 tag-link-position-45" style="font-size: 15.636363636364pt;" aria-label="Windows (3 items)">Windows</a>
+</div>
+</section><section id="archives-4" class="fbox swidgets-wrap widget widget_archive"><div class="sidebar-headline-wrapper">
+<div class="sidebarlines-wrapper"><div class="widget-title-lines"></div></div>
+<h4 class="widget-title">Archives</h4>
+</div>
+			<ul>
+					<li><a href="http://jianch.github.io/jianch.github.io/2020/09/">September 2020</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2020/04/">April 2020</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2019/11/">November 2019</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2018/04/">April 2018</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2018/03/">March 2018</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2017/09/">September 2017</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2017/07/">July 2017</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2017/05/">May 2017</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2017/03/">March 2017</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2017/02/">February 2017</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2017/01/">January 2017</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2016/12/">December 2016</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2016/11/">November 2016</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2016/01/">January 2016</a></li>
+	<li><a href="http://jianch.github.io/jianch.github.io/2015/12/">December 2015</a></li>
+			</ul>
+
+			</section></aside><!-- #secondary -->
+</div>
+</div>
+<!-- #content -->
+
+<footer id="colophon" class="site-footer clearfix">
+
+	<div class="content-wrap">
+		
+			
+			
+		</div>
+
+		<div class="site-info">
+			&copy;2021 Jian Chen			<!-- Delete below lines to remove copyright from footer -->
+			<span class="footer-info-right">
+				 | WordPress Theme: <a href="https://superbthemes.com/ecocoded/"> EcoCoded</a>
+			</span>
+			<!-- Delete above lines to remove copyright from footer -->
+		</div>
+<!-- .site-info -->
+	</footer>
+</div>
+
+
+
+<!-- #colophon -->
+<!-- #page -->
+
+<div id="smobile-menu" class="mobile-only"></div>
+<div id="mobile-menu-overlay"></div>
+
+<script type="text/javascript" id="disqus_count-js-extra">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"jianchen"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.21" id="disqus_count-js"></script>
+<script type="text/javascript" id="disqus_embed-js-extra">
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.21"},"disqusIdentifier":"89 http:\/\/jianch.github.io\/jianch.github.io\/?p=89","disqusShortname":"jianchen","disqusTitle":"How to place errorbars on a grouped bar graph in MATLAB","disqusUrl":"http:\/\/jianch.github.io\/jianch.github.io\/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab\/","postId":"89"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.0.21" id="disqus_embed-js"></script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/js/navigation.min.js?ver=20160720" id="ecocoded-navigation-js"></script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/js/script.min.js?ver=20160720" id="ecocoded-script-js"></script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/js/accessibility.min.js?ver=20160720" id="ecocoded-accessibility-jquery-js"></script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/comment-reply.min.js?ver=5.6.1" id="comment-reply-js"></script>
+<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/wp-embed.min.js?ver=5.6.1" id="wp-embed-js"></script>
+	<script>
+		/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	</body>
+</html>

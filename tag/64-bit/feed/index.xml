@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
@@ -162,7 +162,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

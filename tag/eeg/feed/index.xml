@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
@@ -173,15 +173,15 @@
 <p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Merge Behavioral Data into EEG</title>
-		<link>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/</link>
+					<comments>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
@@ -318,15 +318,15 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG topography sample</title>
-		<link>http://jianch.github.io/jianch.github.io/2016/01/02/eeg-topography-sample/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2016/01/02/eeg-topography-sample/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/eeg-topography-sample/</link>
+					<comments>http://jianch.github.io/jianch.github.io/eeg-topography-sample/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 02 Jan 2016 02:56:55 +0000</pubDate>
@@ -345,15 +345,15 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 <figure class="wp-block-image size-large"><img loading="lazy" width="960" height="840" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/01/02/eeg-topography-sample/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-topography-sample/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</title>
-		<link>http://jianch.github.io/jianch.github.io/2015/12/09/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2015/12/09/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
+					<comments>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 09 Dec 2015 02:44:39 +0000</pubDate>
@@ -463,15 +463,15 @@ end</code></pre>
 <p><em>An minor error was found in trigger.m and has been fixed.</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/09/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
@@ -603,15 +603,15 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG Toolbox for lazy people</title>
-		<link>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/</link>
+					<comments>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
@@ -652,7 +652,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/06/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

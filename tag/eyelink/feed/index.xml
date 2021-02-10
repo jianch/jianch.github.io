@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>Plot Heatmap from Eye Tracking Data</title>
-		<link>http://jianch.github.io/jianch.github.io/2017/09/07/plot-heatmap-from-eye-tracking-data/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2017/09/07/plot-heatmap-from-eye-tracking-data/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/plot-heatmap-from-eye-tracking-data/</link>
+					<comments>http://jianch.github.io/jianch.github.io/plot-heatmap-from-eye-tracking-data/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 07 Sep 2017 03:42:50 +0000</pubDate>
@@ -124,15 +124,15 @@ view(0,90);
 print('heatmap', '-dtiff','-r300');</code></pre>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/09/07/plot-heatmap-from-eye-tracking-data/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/plot-heatmap-from-eye-tracking-data/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Get real-time gaze positions from the eye tracke</title>
-		<link>http://jianch.github.io/jianch.github.io/2017/05/30/get-real-time-gaze-positions-from-the-eye-tracke/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2017/05/30/get-real-time-gaze-positions-from-the-eye-tracke/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/</link>
+					<comments>http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 30 May 2017 03:39:11 +0000</pubDate>
@@ -174,15 +174,15 @@ end</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/05/30/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Load Eyelink data into R (in a very fast way)</title>
-		<link>http://jianch.github.io/jianch.github.io/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/</link>
+					<comments>http://jianch.github.io/jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 17 Jan 2017 03:33:52 +0000</pubDate>
@@ -247,7 +247,7 @@ system('rm tmp.txt')</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

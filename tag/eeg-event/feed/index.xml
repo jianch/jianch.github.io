@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>Merge Behavioral Data into EEG</title>
-		<link>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/</link>
+					<comments>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
@@ -167,7 +167,7 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/12/16/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

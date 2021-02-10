@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</title>
-		<link>http://jianch.github.io/jianch.github.io/2015/12/09/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2015/12/09/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
+					<comments>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 09 Dec 2015 02:44:39 +0000</pubDate>
@@ -140,7 +140,7 @@ end</code></pre>
 <p><em>An minor error was found in trigger.m and has been fixed.</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/09/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

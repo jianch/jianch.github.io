@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>Run Multiple Instances of Dropbox in MAC OS</title>
-		<link>http://jianch.github.io/jianch.github.io/2018/03/21/run-multiple-instances-of-dropbox-in-mac-os/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2018/03/21/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
+					<comments>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 21 Mar 2018 03:44:24 +0000</pubDate>
@@ -52,15 +52,15 @@
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2018/03/21/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>How to place errorbars on a grouped bar graph in MATLAB</title>
-		<link>http://jianch.github.io/jianch.github.io/2016/12/12/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2016/12/12/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
+					<comments>http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Mon, 12 Dec 2016 03:04:13 +0000</pubDate>
@@ -148,15 +148,15 @@ errorbar(x,mm(i,:),ci(i,:),'k', 'linestyle', 'none');
 end</code></pre>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/12/12/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Tips to get USB keyboard index in Matlab while using KbQueueCheck</title>
-		<link>http://jianch.github.io/jianch.github.io/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
+					<comments>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 22 Nov 2016 03:00:03 +0000</pubDate>
@@ -247,7 +247,7 @@ end</code></pre>
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

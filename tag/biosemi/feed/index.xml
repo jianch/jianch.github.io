@@ -29,8 +29,8 @@
 </image> 
 	<item>
 		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
@@ -173,15 +173,15 @@
 <p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2017/02/18/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
@@ -313,7 +313,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/2015/12/08/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
