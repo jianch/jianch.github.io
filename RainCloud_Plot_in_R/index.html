@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang=En>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="RainCloud plot is arising as a very informative method to present raw data, basically, it combines boxplot ,  volin plot , and  scatter plot together, in a visually pleasure way.  The RainClould plot">
+<meta name="keywords" content="R,ggplot2,RainCloud,DataVisualization">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Visualization - the RainCloud Plot in R">
+<meta property="og:url" content="http://jianchen.info/RainCloud_Plot_in_R/index.html">
+<meta property="og:site_name" content="Jian Chen">
+<meta property="og:description" content="RainCloud plot is arising as a very informative method to present raw data, basically, it combines boxplot ,  volin plot , and  scatter plot together, in a visually pleasure way.  The RainClould plot">
+<meta property="og:locale" content="English">
+<meta property="og:image" content="http://jianchen.info/images/raincloud/raincloud.tiff">
+<meta property="og:updated_time" content="2018-08-20T01:14:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Data Visualization - the RainCloud Plot in R">
+<meta name="twitter:description" content="RainCloud plot is arising as a very informative method to present raw data, basically, it combines boxplot ,  volin plot , and  scatter plot together, in a visually pleasure way.  The RainClould plot">
+<meta name="twitter:image" content="http://jianchen.info/images/raincloud/raincloud.tiff">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Data Visualization - the RainCloud Plot in R</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_JianChen.pdf">CV</a></li>
+         
+          <li><a href="/research/">Research</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com/writing">Writings/写作</a></li>
+         
+          <li><a href="/schizophrenia/">Schizophrenia</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/two-way-to-make-mondrians/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/characters-in-karamazov/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/RainCloud_Plot_in_R/&text=Data Visualization - the RainCloud Plot in R"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/RainCloud_Plot_in_R/&is_video=false&description=Data Visualization - the RainCloud Plot in R"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Data Visualization - the RainCloud Plot in R&body=Check out this article: http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/RainCloud_Plot_in_R/&name=Data Visualization - the RainCloud Plot in R&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Data Visualization - the RainCloud Plot in R
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Jian Chen</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-08-13T01:08:17.000Z" itemprop="datePublished">2018-08-13</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/DataVisualization/">DataVisualization</a>, <a class="tag-link" href="/tags/R/">R</a>, <a class="tag-link" href="/tags/RainCloud/">RainCloud</a>, <a class="tag-link" href="/tags/ggplot2/">ggplot2</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><br></p>
+<p><a href="https://micahallen.org/2018/03/15/introducing-raincloud-plots/" target="_blank" rel="noopener">RainCloud plot</a> is arising as a very informative method to present raw data, basically, it combines <strong>boxplot </strong>, <strong> volin plot </strong>, and <strong> scatter plot</strong> together, in a visually pleasure way. </p>
+<p>The RainClould plot requires some basic packages like <em>ggplot2</em>, so we need to load them first.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## load packages</span></span><br><span class="line"><span class="keyword">library</span>(ggplot2)</span><br><span class="line"><span class="keyword">library</span>(plyr)</span><br><span class="line"><span class="keyword">library</span>(scales)</span><br></pre></td></tr></table></figure>
+<p>Then we set up the working directory and load the test data</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## set work directory and load the data</span></span><br><span class="line">setwd(<span class="string">'/to/whenever/the/data/is'</span>)</span><br><span class="line"><span class="comment">## read data</span></span><br><span class="line"><span class="comment"># here I read a csv file</span></span><br><span class="line">test &lt;- read.csv(<span class="string">'example.csv'</span>,header = <span class="literal">T</span>, sep = <span class="string">','</span>)</span><br></pre></td></tr></table></figure>
+<p>A very important function used in raincloud plot is <strong>geom_flat_volin</strong>, which is not a standard function in <em>ggplot2</em>, therefore we need to define it beforehand.</p>
+<p>The following function definition is extracted from the this web page: <a href="">https://gist.github.com/dgrtwo/eb7750e74997891d7c20</a><a href="">2</a>. Copy and paste them into your code.</p>
+<p>Or, you can just source this function via the following code if you won’t bother to copy the complex code. Either way is fine:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">source</span>(<span class="string">"https://gist.githubusercontent.com/benmarwick/2a1bb0133ff568cbe28d/raw/fb53bd97121f7f9ce947837ef1a4c65a73bffb3f/geom_flat_violin.R"</span>)`</span><br></pre></td></tr></table></figure>
+<p><strong>geom_flat_volin</strong> function definition: </p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># =========================== function definition ===========================</span></span><br><span class="line">  </span><br><span class="line"><span class="comment">## define function of geom_flat_volin</span></span><br><span class="line"><span class="comment"># devtools::install_github(repo = "IndrajeetPatil/ggstatsplot")</span></span><br><span class="line"></span><br><span class="line"><span class="string">"%||%"</span> &lt;- <span class="keyword">function</span>(a, b) &#123;</span><br><span class="line"> <span class="keyword">if</span> (!is.null(a))</span><br><span class="line">     a</span><br><span class="line"> <span class="keyword">else</span></span><br><span class="line">     b</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">geom_flat_violin &lt;-</span><br><span class="line"> <span class="keyword">function</span>(mapping = <span class="literal">NULL</span>,</span><br><span class="line">        data = <span class="literal">NULL</span>,</span><br><span class="line">        stat = <span class="string">"ydensity"</span>,</span><br><span class="line">        position = <span class="string">"dodge"</span>,</span><br><span class="line">        trim = <span class="literal">TRUE</span>,</span><br><span class="line">        scale = <span class="string">"area"</span>,</span><br><span class="line">        show.legend = <span class="literal">NA</span>,</span><br><span class="line">        inherit.aes = <span class="literal">TRUE</span>,</span><br><span class="line">        <span class="keyword">...</span>) &#123;</span><br><span class="line">ggplot2::layer(</span><br><span class="line"> data = data,</span><br><span class="line"> mapping = mapping,</span><br><span class="line"> stat = stat,</span><br><span class="line"> geom = GeomFlatViolin,</span><br><span class="line"> position = position,</span><br><span class="line"> show.legend = show.legend,</span><br><span class="line"> inherit.aes = inherit.aes,</span><br><span class="line"> params = list(trim = trim,</span><br><span class="line">                scale = scale,</span><br><span class="line">                <span class="keyword">...</span>)</span><br><span class="line">)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">GeomFlatViolin &lt;-</span><br><span class="line">  ggproto(</span><br><span class="line"><span class="string">"GeomFlatViolin"</span>,</span><br><span class="line">Geom,</span><br><span class="line">setup_data = <span class="keyword">function</span>(data, params) &#123;</span><br><span class="line">  data$width &lt;- data$width %||%</span><br><span class="line">    params$width %||% (resolution(data$x, <span class="literal">FALSE</span>) * <span class="number">0.9</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># ymin, ymax, xmin, and xmax define the bounding rectangle for each group</span></span><br><span class="line">data %&gt;%</span><br><span class="line">    dplyr::group_by(.data = ., group) %&gt;%</span><br><span class="line">    dplyr::mutate(</span><br><span class="line">      .data = .,</span><br><span class="line">      ymin = min(y),</span><br><span class="line">      ymax = max(y),</span><br><span class="line">      xmin = x,</span><br><span class="line">      xmax = x + width / <span class="number">2</span></span><br><span class="line">    )</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line">draw_group = <span class="keyword">function</span>(data, panel_scales, coord)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment"># Find the points for the line to go all the way around</span></span><br><span class="line">data &lt;- base::transform(data,</span><br><span class="line">                          xminv = x,</span><br><span class="line">                          xmaxv = x + violinwidth * (xmax - x))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make sure it's sorted properly to draw the outline</span></span><br><span class="line">newdata &lt;-</span><br><span class="line">    base::rbind(</span><br><span class="line">      dplyr::arrange(.data = base::transform(data, x = xminv), y),</span><br><span class="line">      dplyr::arrange(.data = base::transform(data, x = xmaxv), -y)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"><span class="comment"># Close the polygon: set first and last point the same</span></span><br><span class="line"><span class="comment"># Needed for coord_polar and such</span></span><br><span class="line"> newdata &lt;- rbind(newdata, newdata[<span class="number">1</span>,])</span><br><span class="line"></span><br><span class="line">  ggplot2:::ggname(<span class="string">"geom_flat_violin"</span>,</span><br><span class="line">                   GeomPolygon$draw_panel(newdata, panel_scales, coord))</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line">draw_key = draw_key_polygon,</span><br><span class="line"></span><br><span class="line">default_aes = ggplot2::aes(</span><br><span class="line">  weight = <span class="number">1</span>,</span><br><span class="line">  colour = <span class="string">"grey20"</span>,</span><br><span class="line">  fill = <span class="string">"white"</span>,</span><br><span class="line">  size = <span class="number">0.5</span>,</span><br><span class="line">  alpha = <span class="literal">NA</span>,</span><br><span class="line">  linetype = <span class="string">"solid"</span></span><br><span class="line">),</span><br><span class="line"></span><br><span class="line">required_aes = c(<span class="string">"x"</span>, <span class="string">"y"</span>)</span><br><span class="line">  )</span><br><span class="line"><span class="comment"># =========================== function definition ===========================</span></span><br></pre></td></tr></table></figure>
+<p>Everything we need is ready, so let’s do the plot! </p>
+<p>First we make a data frame as what usually used in ggplot2. </p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## make data frame</span></span><br><span class="line">df &lt;- data.frame(rt = c(test$subi_att,test$subi_unatt),</span><br><span class="line">                 condition = c(rep(<span class="string">'Attended'</span>,length(test$subi_att)),rep(<span class="string">'Unattended'</span>,length(test$subi_unatt)))</span><br><span class="line">                 )</span><br></pre></td></tr></table></figure>
+<p> Then is the plot.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = df, aes(y = rt, x = condition, fill = condition)) +</span><br><span class="line">  geom_flat_violin(position = position_nudge(x = <span class="number">.2</span>, y = <span class="number">0</span>), alpha = <span class="number">.5</span>) +</span><br><span class="line">  geom_boxplot(width = <span class="number">.1</span>,  outlier.shape = <span class="literal">NA</span>, alpha = <span class="number">0.5</span>) +</span><br><span class="line">  geom_point(aes(y = rt, color = condition), position = position_jitter(width = <span class="number">.15</span>), size = <span class="number">.8</span>, alpha = <span class="number">0.8</span>) +</span><br><span class="line"></span><br><span class="line">  labs(x=<span class="string">"Condition"</span>,y=<span class="string">"Response Time (s)"</span>) + theme(legend.position=<span class="string">"none"</span>) + theme(axis.title = element_text(family = <span class="string">"Times New Roman"</span>)) + </span><br><span class="line">  theme(axis.text=element_text(size=<span class="number">10</span>, family = <span class="string">"Times New Roman"</span>)) + </span><br><span class="line">  theme(legend.title = element_text(family = <span class="string">"Times New Roman"</span>)) + </span><br><span class="line">  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + theme(panel.background = element_blank()) +</span><br><span class="line">  <span class="comment">#theme(panel.border = element_rect(color = 'black',fill=NA, size = 1)) + </span></span><br><span class="line">  theme(axis.line = element_line(colour = <span class="string">'black'</span>, size = <span class="number">0.5</span>)) + </span><br><span class="line">  theme(axis.ticks = element_line(colour = <span class="string">"black"</span>, size = <span class="number">0.4</span>)) + </span><br><span class="line">  scale_y_continuous(limits = c(<span class="number">.2</span>,<span class="number">.8</span>), expand = c(<span class="number">0</span>,<span class="number">0</span>), oob = rescale_none) +    <span class="comment">## y axis starts from non-zero point</span></span><br><span class="line">  scale_x_discrete(expand = c(<span class="number">0.2</span>,<span class="number">0.2</span>))</span><br><span class="line"></span><br><span class="line">ggsave(<span class="string">'plot.tiff'</span>)</span><br></pre></td></tr></table></figure>
+<p>We then will see the figure. </p>
+<p><img src="/images/raincloud/raincloud.tiff" alt=""></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_JianChen.pdf">CV</a></li>
+         
+          <li><a href="/research/">Research</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com/writing">Writings/写作</a></li>
+         
+          <li><a href="/schizophrenia/">Schizophrenia</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jianchen.info/RainCloud_Plot_in_R/&text=Data Visualization - the RainCloud Plot in R"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jianchen.info/RainCloud_Plot_in_R/&is_video=false&description=Data Visualization - the RainCloud Plot in R"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Data Visualization - the RainCloud Plot in R&body=Check out this article: http://jianchen.info/RainCloud_Plot_in_R/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jianchen.info/RainCloud_Plot_in_R/&title=Data Visualization - the RainCloud Plot in R"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jianchen.info/RainCloud_Plot_in_R/&name=Data Visualization - the RainCloud Plot in R&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    
+
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Jian Chen
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/files/CV_JianChen.pdf">CV</a></li>
+         
+          <li><a href="/research/">Research</a></li>
+         
+          <li><a href="http://saturninesaturn.weebly.com/writing">Writings/写作</a></li>
+         
+          <li><a href="/schizophrenia/">Schizophrenia</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+<div id="disqus_thread"></div>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-59160435-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'jianchen';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
