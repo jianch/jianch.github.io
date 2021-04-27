@@ -10,7 +10,7 @@
 <channel>
 	<title>edf &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/edf/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:34:41 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>edf &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Load Eyelink data into R (in a very fast way)</title>
-		<link>http://jianch.github.io/jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/</link>
-					<comments>http://jianch.github.io/jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/#respond</comments>
+		<link>http://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/</link>
+					<comments>http://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 17 Jan 2017 03:33:52 +0000</pubDate>
@@ -39,7 +39,7 @@
 		<category><![CDATA[edf]]></category>
 		<category><![CDATA[Eyelink]]></category>
 		<category><![CDATA[Eyetracking]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=120</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=120</guid>
 
 					<description><![CDATA[These scripts are adapted from Dr. Jason Forte’s work in our lab. R]]></description>
 										<content:encoded><![CDATA[
@@ -95,7 +95,7 @@ system('rm tmp.txt')</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

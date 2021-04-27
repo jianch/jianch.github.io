@@ -10,7 +10,7 @@
 <channel>
 	<title>Biosemi &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/biosemi/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:36:34 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>Biosemi &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		<link>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
@@ -38,9 +38,9 @@
 		<category><![CDATA[Biosemi]]></category>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=122</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=122</guid>
 
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
@@ -173,15 +173,15 @@
 <p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
@@ -192,11 +192,11 @@
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Ubuntu]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=60</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=60</guid>
 
-					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
+					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -313,7 +313,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

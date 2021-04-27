@@ -10,7 +10,7 @@
 <channel>
 	<title>Mac &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/mac/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>Mac &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Replace MATLAB with Octave in MacOS</title>
-		<link>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/</link>
-					<comments>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
+		<link>http://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
+					<comments>http://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
@@ -38,9 +38,9 @@
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[MATLAB]]></category>
 		<category><![CDATA[Octave]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=147</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=147</guid>
 
-					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
+					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
 
@@ -73,15 +73,15 @@
 <p>I feel happy and I love open source.&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
-		<link>http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
-					<comments>http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
+		<link>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
+					<comments>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Mon, 06 Apr 2020 03:51:40 +0000</pubDate>
@@ -90,9 +90,9 @@
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[OnlineVideo]]></category>
 		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=141</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=141</guid>
 
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
 
@@ -142,7 +142,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -237,25 +237,25 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="http://jianch.github.io/jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="http://jianch.github.io/jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
+<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="http://jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="http://jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Run Multiple Instances of Dropbox in MAC OS</title>
-		<link>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
-					<comments>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
+		<link>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
+					<comments>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 21 Mar 2018 03:44:24 +0000</pubDate>
 				<category><![CDATA[SideProject]]></category>
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=133</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=133</guid>
 
 					<description><![CDATA[When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&#160; See the image for details.]]></description>
 										<content:encoded><![CDATA[
@@ -267,18 +267,18 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG Toolbox for lazy people</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
+		<link>http://jianch.github.io/eeg-toolbox-for-lazy-people/</link>
+					<comments>http://jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
@@ -292,7 +292,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 		<category><![CDATA[toolbox]]></category>
 		<category><![CDATA[Tsinghua]]></category>
 		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=41</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=41</guid>
 
 					<description><![CDATA[Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely. Download and try it!]]></description>
 										<content:encoded><![CDATA[
@@ -304,7 +304,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
 
 
 
@@ -312,14 +312,14 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
+<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
 
 
 
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

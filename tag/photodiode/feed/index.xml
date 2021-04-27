@@ -10,7 +10,7 @@
 <channel>
 	<title>Photodiode &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/photodiode/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:37:45 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>Photodiode &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
+		<link>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
+					<comments>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
@@ -42,9 +42,9 @@
 		<category><![CDATA[Laser]]></category>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=124</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
@@ -77,7 +77,7 @@
 <figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

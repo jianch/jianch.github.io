@@ -10,7 +10,7 @@
 <channel>
 	<title>eeglab &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/eeglab/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 02:57:10 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>eeglab &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>EEG topography sample</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-topography-sample/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-topography-sample/#respond</comments>
+		<link>http://jianch.github.io/eeg-topography-sample/</link>
+					<comments>http://jianch.github.io/eeg-topography-sample/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 02 Jan 2016 02:56:55 +0000</pubDate>
@@ -38,7 +38,7 @@
 		<category><![CDATA[dynamic]]></category>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[eeglab]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=78</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=78</guid>
 
 					<description><![CDATA[A sample to illustrate how a period of EEG topography looks like.]]></description>
 										<content:encoded><![CDATA[
@@ -46,10 +46,10 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="960" height="840" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="960" height="840" src="http://jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-topography-sample/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-topography-sample/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

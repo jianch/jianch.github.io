@@ -10,7 +10,7 @@
 <channel>
 	<title>SideProject &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/category/sideproject/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>SideProject &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Replace MATLAB with Octave in MacOS</title>
-		<link>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/</link>
-					<comments>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
+		<link>http://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
+					<comments>http://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
@@ -38,9 +38,9 @@
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[MATLAB]]></category>
 		<category><![CDATA[Octave]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=147</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=147</guid>
 
-					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
+					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
 
@@ -73,21 +73,21 @@
 <p>I feel happy and I love open source.&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Characters in The Brothers Karamazov</title>
-		<link>http://jianch.github.io/jianch.github.io/characters-in-the-brothers-karamazov/</link>
-					<comments>http://jianch.github.io/jianch.github.io/characters-in-the-brothers-karamazov/#respond</comments>
+		<link>http://jianch.github.io/characters-in-the-brothers-karamazov/</link>
+					<comments>http://jianch.github.io/characters-in-the-brothers-karamazov/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Mon, 02 Apr 2018 03:45:59 +0000</pubDate>
 				<category><![CDATA[SideProject]]></category>
 		<category><![CDATA[Dostoyevsky]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=136</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=136</guid>
 
 					<description><![CDATA[I made a figure to illustrate the many characters in Dostoyevsky’s masterpiece: The Brothers Karamazov]]></description>
 										<content:encoded><![CDATA[
@@ -99,25 +99,25 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg" alt="" class="wp-image-137" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov-300x225.jpeg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov-768x576.jpeg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov-850x638.jpeg 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="http://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg" alt="" class="wp-image-137" srcset="http://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/Karamazov-300x225.jpeg 300w, http://jianch.github.io/wp-content/uploads/2021/02/Karamazov-768x576.jpeg 768w, http://jianch.github.io/wp-content/uploads/2021/02/Karamazov-850x638.jpeg 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/characters-in-the-brothers-karamazov/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/characters-in-the-brothers-karamazov/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Run Multiple Instances of Dropbox in MAC OS</title>
-		<link>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
-					<comments>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
+		<link>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
+					<comments>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 21 Mar 2018 03:44:24 +0000</pubDate>
 				<category><![CDATA[SideProject]]></category>
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=133</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=133</guid>
 
 					<description><![CDATA[When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&#160; See the image for details.]]></description>
 										<content:encoded><![CDATA[
@@ -129,27 +129,27 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Sublime Text 2 with MATLAB Syntax &#8211; Windows</title>
-		<link>http://jianch.github.io/jianch.github.io/sublime-text-2-with-matlab-syntax-windows/</link>
-					<comments>http://jianch.github.io/jianch.github.io/sublime-text-2-with-matlab-syntax-windows/#respond</comments>
+		<link>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/</link>
+					<comments>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 07 Jan 2016 02:56:00 +0000</pubDate>
 				<category><![CDATA[SideProject]]></category>
 		<category><![CDATA[MATLAB]]></category>
 		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=76</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=76</guid>
 
-					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/sublime-text-2-with-matlab-syntax-windows/">Continue reading <span class="screen-reader-text">Sublime Text 2 with MATLAB Syntax &#8211; Windows</span></a>]]></description>
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or&#8230; <a class="more-link" href="http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/">Continue reading <span class="screen-reader-text">Sublime Text 2 with MATLAB Syntax &#8211; Windows</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 
@@ -215,15 +215,15 @@
 <p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/sublime-text-2-with-matlab-syntax-windows/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Chrome Extension for the library of the University of Melbourne</title>
-		<link>http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
-					<comments>http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
+		<link>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
+					<comments>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 10 Dec 2015 02:49:00 +0000</pubDate>
@@ -233,9 +233,9 @@
 		<category><![CDATA[Javascript]]></category>
 		<category><![CDATA[library]]></category>
 		<category><![CDATA[UniMelb]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=70</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=70</guid>
 
-					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p><em>This extension is no longer working since the university introduces new systems in. </em></p>
 
@@ -245,7 +245,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="http://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="http://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -364,7 +364,7 @@
 <p>That’s it!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

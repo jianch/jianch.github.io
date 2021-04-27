@@ -10,7 +10,7 @@
 <channel>
 	<title>database &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/database/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 02:53:47 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>database &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Chrome Extension for the library of the University of Melbourne</title>
-		<link>http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
-					<comments>http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
+		<link>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
+					<comments>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 10 Dec 2015 02:49:00 +0000</pubDate>
@@ -40,9 +40,9 @@
 		<category><![CDATA[Javascript]]></category>
 		<category><![CDATA[library]]></category>
 		<category><![CDATA[UniMelb]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=70</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=70</guid>
 
-					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p><em>This extension is no longer working since the university introduces new systems in. </em></p>
 
@@ -52,7 +52,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="http://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="http://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -171,7 +171,7 @@
 <p>That’s it!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

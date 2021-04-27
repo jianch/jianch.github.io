@@ -10,7 +10,7 @@
 <channel>
 	<title>EEG &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/eeg/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:36:34 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>EEG &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		<link>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
@@ -38,9 +38,9 @@
 		<category><![CDATA[Biosemi]]></category>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=122</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=122</guid>
 
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
@@ -173,15 +173,15 @@
 <p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Merge Behavioral Data into EEG</title>
-		<link>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/</link>
-					<comments>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
+		<link>http://jianch.github.io/merge-behavioral-data-into-eeg/</link>
+					<comments>http://jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
@@ -193,7 +193,7 @@
 		<category><![CDATA[ERPLAB]]></category>
 		<category><![CDATA[Event]]></category>
 		<category><![CDATA[EVENTLIST]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=94</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=94</guid>
 
 					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
 										<content:encoded><![CDATA[
@@ -209,11 +209,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
 
 
 
@@ -318,15 +318,15 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG topography sample</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-topography-sample/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-topography-sample/#respond</comments>
+		<link>http://jianch.github.io/eeg-topography-sample/</link>
+					<comments>http://jianch.github.io/eeg-topography-sample/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 02 Jan 2016 02:56:55 +0000</pubDate>
@@ -334,7 +334,7 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 		<category><![CDATA[dynamic]]></category>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[eeglab]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=78</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=78</guid>
 
 					<description><![CDATA[A sample to illustrate how a period of EEG topography looks like.]]></description>
 										<content:encoded><![CDATA[
@@ -342,18 +342,18 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="960" height="840" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="960" height="840" src="http://jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-topography-sample/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-topography-sample/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</title>
-		<link>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
-					<comments>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
+		<link>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
+					<comments>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 09 Dec 2015 02:44:39 +0000</pubDate>
@@ -362,9 +362,9 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Parallel Port]]></category>
 		<category><![CDATA[Trigger]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=65</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=65</guid>
 
-					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/">Continue reading <span class="screen-reader-text">Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</span></a>]]></description>
+					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even&#8230; <a class="more-link" href="http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/">Continue reading <span class="screen-reader-text">Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>This method is developed by&nbsp;<a href="https://groups.yahoo.com/neo/groups/psychtoolbox/conversations/messages/13972" target="_blank" rel="noreferrer noopener">Erik Flister</a>. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&nbsp;<em><strong>pp.m</strong></em>&nbsp;and&nbsp;<em><strong>ppMex.c</strong></em>.</p>
 
@@ -378,7 +378,7 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 
 
 
-<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip" class="wp-block-file__button" download>Download</a></div>
+<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip" class="wp-block-file__button" download>Download</a></div>
 
 
 
@@ -463,15 +463,15 @@ end</code></pre>
 <p><em>An minor error was found in trigger.m and has been fixed.</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
@@ -482,11 +482,11 @@ end</code></pre>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Ubuntu]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=60</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=60</guid>
 
-					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
+					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -603,15 +603,15 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG Toolbox for lazy people</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
+		<link>http://jianch.github.io/eeg-toolbox-for-lazy-people/</link>
+					<comments>http://jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
@@ -625,7 +625,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 		<category><![CDATA[toolbox]]></category>
 		<category><![CDATA[Tsinghua]]></category>
 		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=41</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=41</guid>
 
 					<description><![CDATA[Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely. Download and try it!]]></description>
 										<content:encoded><![CDATA[
@@ -637,7 +637,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
 
 
 
@@ -645,14 +645,14 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 
 
 
-<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
+<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
 
 
 
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

@@ -10,7 +10,7 @@
 <channel>
 	<title>KbCheck &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/kbcheck/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:00:26 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>KbCheck &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Tips to get USB keyboard index in Matlab while using KbQueueCheck</title>
-		<link>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
-					<comments>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
+		<link>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
+					<comments>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 22 Nov 2016 03:00:03 +0000</pubDate>
@@ -42,9 +42,9 @@
 		<category><![CDATA[MATLAB]]></category>
 		<category><![CDATA[Psychtoolbox]]></category>
 		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=81</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=81</guid>
 
-					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/">Continue reading <span class="screen-reader-text">Tips to get USB keyboard index in Matlab while using KbQueueCheck</span></a>]]></description>
+					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“&#8230; <a class="more-link" href="http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/">Continue reading <span class="screen-reader-text">Tips to get USB keyboard index in Matlab while using KbQueueCheck</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard?</p>
 
@@ -70,11 +70,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -102,11 +102,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -118,10 +118,10 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

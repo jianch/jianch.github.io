@@ -10,7 +10,7 @@
 <channel>
 	<title>Linux &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/linux/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:37:45 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>Linux &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
+		<link>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
+					<comments>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
@@ -42,9 +42,9 @@
 		<category><![CDATA[Laser]]></category>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=124</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
@@ -77,15 +77,15 @@
 <figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		<link>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
@@ -93,9 +93,9 @@
 		<category><![CDATA[Biosemi]]></category>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=122</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=122</guid>
 
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
@@ -228,15 +228,15 @@
 <p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Tips to get USB keyboard index in Matlab while using KbQueueCheck</title>
-		<link>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
-					<comments>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
+		<link>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
+					<comments>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 22 Nov 2016 03:00:03 +0000</pubDate>
@@ -248,9 +248,9 @@
 		<category><![CDATA[MATLAB]]></category>
 		<category><![CDATA[Psychtoolbox]]></category>
 		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=81</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=81</guid>
 
-					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/">Continue reading <span class="screen-reader-text">Tips to get USB keyboard index in Matlab while using KbQueueCheck</span></a>]]></description>
+					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“&#8230; <a class="more-link" href="http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/">Continue reading <span class="screen-reader-text">Tips to get USB keyboard index in Matlab while using KbQueueCheck</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard?</p>
 
@@ -276,11 +276,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -296,7 +296,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -308,11 +308,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -324,18 +324,18 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</title>
-		<link>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
-					<comments>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
+		<link>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
+					<comments>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 09 Dec 2015 02:44:39 +0000</pubDate>
@@ -344,9 +344,9 @@
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Parallel Port]]></category>
 		<category><![CDATA[Trigger]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=65</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=65</guid>
 
-					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/">Continue reading <span class="screen-reader-text">Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</span></a>]]></description>
+					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even&#8230; <a class="more-link" href="http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/">Continue reading <span class="screen-reader-text">Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>This method is developed by&nbsp;<a href="https://groups.yahoo.com/neo/groups/psychtoolbox/conversations/messages/13972" target="_blank" rel="noreferrer noopener">Erik Flister</a>. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&nbsp;<em><strong>pp.m</strong></em>&nbsp;and&nbsp;<em><strong>ppMex.c</strong></em>.</p>
 
@@ -360,7 +360,7 @@
 
 
 
-<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip" class="wp-block-file__button" download>Download</a></div>
+<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip" class="wp-block-file__button" download>Download</a></div>
 
 
 
@@ -445,15 +445,15 @@ end</code></pre>
 <p><em>An minor error was found in trigger.m and has been fixed.</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
+					<comments>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
@@ -464,11 +464,11 @@ end</code></pre>
 		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Ubuntu]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=60</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=60</guid>
 
-					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
+					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -585,7 +585,7 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

@@ -10,7 +10,7 @@
 <channel>
 	<title>Error bar &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/error-bar/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:04:29 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>Error bar &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>How to place errorbars on a grouped bar graph in MATLAB</title>
-		<link>http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
-					<comments>http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/#respond</comments>
+		<link>http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
+					<comments>http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Mon, 12 Dec 2016 03:04:13 +0000</pubDate>
@@ -38,9 +38,9 @@
 		<category><![CDATA[Error bar]]></category>
 		<category><![CDATA[Notes]]></category>
 		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=89</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=89</guid>
 
-					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/">Continue reading <span class="screen-reader-text">How to place errorbars on a grouped bar graph in MATLAB</span></a>]]></description>
+					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located&#8230; <a class="more-link" href="http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/">Continue reading <span class="screen-reader-text">How to place errorbars on a grouped bar graph in MATLAB</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
 
@@ -50,7 +50,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1005" height="811" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png 1005w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-300x242.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-768x620.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-850x686.png 850w" sizes="(max-width: 1005px) 100vw, 1005px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1005" height="811" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png 1005w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-300x242.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-768x620.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-850x686.png 850w" sizes="(max-width: 1005px) 100vw, 1005px" /></figure>
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="732" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-300x214.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-768x549.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-850x607.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy.jpg 1188w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>MATLAB Handle Graphics</figcaption></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="732" src="http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92" srcset="http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-300x214.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-768x549.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-850x607.jpg 850w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy.jpg 1188w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>MATLAB Handle Graphics</figcaption></figure>
 
 
 
@@ -118,7 +118,7 @@ errorbar(x,mm(i,:),ci(i,:),'k', 'linestyle', 'none');
 end</code></pre>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

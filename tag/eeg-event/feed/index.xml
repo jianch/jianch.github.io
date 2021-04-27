@@ -10,7 +10,7 @@
 <channel>
 	<title>EEG.event &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/tag/eeg-event/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Wed, 10 Feb 2021 03:06:34 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
-	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>EEG.event &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io/jianch.github.io</link>
+	<link>http://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Merge Behavioral Data into EEG</title>
-		<link>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/</link>
-					<comments>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
+		<link>http://jianch.github.io/merge-behavioral-data-into-eeg/</link>
+					<comments>http://jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
@@ -42,7 +42,7 @@
 		<category><![CDATA[ERPLAB]]></category>
 		<category><![CDATA[Event]]></category>
 		<category><![CDATA[EVENTLIST]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=94</guid>
+		<guid isPermaLink="false">http://jianch.github.io/?p=94</guid>
 
 					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
 										<content:encoded><![CDATA[
@@ -58,11 +58,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
 
 
 
@@ -167,7 +167,7 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
+					<wfw:commentRss>http://jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
