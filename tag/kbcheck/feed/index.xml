@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -44,7 +44,7 @@
 		<category><![CDATA[Tricks]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=81</guid>
 
-					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“...]]></description>
+					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/">Continue reading <span class="screen-reader-text">Tips to get USB keyboard index in Matlab while using KbQueueCheck</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard?</p>
 

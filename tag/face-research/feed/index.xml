@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -40,7 +40,7 @@
 		<category><![CDATA[toolbox]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=47</guid>
 
-					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file...]]></description>
+					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/a-matlab-toolbox-for-face-research/">Continue reading <span class="screen-reader-text">A MATLAB Toolbox for Face Research</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work.</p>
 

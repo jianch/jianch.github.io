@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Trigger]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=65</guid>
 
-					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even...]]></description>
+					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/">Continue reading <span class="screen-reader-text">Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>This method is developed by&nbsp;<a href="https://groups.yahoo.com/neo/groups/psychtoolbox/conversations/messages/13972" target="_blank" rel="noreferrer noopener">Erik Flister</a>. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&nbsp;<em><strong>pp.m</strong></em>&nbsp;and&nbsp;<em><strong>ppMex.c</strong></em>.</p>
 

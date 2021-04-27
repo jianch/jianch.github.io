@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; Dr Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 02:43:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>Uncategorized &#8211; Dr Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A MATLAB Toolbox for Face Research</title>
+		<link>http://jianch.github.io/jianch.github.io/a-matlab-toolbox-for-face-research/</link>
+					<comments>http://jianch.github.io/jianch.github.io/a-matlab-toolbox-for-face-research/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 07 Dec 2015 02:24:20 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[face research]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[toolbox]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=47</guid>
+
+					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/a-matlab-toolbox-for-face-research/">Continue reading <span class="screen-reader-text">A MATLAB Toolbox for Face Research</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work.</p>
+
+
+
+<p></p>
+
+
+
+<p>Here is the source code:  </p>
+
+
+
+<div class="wp-block-file"><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Pupil_face</a><a href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip" class="wp-block-file__button" download>Download</a></div>
+
+
+
+<p></p>
+
+
+
+<p>How to use:</p>
+
+
+
+<p>Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file (3 arrow) in the current directory. Remember to connect to the internet as I use some online face analysis tools. After computation, just go to the output_face folder to pick up processed face images (3 arrow).</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="598" height="229" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/2.jpg 598w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/2-300x115.jpg 300w" sizes="(max-width: 598px) 100vw, 598px" /></figure>
+
+
+
+<p>Run the pupil_face.m file, then it will automatically recognise the pupil position and resize the face to a grayscale pupil-distance constant face. Remember to connect to the Internet cause I use some online source.</p>
+
+
+
+<p>Results showing as below:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="380" height="381" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1.png 380w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1-300x301.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/1-150x150.png 150w" sizes="(max-width: 380px) 100vw, 380px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1001" height="531" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3.jpg 1001w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3-300x159.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3-768x407.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/3-850x451.jpg 850w" sizes="(max-width: 1001px) 100vw, 1001px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1001" height="531" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4.jpg 1001w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4-300x159.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4-768x407.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/4-850x451.jpg 850w" sizes="(max-width: 1001px) 100vw, 1001px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="638" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-300x187.jpg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-768x478.jpg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5-850x529.jpg 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/5.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="731" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-300x214.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-768x548.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6-850x607.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/6.png 1091w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/a-matlab-toolbox-for-face-research/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

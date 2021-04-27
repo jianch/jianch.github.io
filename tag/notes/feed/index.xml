@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -40,7 +40,7 @@
 		<category><![CDATA[Tricks]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=89</guid>
 
-					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located...]]></description>
+					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/">Continue reading <span class="screen-reader-text">How to place errorbars on a grouped bar graph in MATLAB</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
 

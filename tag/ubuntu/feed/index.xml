@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -43,7 +43,7 @@
 		<category><![CDATA[Ubuntu]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=60</guid>
 
-					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series...]]></description>
+					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
 										<content:encoded><![CDATA[
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 

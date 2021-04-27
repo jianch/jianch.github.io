@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Windows]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=141</guid>
 
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short...]]></description>
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
 
@@ -206,7 +206,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 		<category><![CDATA[Windows]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=76</guid>
 
-					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or...]]></description>
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/sublime-text-2-with-matlab-syntax-windows/">Continue reading <span class="screen-reader-text">Sublime Text 2 with MATLAB Syntax &#8211; Windows</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 

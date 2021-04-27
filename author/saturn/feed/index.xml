@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>saturn &#8211; Dr Jian Chen</title>
+	<atom:link href="http://localhost/wordpress/author/saturn/feed/" rel="self" type="application/rss+xml" />
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<description></description>
+	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
+
+<image>
+	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<title>saturn &#8211; Dr Jian Chen</title>
+	<link>http://jianch.github.io/jianch.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Replace MATLAB with Octave in MacOS</title>
+		<link>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/</link>
+					<comments>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
+				<category><![CDATA[SideProject]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[MATLAB]]></category>
+		<category><![CDATA[Octave]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=147</guid>
+
+					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
+
+
+
+<p>Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all.</p>
+
+
+
+<p>So, I decide to replace MATLAB with Octave in my research.&nbsp;</p>
+
+
+
+<p><strong>1, unisntall MATLAB from your system</strong><br>OMG, so relief. Such a huge and unresponsive app! My computer will thank me for this.</p>
+
+
+
+<p><strong>2, MATLAB -&gt; Octave&nbsp;</strong><br>Follow instructions on this webpage, you will find it’s pretty easy to install Octave in your mac.<br><a href="https://wiki.octave.org/Octave_for_macOS" target="_blank" rel="noreferrer noopener">https://wiki.octave.org/Octave_for_macOS</a></p>
+
+
+
+<p><strong>3, PsychToolbox -&gt; PsychToolbox</strong><br>PsychToolbox supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="http://psychtoolbox.org/download" target="_blank" rel="noreferrer noopener">http://psychtoolbox.org/download</a></p>
+
+
+
+<p><strong>4, EEGLAB -&gt; EEGLAB</strong><br>EEGLAB supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="https://sccn.ucsd.edu/wiki/Running/_EEGLAB/_on/_Octave" target="_blank" rel="noreferrer noopener">https://sccn.ucsd.edu/wiki/Running\_EEGLAB\_on\_Octave</a></p>
+
+
+
+<p>I feel happy and I love open source.&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
+		<link>http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
+					<comments>http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2020 03:51:40 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Inquisit]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[OnlineVideo]]></category>
+		<category><![CDATA[Windows]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=141</guid>
+
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
+
+
+
+<p>Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&nbsp;</p>
+
+
+
+<p>You will need an embeded video link like this, it can be obtained from Youtube Share.</p>
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%26autoplay%3D1
+</div></figure>
+
+
+
+<p>Then you need to add a html element in the Inquisit, it looks like this:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;html demo>
+/ items = videos
+/ select = 1
+/ size = (100%,100%)
+/ showborders = false
+/ showscrollbars = false
+&lt;/html></code></pre>
+
+
+
+<p>However, this method only works fine in MacOS, it shows blank when you run the Inquisit script in a Windows computer. This is a known issue and there is no official solution yet.&nbsp;</p>
+
+
+
+<p>————————————<br><strong>Q:&nbsp;</strong><br>I’ve used html to embed videos in my experiment that I have uploaded on youtube.<br>The embedded links when directly entered into the browser (firefox, internet explorer) work fine. Within inquisit it also works fine on a mac, but I’m encountering problems on windows (on some windows laptops it only shows a black box rather than the video). Also, there seem to be a difference between windows 10 and windows 7, since it did work on someone’s windows 7 laptop.<br>Is there a difference for html on mac vs windows?</p>
+
+
+
+<p><strong>A:&nbsp;</strong><br>Yes, there are differences between OSX and Windows in how HTML is handled. Essentially, under Windows, Inquisit embeds Internet Explorer (because it is reliably available on all Windows systems) to render HTML. When run in embedded mode like this, however, Internet Explorer enforces various restrictions that may keep embedded / interactive content such as videos from working. The way a given system is set up and what security settings the user or organization applied to Internet Explorer installations also play a role under some circumstances, i.e. content may work on one system, but not on a different one with different settings / restrictions applied.<br><strong>I’m afraid there isn’t a really good or universal solution here.&nbsp;</strong>Ideally, you’d not embed Youtube videos, but instead you’d use standard \&lt;video&gt; elements in Inquisit to play the videos. For online use, you can set the \&lt;video&gt; elements’ /stream attributes to true, that way the won’t have to be downloaded in full before the experiment launches, they’ll be streamed instead at runtime.<br><em><a href="https://www.millisecond.com/forums/Topic25195.aspx" target="_blank" rel="noreferrer noopener">https://www.millisecond.com/forums/Topic25195.aspx</a></em><br>————————————</p>
+
+
+
+<p>A possible workaround is to right click on the black screen and then choose a different encoding, such as “Western European (Windows)”. Then the online video will be loaded and displayed on the Inquisit. There seems to be an encoding issue in running Inquisit script in Windows.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>So, is there a “<strong>really good or universal solution</strong>” for this problem? The answer is&nbsp;<strong>YES.</strong></p>
+
+
+
+<p>My idea here is, if the Inquisit is able to handle html element, can we directly insert a DIY html page rather than let the Inquisit build a html page?&nbsp;</p>
+
+
+
+<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>; <a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>; <a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;style>
+.iframe-container {
+ overflow: hidden;
+ padding-top: 56.25%;
+ position: relative;
+}
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+ padding-top: 75%;
+}
+&lt;/style>
+&lt;/head>
+
+&lt;body bgcolor="black">
+
+&lt;div class="iframe-container">
+ &lt;iframe src="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" allowfullscreen=1>&lt;/iframe>
+&lt;/div>
+
+&lt;/body>
+&lt;/html></code></pre>
+
+
+
+<p>You can create an empty html document and the copy these code into your document, or you can download a html file from&nbsp;<a href="https://jianchen.info/files/inquisitOnlineVideo/demo.html">here</a>.</p>
+
+
+
+<p>When you have the DIY html file, let’s see an Inquisit <a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;html videoDemo>
+/ items = ("demo.html")
+/ size = (100%, 100%) 
+/ erase = true(255, 255, 255)
+/ showborders = false
+/ showscrollbars = false
+&lt;/html>
+
+&lt;trial videoDemo>
+/ stimulustimes = &#91;500=videoDemo]
+/ trialduration = 50000
+/ ontrialend= &#91;trial.videoDemo.resetstimulusframes();]
+&lt;/trial>
+
+&lt;block videoDemo>
+/ trials = &#91;1=videoDemo]
+&lt;/block>
+
+&lt;expt>
+/ blocks = &#91;1=videoDemo]
+&lt;/expt></code></pre>
+
+
+
+<p></p>
+
+
+
+<p>And boom! It works! Now we can display Youtube video in Inquisit in a damn Windows pc!</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="http://jianch.github.io/jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="http://jianch.github.io/jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Change the space between paragraphs in Qualtrics</title>
+		<link>http://jianch.github.io/jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/</link>
+					<comments>http://jianch.github.io/jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 12 Nov 2019 03:47:26 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Padding]]></category>
+		<category><![CDATA[Qualtrics]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=139</guid>
+
+					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/">Continue reading <span class="screen-reader-text">Change the space between paragraphs in Qualtrics</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
+
+
+
+<p>One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph.</p>
+
+
+
+<pre class="wp-block-code"><code>jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-bottom", "0px");
+jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px");</code></pre>
+
+
+
+<p>Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Characters in The Brothers Karamazov</title>
+		<link>http://jianch.github.io/jianch.github.io/characters-in-the-brothers-karamazov/</link>
+					<comments>http://jianch.github.io/jianch.github.io/characters-in-the-brothers-karamazov/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 02 Apr 2018 03:45:59 +0000</pubDate>
+				<category><![CDATA[SideProject]]></category>
+		<category><![CDATA[Dostoyevsky]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=136</guid>
+
+					<description><![CDATA[I made a figure to illustrate the many characters in Dostoyevsky’s masterpiece: The Brothers Karamazov]]></description>
+										<content:encoded><![CDATA[
+<p>I made a figure to illustrate the many characters in Dostoyevsky’s masterpiece: <em>The Brothers Karamazov</em></p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg" alt="" class="wp-image-137" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov-300x225.jpeg 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov-768x576.jpeg 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/Karamazov-850x638.jpeg 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/characters-in-the-brothers-karamazov/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Run Multiple Instances of Dropbox in MAC OS</title>
+		<link>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
+					<comments>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Wed, 21 Mar 2018 03:44:24 +0000</pubDate>
+				<category><![CDATA[SideProject]]></category>
+		<category><![CDATA[Mac]]></category>
+		<category><![CDATA[Tricks]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=133</guid>
+
+					<description><![CDATA[When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&#160; See the image for details.]]></description>
+										<content:encoded><![CDATA[
+<p>When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&nbsp;</p>
+
+
+
+<p>See the image for details.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Plot Heatmap from Eye Tracking Data</title>
+		<link>http://jianch.github.io/jianch.github.io/plot-heatmap-from-eye-tracking-data/</link>
+					<comments>http://jianch.github.io/jianch.github.io/plot-heatmap-from-eye-tracking-data/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 07 Sep 2017 03:42:50 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Eyelink]]></category>
+		<category><![CDATA[Eyetracking]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=130</guid>
+
+					<description><![CDATA[There are many ways/toolbox to plot a heat map from eye tracking data. but I prefer DIY Here is the source code:]]></description>
+										<content:encoded><![CDATA[
+<p>There are many ways/toolbox to plot a heat map from eye tracking data. but I prefer DIY</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>Here is the source code:</p>
+
+
+
+<pre class="wp-block-code"><code>%% Data Structure Explanation
+% Explanation from Eyelink Programers Guide 3.0
+
+%--------------------------------------------------------
+% dataEyelink =
+%
+%       samples: &#91;401341x4 double]()
+%     fixations: &#91;3965x6 double]()
+%      saccades: &#91;3964x9 double]()
+%        blinks: &#91;1720x3 double]()
+%      triggers: &#91;1080x3 double]()
+
+%--------------------------------------------------------
+% dataEyelink.samples
+%       column1         column2         column3     column4
+%       timepoint       x               y           pupil size
+%--------------------------------------------------------
+% dataEyelink.fixations
+%       column1         column2         column3     column4 column5 column6
+%       tmepoint_start  timepoint_end   duration    x       y       avg pupil size
+%--------------------------------------------------------
+% dataEyelink.saccades
+%       column1         column2         column3     column4 column5 column6
+%       tmepoint_start  timepoint_end   duration    x_from  y_from  x_to
+%       column7         column8         column9
+%       y_to            amplitude       peak velocity
+%                       in degrees      degr/sec
+%--------------------------------------------------------
+% dataEyelink.blinks
+%       column1         column2         column3
+%       tmepoint_start  timepoint_end   duration
+%--------------------------------------------------------
+% dataEyelink.triggers
+%       column1         column2         column3
+%       tmepoint        1=SYNCON        Trial(I also wrote trial number)
+%                       0=SYNCOFF
+%--------------------------------------------------------
+
+
+
+clear;
+load xxxxEyelink.mat
+
+%% variables
+gaussSigma = 0.05;
+posX = round(dataEyelink.fixations(:,4));
+posY = round(dataEyelink.fixations(:,5));
+gazeDuration = dataEyelink.fixations(:,3) / max(dataEyelink.fixations(:,3)); % rescale to 0-1
+
+%% generating data for heatmap
+gazedata = &#91;posX/1024, posY/768](); % rescale to 0-1
+gazedata = gazedata((gazedata(:, 1))\>0, :); % remove possible negative value...
+
+%% make gaussians
+figure;
+&#91;X,Y]() = meshgrid(0:0.001:1, 0:0.001:1);
+z = zeros(size(X,1),size(X,2));
+
+for i = 1:length(gazedata)
+z = z + gazeDuration(i) * exp(-( ((X - gazedata(i,1)).^2 ./ (2*gaussSigma^2)) + ((Y - gazedata(i,2)).^2 ./ (2*gaussSigma^2)) ) );
+end
+
+mesh(X,Y,z); % plot the heatmap
+colorbar;
+caxis(&#91;0,300]());
+view(0,90);
+
+
+print('heatmap', '-dtiff','-r300');</code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/plot-heatmap-from-eye-tracking-data/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Corrected Vision May Still Bias the Gabor Patch Detection</title>
+		<link>http://jianch.github.io/jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
+					<comments>http://jianch.github.io/jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Wed, 12 Jul 2017 03:40:14 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[astigmatism]]></category>
+		<category><![CDATA[Gabor]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=128</guid>
+
+					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/">Continue reading <span class="screen-reader-text">Corrected Vision May Still Bias the Gabor Patch Detection</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task.</p>
+
+
+
+<p>This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below is my test data from 800 trials of a detection task (error bar represents 1 SE).</p>
+
+
+
+<p>I gradually increased the Gabor patch contrast from 0 to 100%, I pressed a button when I saw something on the screen (grey background).</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/CJ04May17a.png" alt=""><br>Session 1</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/CJ04May17b.png" alt=""><br>Session 2</p>
+
+
+
+<p>I am quite curious about why I feel so differently for these two kinds of Gabor patch, am I special? Do I have something wrong with my eye?</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>So I asked two colleague (they don’t wear glass regularly) to do the same task, and it turns out no difference between vertical and horizontal Gabor patches.</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/CV04May17a.png" alt=""><br>Colleague 1</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/JN06May17a.png" alt=""><br>Colleague 2</p>
+
+
+
+<p>Then what’s going on underneath?</p>
+
+
+
+<p>I doubt that although I have a glass to correct my vision, I may not have astigmatism corrected. So I asked a friend, who also wear a glass, to do the same task. As you can see, he has the same problem.</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/ZL28Jun17a.png" alt=""><br>Friend 1</p>
+
+
+
+<p>Insofar, my guess of the explanation for such results is astigmatism. Me and my friend both have inappropriately corrected vision, which leads to the difference in detection task.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>You may have a quick test to see if you have astigmatism. All the bars in below should have similar brightness.</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/EYE_astigmatism.gif" alt=""><br>Astigmatism Test</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>What’s the hint from this observation? Well, it may remind us to make sure that participants who claim a correctly corrected vision should be re-checked, especially in those vision tasks relying on Gabor patch detection.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Get real-time gaze positions from the eye tracke</title>
+		<link>http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/</link>
+					<comments>http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 30 May 2017 03:39:11 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Eyelink]]></category>
+		<category><![CDATA[gaze]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=126</guid>
+
+					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/">Continue reading <span class="screen-reader-text">Get real-time gaze positions from the eye tracke</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
+
+
+
+<p>With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<pre class="wp-block-code"><code>% make sure participants are fixating on the central
+while isEyeLink  % if Eyelink was connected
+status = Eyelink('newfloatsampleavailable');  % check to see if everything is fine in Eyelink
+if status /=0; % if all is fine
+evt = Eyelink('newestfloatsample'); % get the newest float sample from Eyelink
+realtime.x = evt.gx(1);  % get the x axis of gaze
+realtime.y = evt.gy(1);  % get the y axis of gaze
+end;
+
+if abs(realtime.x-512)\&lt;=50&amp;abs(realtime.y-384)\&lt;=50  % if the gaze falls into  a 50\*50 pixel square around the cross
+break; % jump out the loop and start the trial
+end
+end</code></pre>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Keyboard Calibration Using the Damn Laser</title>
+		<link>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
+					<comments>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Bootstrapping]]></category>
+		<category><![CDATA[Calibration]]></category>
+		<category><![CDATA[CRT]]></category>
+		<category><![CDATA[Keyboard]]></category>
+		<category><![CDATA[Laser]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Photodiode]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=124</guid>
+
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
+
+
+
+<p>Well, let me find the raw data first, since it’s been done for a long time.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>Environment: MATLAB with Linux (Ubuntu 14.04)</p>
+
+
+
+<p>Monitor: SONY Triniton at 120Hz</p>
+
+
+
+<p>Keyboard: Mechanic number board</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
+		<link>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
+					<comments>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Biosemi]]></category>
+		<category><![CDATA[EEG]]></category>
+		<category><![CDATA[Linux]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=122</guid>
+
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Here are the basic steps I used to process BioSemi EEG data.</p>
+
+
+
+<p><strong>1 load raw data</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/809C496A-8039-4D2E-9B13-70B6B7721A10.png" alt=""/></figure>
+
+
+
+<p><strong>2 channel location</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/030CC12C-9735-43A2-AD38-53EBF6240A46.png" alt=""/></figure>
+
+
+
+<p><strong>3 re-reference</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3135436B-A01A-4FED-9B9E-E426C7FA3CB4.png" alt=""/></figure>
+
+
+
+<p><strong>4 filtering</strong>&nbsp;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later)</p>
+
+
+
+<p><strong>5 Create EEG event list (ERPLAB from now on)</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F18A0B75-3355-4EBE-B7CA-E62720858371.png" alt=""/></figure>
+
+
+
+<p><strong>6 Assign bins (how to operate on bins? see&nbsp;<a href="https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial" target="_blank" rel="noreferrer noopener">here</a>)</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/43ABAD39-3E41-4BA7-9607-34EA61FE7D74.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/8A8EC18C-86E4-4AB8-8242-1E6D23716321.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/4AC21F49-0134-4FE3-83E1-12B663C404DF.png" alt=""/></figure>
+
+
+
+<p><strong>7 extract bin-based epoch</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/B1B02461-7F46-4AB1-8371-AF769E9F3E26.png" alt=""/></figure>
+
+
+
+<p><strong>8 artifact rejection</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/40120CE4-073E-4CEF-A35D-98DDB2DDD429.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/9234B231-7612-41D2-9349-5682C3027FD8.png" alt=""/></figure>
+
+
+
+<p><strong>-&gt; choose channel around the eye. -&gt; update and then reject</strong></p>
+
+
+
+<p><strong>9 compute average erps</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/289AC38D-87CF-4234-9B90-D5C01D010D9A.png" alt=""/></figure>
+
+
+
+<p><strong>10 filter if you don’t do it in step 4</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/CD5AD34D-B8EC-4825-B5A8-90EA5C31611D.png" alt=""/></figure>
+
+
+
+<p><strong>11 bin operations if necessary&nbsp;</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/1E8272A4-A250-4471-945D-2D764439AE61.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3FA48AA1-9212-4A49-A8B4-73CEFFB13B38.png" alt=""/></figure>
+
+
+
+<p><strong>12 Plot ERPs</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/AB81310E-9BC5-422B-95FD-B3718883494D.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F1F2CFBD-3018-4E77-B960-35EEFB103226.png" alt=""/></figure>
+
+
+
+<p><strong>13 Save figures if you want</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/14A0D60A-40B2-4697-9F30-84312AFCEEBF.png" alt=""/></figure>
+
+
+
+<p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

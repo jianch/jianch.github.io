@@ -388,15 +388,25 @@ function aiDisableIframeAsLayerOptions(value) {
   jQuery('input[id=show_iframe_as_layer_full]:radio').attr('disabled',value);
   jQuery('#show_iframe_as_layer_header_file').prop('readonly', value);
   jQuery('#show_iframe_as_layer_header_height').prop('readonly', value);
+  jQuery('#show_iframe_as_layer_autoclick_delay').prop('readonly', value);
+  jQuery('#show_iframe_as_layer_autoclick_hide_time').prop('readonly', value);
   jQuery('input[id=show_iframe_as_layer_header_position1]:radio, input[id=show_iframe_as_layer_header_position2]:radio').attr('disabled',value);
   jQuery('input[id=show_iframe_as_layer_full1]:radio, input[id=show_iframe_as_layer_full2]:radio, input[id=show_iframe_as_layer_full3]:radio').attr('disabled',value);
   jQuery('input[id=show_iframe_as_layer_keep_content1]:radio, input[id=show_iframe_as_layer_keep_content2]:radio').attr('disabled',value);
 
   var selector = '#show_iframe_as_layer_full, #show_iframe_as_layer_header_file, #show_iframe_as_layer_header_height, ';
-  selector += '#show_iframe_as_layer_header_position1, #show_iframe_as_layer_full1, #show_iframe_as_layer_keep_content1';
+  selector += '#show_iframe_as_layer_header_position1, #show_iframe_as_layer_full1, #show_iframe_as_layer_keep_content1, ';
+  selector += '#show_iframe_as_layer_autoclick_delay, #show_iframe_as_layer_autoclick_hide_time';
     
-   aiDisableTextSection(value, selector);
+  aiDisableTextSection(value, selector);
  
+}
+
+function aiDisableAddParamOptions(value) {
+	jQuery('input[id=add_iframe_url_as_param_direct1]:radio, input[id=add_iframe_url_as_param_direct2]:radio').attr('disabled',value);
+	jQuery('#add_iframe_url_as_param_prefix').prop('readonly',value);
+    var selector = '#add_iframe_url_as_param_prefix, #add_iframe_url_as_param_direct1';
+    aiDisableTextSection(value, selector);
 }
 
 function aiDisableTextSection(value, selector) {
@@ -518,7 +528,15 @@ function aiInitAdminConfiguration(isPro, acc_type) {
            jQuery('#enable_lazy_load_manual_element').prop('readonly',false);
         }
     });
-
+	
+	// add_iframe_url_as_param
+	if (jQuery('input[type=radio][name=add_iframe_url_as_param]:checked').val() === 'false') {
+        aiDisableAddParamOptions(true);
+    }
+	jQuery('input[type=radio][name=add_iframe_url_as_param]').click( function(){
+        aiDisableAddParamOptions(jQuery(this).val() === 'false');
+    });
+	
     if (jQuery('input[type=radio][name=enable_lazy_load]:checked').val() === 'false') {
         aiDisableLazyLoadOptions(true);
         jQuery('#enable_lazy_load_manual_element').prop('readonly',true);
@@ -1025,6 +1043,7 @@ function aiGenerateShortcode(isPro) {
         output += aiGenerateTextShortcode('map_parameter_to_url');
         output += aiGenerateRadioShortcode('add_iframe_url_as_param','false');
         output += aiGenerateTextShortcode('add_iframe_url_as_param_prefix');
+		output += aiGenerateRadioShortcode('add_iframe_url_as_param_direct','false');
 
         output += aiGenerateRadioShortcode('onload_scroll_top','false');
         output += aiGenerateRadioShortcode('hide_page_until_loaded','false');
@@ -1060,6 +1079,8 @@ function aiGenerateShortcode(isPro) {
        output += aiGenerateRadioShortcode('show_iframe_as_layer', 'false');
        output += aiGenerateRadioShortcode('show_iframe_as_layer_full', 'false');
 
+       output += aiGenerateTextShortcode('show_iframe_as_layer_autoclick_delay');
+       output += aiGenerateTextShortcode('show_iframe_as_layer_autoclick_hide_time');
        output += aiGenerateTextShortcode('show_iframe_as_layer_header_file');
        output += aiGenerateTextShortcodeWithDefault('show_iframe_as_layer_header_height','100');
        output += aiGenerateRadioShortcode('show_iframe_as_layer_header_position', 'top');
@@ -1451,14 +1472,16 @@ function aiShowLayerIframe(event, id, path, hideUntilLoaded, showLoadingIcon, ke
     icon = '<div id="ai-div-loader-global" style="position: fixed;z-index:100004;margin-left:-33px;left: 50%;top:50%;margin-top:-33px"><img src="' + path + 'loader.gif" width="66" height="66" title="Loading" alt="Loading"></div>';
   }
 
-  jQuery(layerId).parent().append('<div id="ai_backlayer" style="z-index:100001;position:fixed;top:0;left:0;width:100%;height:100%;background-color: rgba(50,50,50,0.5);overflow:hidden;cursor:pointer"><!-- --></div>' + icon);
-
+  if (jQuery('#ai_backlayer').length === 0) { // we do not have a layer yet...
+      jQuery(layerId).parent().append('<div id="ai_backlayer" style="z-index:100001;position:fixed;top:0;left:0;width:100%;height:100%;background-color: rgba(50,50,50,0.5);overflow:hidden;cursor:pointer"><!-- --></div>' + icon);
+  }
+  
   jQuery( '#ai_backlink, #ai_backlayer' ).click(function() {
     aiHideLayerIframe(id, keep);
   });
   if (!reload) {
-      event.preventDefault();
-      event.stopPropagation();
+    event.preventDefault();
+    event.stopPropagation();
   }
 }
 
@@ -1511,8 +1534,15 @@ function aiCheckReload (link, id) {
  * This changes the current url and adds or updates the
  * existing parameter with the given url
  */
-function aiChangeUrlParam(loc, param, orig, prefix) {
+function aiChangeUrlParam(loc, param, orig, prefix, isDirect) {
    var newUrl;
+   var keepSlash = false;
+   
+   // add protocol if // is used in the shortcode 
+   if (orig.lastIndexOf("//", 0) !== -1) {
+	   orig = location.protocol + orig;
+   }
+   
    if (loc !== encodeURIComponent(orig)) {
 	 newUrl = aiSetGetParameter(param, loc);
 	 var removeProtocol = true;
@@ -1536,13 +1566,24 @@ function aiChangeUrlParam(loc, param, orig, prefix) {
            newUrl = newUrl.replace('https%3A%2F%2F','');
        }
      }
+	 
+     if (isDirect) {		
+		var newUrl = aiRemoveQueryString(window.location.href);
+		var locDecoded = decodeURIComponent(loc);
+		var queryStart = locDecoded.indexOf('?');
+		if (queryStart !== -1) {
+			var queryPart = locDecoded.slice(queryStart + 1);
+			newUrl += '?' + queryPart;
+			keepSlash = true;
+		}		
+	 } 
    } else {
       var fullUrl = window.location.href;
 	  // remove param/* first
 	  fullUrl = fullUrl.split("/" + param + "/",1)[0];
 	  newUrl = aiRemoveURLParameter(fullUrl, param);
    }
-   aiSetBrowserUrl(newUrl); 
+   aiSetBrowserUrl(newUrl, keepSlash); 
 }
 
 function aiGetUrlMappingUrl(locBase, param, prefix, id) {
@@ -1569,9 +1610,11 @@ function aiGetUrlMappingUrl(locBase, param, prefix, id) {
 	return newUrl;
 }
 
-function aiSetBrowserUrl(newUrl) {
+function aiSetBrowserUrl(newUrl, keepSlash) {
 	if (aiSupportsHistoryApi()) {
-        newUrl = newUrl.replace(/%2F/g,'/');
+        if (!keepSlash) {
+		    newUrl = newUrl.replace(/%2F/g,'/');
+		}
         window.history.pushState({}, '', newUrl);
         // I asume the back button is clicked.
         window.onpopstate = function(event) {
@@ -1585,8 +1628,10 @@ function aiSetBrowserUrl(newUrl) {
 function aiRemoveQueryString(loc) {
     if (loc.indexOf('%3F') >= 0) {
 	    return loc.split('%3F')[0]; 
-	} else {
-	    return loc;
+	} else if (loc.indexOf('?') >= 0) {
+	    return loc.split('?')[0]; 
+	} else { 
+	 return loc;
 	}
 }	
 
@@ -1600,7 +1645,7 @@ function aiGetUrlMapping(url, param, prefix) {
     // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
     jQuery.post(MyAjax.ajaxurl, data, function(id) {
        var newUrl = aiGetUrlMappingUrl(url, param, prefix, id);
-	   aiSetBrowserUrl(newUrl);   
+	   aiSetBrowserUrl(newUrl, false);   
    });  
 }
 
@@ -1966,6 +2011,44 @@ function aiRemoveElementsFromHeight(id,height,removeElements) {
 	var calc = 'calc(' + height + ' - ' + totalHeight + 'px)';
 	iframe.css('height', calc);
 }
+
+function aiTriggerAutoOpen(id, selector, autoclickDelay, hideTime) {
+	if (autoclickDelay === 0) {
+		aiOpenIframeOnClick(id, selector);
+	} else {
+		setTimeout(function() {
+		    aiOpenIframeOnClick(id, selector);	
+		}, autoclickDelay);
+	}
+	
+	var now = new Date();
+    var time = now.getTime();
+    var expireTime = time + (hideTime * 86400000);
+    now.setTime(expireTime);
+    var	trimmedSelector = selector.replace(/[^A-Za-z0-9\-]/g, '');
+	document.cookie = 'ai_disable_autoclick_iframe_' + trimmedSelector + '=Auto open is disabled until this cookie expires;expires='+now.toUTCString()+';path=/';
+}
+
+function aiCheckAutoOpenHash(id, autoclickDelay, hideTime) {
+	if (window.location.hash) {
+       var hash = window.location.hash;
+	   var trimmedHash = hash.replace(/[^A-Za-z0-9\-]/g, '');
+	   trimmedHash = "#" + trimmedHash;
+	   if (jQuery(trimmedHash).length !== 0) { // id does exist   
+		   if (jQuery(trimmedHash).first().attr('target') == id) { // target is iframe
+		       aiTriggerAutoOpen(id, trimmedHash, autoclickDelay, hideTime);   
+		   }
+       }
+    }
+}
+
+function aiOpenIframeOnClick(id, selector) {
+	var myelement = jQuery(selector).first().attr("href"); 
+    jQuery("#" + id).attr("src", myelement); 
+	jQuery(selector).first().click();
+}
+
+
 // IE11 does not support includes
 if (!String.prototype.includes) {
   String.prototype.includes = function(search, start) {

@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.6.1</generator>
+	<generator>https://wordpress.org/?v=5.7.1</generator>
 
 <image>
 	<url>http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -42,7 +42,7 @@
 		<category><![CDATA[UniMelb]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/jianch.github.io/?p=70</guid>
 
-					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob)....]]></description>
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p><em>This extension is no longer working since the university introduces new systems in. </em></p>
 
