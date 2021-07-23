@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=5.8</generator>
 
 <image>
 	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -41,7 +41,7 @@
 		<category><![CDATA[Windows]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=141</guid>
 
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos. Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&#160; You will need an…]]></description>
 										<content:encoded><![CDATA[
 <p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
 
@@ -207,7 +207,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 		<category><![CDATA[Qualtrics]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=139</guid>
 
-					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even&#8230; <a class="more-link" href="http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/">Continue reading <span class="screen-reader-text">Change the space between paragraphs in Qualtrics</span></a>]]></description>
+					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.]]></description>
 										<content:encoded><![CDATA[
 <p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
 
@@ -344,7 +344,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 		<category><![CDATA[Gabor]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=128</guid>
 
-					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below&#8230; <a class="more-link" href="http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/">Continue reading <span class="screen-reader-text">Corrected Vision May Still Bias the Gabor Patch Detection</span></a>]]></description>
+					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below is my test data from 800 trials of a detection task (error bar represents 1 SE). I gradually increased the Gabor patch contrast from 0 to 100%, I pressed a button when I saw something on the screen (grey background). Session 1 Session 2 I…]]></description>
 										<content:encoded><![CDATA[
 <p>As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task.</p>
 
@@ -438,7 +438,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 		<category><![CDATA[gaze]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=126</guid>
 
-					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before&#8230; <a class="more-link" href="http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/">Continue reading <span class="screen-reader-text">Get real-time gaze positions from the eye tracke</span></a>]]></description>
+					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.]]></description>
 										<content:encoded><![CDATA[
 <p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
 
@@ -493,7 +493,7 @@ end</code></pre>
 		<category><![CDATA[Photodiode]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
@@ -544,7 +544,7 @@ end</code></pre>
 		<category><![CDATA[Linux]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=122</guid>
 
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins (how to operate on bins? see&#160;here) 7 extract bin-based epoch 8 artifact rejection -&#62; choose channel around the eye. -&#62; update and then reject 9 compute average erps 10 filter if you don’t do it in step 4 11 bin operations if necessary&#160; 12 Plot…]]></description>
 										<content:encoded><![CDATA[
 <p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
@@ -896,102 +896,6 @@ ERP.EVENTLIST.eventinfo = event;</code></pre>
 ]]></content:encoded>
 					
 					<wfw:commentRss>http://jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>How to place errorbars on a grouped bar graph in MATLAB</title>
-		<link>http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
-					<comments>http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Mon, 12 Dec 2016 03:04:13 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Error bar]]></category>
-		<category><![CDATA[Notes]]></category>
-		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=89</guid>
-
-					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located&#8230; <a class="more-link" href="http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/">Continue reading <span class="screen-reader-text">How to place errorbars on a grouped bar graph in MATLAB</span></a>]]></description>
-										<content:encoded><![CDATA[
-<p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
-
-
-
-<p>We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example:</p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1005" height="811" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png 1005w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-300x242.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-768x620.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137-850x686.png 850w" sizes="(max-width: 1005px) 100vw, 1005px" /></figure>
-
-
-
-<p>The error bars are located in the center of each grouped bars, rather than the individual bar in each grouped bars.</p>
-
-
-
-<p>Here is the note I made, the main code is from the link below:</p>
-
-
-
-<p><a href="https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b">https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b</a></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="732" src="http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92" srcset="http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-300x214.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-768x549.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-850x607.jpg 850w, http://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy.jpg 1188w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>MATLAB Handle Graphics</figcaption></figure>
-
-
-
-<p></p>
-
-
-
-<p>Code example:</p>
-
-
-
-<pre class="wp-block-code"><code>Data set:
-
-mm: 4 by 6 matrix; ci: 4 by 6 matrix
-
-
-
-mm =
-
-&#91;0.2081 0.3440 0.3470 0.7018 0.8422 0.9874
-0.2628 0.3043 0.4032 0.7287 0.8462 1.1055
-0.2928 0.3139 0.4176 0.7241 0.8319 1.0483
-0.2287 0.2538 0.3665 0.4895 0.8999 1.1309]
-
-ci =
-
-&#91;0.0176 0.0473 0.0443 0.0724 0.0855 0.0931
-0.0312 0.0201 0.0407 0.0621 0.0604 0.0874
-0.0291 0.0330 0.0403 0.0756 0.0732 0.0847
-0.0228 0.0150 0.0264 0.0598 0.0922 0.0861]</code></pre>
-
-
-
-<pre class="wp-block-code"><code>figure;
-h = bar(mm');
-set(h,'BarWidth',0.8);    % The bars will now touch each other
-set(gca,'fontsize', 18);
-set(get(gca,'YLabel'),'String','RT in Seconds')
-lh = legend('Valid Left', 'Invalid left', 'Valid right', 'Invalid right');
-set(lh,'Location','BestOutside','Orientation','horizontal')
-hold on;
-
-% Aligning errorbar to individual bar within groups
-% Based on barweb.m by Bolu Ajiboye from MATLAB File Exchange
-groupwidth = min(0.8, 4/(4+1.5));
-for i = 1:4
-x = (1:6) - groupwidth/2 + (2*i-1) * groupwidth / (2*4);
-errorbar(x,mm(i,:),ci(i,:),'k', 'linestyle', 'none');
-end</code></pre>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/how-to-place-errorbars-on-a-grouped-bar-graph-in-matlab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

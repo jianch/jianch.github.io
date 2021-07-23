@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=5.8</generator>
 
 <image>
 	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -40,7 +40,7 @@
 		<category><![CDATA[Octave]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=147</guid>
 
-					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
+					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all. So, I…]]></description>
 										<content:encoded><![CDATA[
 <p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
 
@@ -92,7 +92,7 @@
 		<category><![CDATA[Windows]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=141</guid>
 
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos. Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&#160; You will need an…]]></description>
 										<content:encoded><![CDATA[
 <p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
 
@@ -258,7 +258,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 		<category><![CDATA[Qualtrics]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=139</guid>
 
-					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even&#8230; <a class="more-link" href="http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/">Continue reading <span class="screen-reader-text">Change the space between paragraphs in Qualtrics</span></a>]]></description>
+					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.]]></description>
 										<content:encoded><![CDATA[
 <p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
 
@@ -454,7 +454,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 		<category><![CDATA[Gabor]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=128</guid>
 
-					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below&#8230; <a class="more-link" href="http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/">Continue reading <span class="screen-reader-text">Corrected Vision May Still Bias the Gabor Patch Detection</span></a>]]></description>
+					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below is my test data from 800 trials of a detection task (error bar represents 1 SE). I gradually increased the Gabor patch contrast from 0 to 100%, I pressed a button when I saw something on the screen (grey background). Session 1 Session 2 I…]]></description>
 										<content:encoded><![CDATA[
 <p>As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task.</p>
 
@@ -548,7 +548,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 		<category><![CDATA[gaze]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=126</guid>
 
-					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before&#8230; <a class="more-link" href="http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/">Continue reading <span class="screen-reader-text">Get real-time gaze positions from the eye tracke</span></a>]]></description>
+					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.]]></description>
 										<content:encoded><![CDATA[
 <p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
 
@@ -603,7 +603,7 @@ end</code></pre>
 		<category><![CDATA[Photodiode]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
@@ -637,157 +637,6 @@ end</code></pre>
 ]]></content:encoded>
 					
 					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Biosemi]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[Linux]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=122</guid>
-
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins&#8230; <a class="more-link" href="http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/">Continue reading <span class="screen-reader-text">EEG Processing Steps (based on EEGLAB and ERPLAB)</span></a>]]></description>
-										<content:encoded><![CDATA[
-<p>Here are the basic steps I used to process BioSemi EEG data.</p>
-
-
-
-<p><strong>1 load raw data</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/809C496A-8039-4D2E-9B13-70B6B7721A10.png" alt=""/></figure>
-
-
-
-<p><strong>2 channel location</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/030CC12C-9735-43A2-AD38-53EBF6240A46.png" alt=""/></figure>
-
-
-
-<p><strong>3 re-reference</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3135436B-A01A-4FED-9B9E-E426C7FA3CB4.png" alt=""/></figure>
-
-
-
-<p><strong>4 filtering</strong>&nbsp;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later)</p>
-
-
-
-<p><strong>5 Create EEG event list (ERPLAB from now on)</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F18A0B75-3355-4EBE-B7CA-E62720858371.png" alt=""/></figure>
-
-
-
-<p><strong>6 Assign bins (how to operate on bins? see&nbsp;<a href="https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial" target="_blank" rel="noreferrer noopener">here</a>)</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/43ABAD39-3E41-4BA7-9607-34EA61FE7D74.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/8A8EC18C-86E4-4AB8-8242-1E6D23716321.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/4AC21F49-0134-4FE3-83E1-12B663C404DF.png" alt=""/></figure>
-
-
-
-<p><strong>7 extract bin-based epoch</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/B1B02461-7F46-4AB1-8371-AF769E9F3E26.png" alt=""/></figure>
-
-
-
-<p><strong>8 artifact rejection</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/40120CE4-073E-4CEF-A35D-98DDB2DDD429.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/9234B231-7612-41D2-9349-5682C3027FD8.png" alt=""/></figure>
-
-
-
-<p><strong>-&gt; choose channel around the eye. -&gt; update and then reject</strong></p>
-
-
-
-<p><strong>9 compute average erps</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/289AC38D-87CF-4234-9B90-D5C01D010D9A.png" alt=""/></figure>
-
-
-
-<p><strong>10 filter if you don’t do it in step 4</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/CD5AD34D-B8EC-4825-B5A8-90EA5C31611D.png" alt=""/></figure>
-
-
-
-<p><strong>11 bin operations if necessary&nbsp;</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/1E8272A4-A250-4471-945D-2D764439AE61.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3FA48AA1-9212-4A49-A8B4-73CEFFB13B38.png" alt=""/></figure>
-
-
-
-<p><strong>12 Plot ERPs</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/AB81310E-9BC5-422B-95FD-B3718883494D.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F1F2CFBD-3018-4E77-B960-35EEFB103226.png" alt=""/></figure>
-
-
-
-<p><strong>13 Save figures if you want</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/14A0D60A-40B2-4697-9F30-84312AFCEEBF.png" alt=""/></figure>
-
-
-
-<p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

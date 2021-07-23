@@ -11,11 +11,11 @@
 	<atom:link href="http://localhost/wordpress/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>http://jianch.github.io</link>
 	<description></description>
-	<lastBuildDate>Tue, 27 Apr 2021 11:13:14 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 23 Jul 2021 02:17:21 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=5.8</generator>
 </channel>
 </rss>

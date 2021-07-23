@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=5.8</generator>
 
 <image>
 	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
@@ -40,7 +40,7 @@
 		<category><![CDATA[Octave]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=147</guid>
 
-					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
+					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all. So, I…]]></description>
 										<content:encoded><![CDATA[
 <p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
 
@@ -149,7 +149,7 @@
 		<category><![CDATA[Windows]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=76</guid>
 
-					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or&#8230; <a class="more-link" href="http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/">Continue reading <span class="screen-reader-text">Sublime Text 2 with MATLAB Syntax &#8211; Windows</span></a>]]></description>
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7: Save the file and close it. Next, open Objective-C++.tmLanguage and do the same thing to Line 8: Save and close that file as well. Finally, just to make sure your Open all with current extension as… command worked, go to Packages/User…]]></description>
 										<content:encoded><![CDATA[
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 
@@ -235,7 +235,7 @@
 		<category><![CDATA[UniMelb]]></category>
 		<guid isPermaLink="false">http://jianch.github.io/?p=70</guid>
 
-					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob). Here is the method: I add “ezp.lib.unimelb.edu.au” to the end of the target database address after I found a paper in Google Scholar, then it will redirect to the library login page. For example, one of the paper’s addresses is: 1 http://www.sciencedirect.com/science/article/pii/S0006899315008550 I modified it…]]></description>
 										<content:encoded><![CDATA[
 <p><em>This extension is no longer working since the university introduces new systems in. </em></p>
 
