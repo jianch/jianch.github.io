@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/wordpress/author/saturn/feed/" rel="self" type="application/rss+xml" />
 	<link>http://jianch.github.io</link>
 	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 23 Jul 2021 03:00:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,66 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Digit Span Task in Qualtrics</title>
+		<link>http://jianch.github.io/digit-span-task-in-qualtrics/</link>
+					<comments>http://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Fri, 23 Jul 2021 03:00:12 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Digit Span Task]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[QRTE]]></category>
+		<category><![CDATA[Qualtrics]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/?p=216</guid>
+
+					<description><![CDATA[The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the…]]></description>
+										<content:encoded><![CDATA[
+<p>The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. </p>
+
+
+
+<p>I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. </p>
+
+
+
+<p>Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the study due to this reason. May I say that we are lucky enough if we can have 50% participants complete the Inquisit Web-based cognitive tasks? Other ways to run online cognitive tasks include the PsychoPy and PsyToolkit, but I won&#8217;t talk about them in this article.</p>
+
+
+
+<p>The ideal way to run cognitive tasks along with Qualtrics survey, of course, is to run cognitive tasks within Qualtrics. </p>
+
+
+
+<p>Here is an example of running digit span task within Qualtrics. I need to explicitly state that, the code is not from me. I developed my own working version with the help from Dr Becky Gilbert (@BeckyAGilbert). You can find her at https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/. And of course, if you do use the task and the code, it would be appreciated either a citation or acknowledgment. You should also cite the QRTE paper: <a rel="noreferrer noopener" href="https://link.springer.com/article/10.3758/s13428-014-0530-7" target="_blank">https://link.springer.com/article/10.3758/s13428-014-0530-7</a> .</p>
+
+
+
+<p></p>
+
+
+
+<p><strong>You can find <meta charset="utf-8">Dr Becky Gilbert&#8217;s Digit Span Task at this link: https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg</strong>. The first half of the task works fine but the second half does not work. This is because <meta charset="utf-8">QRTE JavaScript library is no longer supported. <br><br>Here is the QSF file that exported from Qualtrics. </p>
+
+
+
+<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="http://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip" class="wp-block-file__button" download>Download</a></div>
+
+
+
+<p>To get it to work properly, you may need to go into the survey settings and remove any default styling that your institution applies to Qualtrics surveys. You&#8217;ll want to use the plain/basic styling option for this task. You can also look at the QRTE documentation for more information about how it works: <a rel="noreferrer noopener" href="http://www.qrtengine.com/" target="_blank">http://www.qrtengine.com/</a></p>
+
+
+
+<p>In my case, I have to put the forward and backward parts separately into two Qualtrics surveys, otherwise it just won&#8217;t work. I would recommend you do the same thing. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/digit-span-task-in-qualtrics/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Replace MATLAB with Octave in MacOS</title>
 		<link>http://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
 					<comments>http://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
@@ -582,61 +642,6 @@ end</code></pre>
 ]]></content:encoded>
 					
 					<wfw:commentRss>http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Bootstrapping]]></category>
-		<category><![CDATA[Calibration]]></category>
-		<category><![CDATA[CRT]]></category>
-		<category><![CDATA[Keyboard]]></category>
-		<category><![CDATA[Laser]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
-
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board]]></description>
-										<content:encoded><![CDATA[
-<p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
-
-
-
-<p>Well, let me find the raw data first, since it’s been done for a long time.</p>
-
-
-
-<hr class="wp-block-separator"/>
-
-
-
-<p>Environment: MATLAB with Linux (Ubuntu 14.04)</p>
-
-
-
-<p>Monitor: SONY Triniton at 120Hz</p>
-
-
-
-<p>Keyboard: Mechanic number board</p>
-
-
-
-<hr class="wp-block-separator"/>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

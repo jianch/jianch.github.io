@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/wordpress/category/research/feed/" rel="self" type="application/rss+xml" />
 	<link>http://jianch.github.io</link>
 	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:52:13 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 23 Jul 2021 03:00:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,66 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Digit Span Task in Qualtrics</title>
+		<link>http://jianch.github.io/digit-span-task-in-qualtrics/</link>
+					<comments>http://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Fri, 23 Jul 2021 03:00:12 +0000</pubDate>
+				<category><![CDATA[Research]]></category>
+		<category><![CDATA[Digit Span Task]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[QRTE]]></category>
+		<category><![CDATA[Qualtrics]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/?p=216</guid>
+
+					<description><![CDATA[The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the…]]></description>
+										<content:encoded><![CDATA[
+<p>The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. </p>
+
+
+
+<p>I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. </p>
+
+
+
+<p>Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the study due to this reason. May I say that we are lucky enough if we can have 50% participants complete the Inquisit Web-based cognitive tasks? Other ways to run online cognitive tasks include the PsychoPy and PsyToolkit, but I won&#8217;t talk about them in this article.</p>
+
+
+
+<p>The ideal way to run cognitive tasks along with Qualtrics survey, of course, is to run cognitive tasks within Qualtrics. </p>
+
+
+
+<p>Here is an example of running digit span task within Qualtrics. I need to explicitly state that, the code is not from me. I developed my own working version with the help from Dr Becky Gilbert (@BeckyAGilbert). You can find her at https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/. And of course, if you do use the task and the code, it would be appreciated either a citation or acknowledgment. You should also cite the QRTE paper: <a rel="noreferrer noopener" href="https://link.springer.com/article/10.3758/s13428-014-0530-7" target="_blank">https://link.springer.com/article/10.3758/s13428-014-0530-7</a> .</p>
+
+
+
+<p></p>
+
+
+
+<p><strong>You can find <meta charset="utf-8">Dr Becky Gilbert&#8217;s Digit Span Task at this link: https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg</strong>. The first half of the task works fine but the second half does not work. This is because <meta charset="utf-8">QRTE JavaScript library is no longer supported. <br><br>Here is the QSF file that exported from Qualtrics. </p>
+
+
+
+<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="http://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip" class="wp-block-file__button" download>Download</a></div>
+
+
+
+<p>To get it to work properly, you may need to go into the survey settings and remove any default styling that your institution applies to Qualtrics surveys. You&#8217;ll want to use the plain/basic styling option for this task. You can also look at the QRTE documentation for more information about how it works: <a rel="noreferrer noopener" href="http://www.qrtengine.com/" target="_blank">http://www.qrtengine.com/</a></p>
+
+
+
+<p>In my case, I have to put the forward and backward parts separately into two Qualtrics surveys, otherwise it just won&#8217;t work. I would recommend you do the same thing. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/digit-span-task-in-qualtrics/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
 		<link>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
 					<comments>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
@@ -751,151 +811,6 @@ system('rm tmp.txt')</code></pre>
 ]]></content:encoded>
 					
 					<wfw:commentRss>http://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Merge Behavioral Data into EEG</title>
-		<link>http://jianch.github.io/merge-behavioral-data-into-eeg/</link>
-					<comments>http://jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[EEG.event]]></category>
-		<category><![CDATA[ERP]]></category>
-		<category><![CDATA[ERP.EVENTLIST.eventinfo]]></category>
-		<category><![CDATA[ERPLAB]]></category>
-		<category><![CDATA[Event]]></category>
-		<category><![CDATA[EVENTLIST]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=94</guid>
-
-					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
-										<content:encoded><![CDATA[
-<p>An example code of how I merge behavioral data into EEG</p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
-
-
-
-<p></p>
-
-
-
-<p>Code:</p>
-
-
-
-<p></p>
-
-
-
-<pre class="wp-block-code"><code>%% merge behavioral data into EEG
-
-% Sometimes, it's hard to lively send behavioral data to EEG system, i.e.
-
-% oral response. Here is a code example to merge behavioral result into EEG
-
-% data.
-
-% Author: Jian Chen
-
-% saturn.jian.chen@gmail.com
-
-% 13/Dec/2016
-
-%+++++++++++++%
-
-%% load EEG data first, finish 'channel location', 're-reference'
-
-% get event data via 'event = EEG.event'
-
-event = EEG.event;
-
-event\_back = event;
-
-%% load behavioral data
-
-fid = fopen('YourResponse\_acc.txt');  % here is a vector with length of 540
-
-acc = textscan(fid,'%d');
-
-fclose(fid);
-
-%% set the latency between target code and inserted code
-
-time = 100;
-
-%% creat response event
-
-for i = 2 : 2 : length(event)
-
-Nevent(i/2).bepoch    = event(i).bepoch;
-
-Nevent(i/2).bini      = event(i).bini;
-
-Nevent(i/2).binlabel  = event(i).binlabel;
-
-Nevent(i/2).codelabel = event(i).codelabel;
-
-Nevent(i/2).duration  = event(i).duration;
-
-Nevent(i/2).enable    = event(i).enable;
-
-Nevent(i/2).flag      = event(i).flag;
-
-Nevent(i/2).item      = event(i).item + 1;
-
-Nevent(i/2).latency   = event(i).latency + time;
-
-Nevent(i/2).type      = acc{1}(i/2);
-
-end
-
-%% add new events to original event list
-
-for i = 1:length(Nevent)
-
-event(2*i+i+1:end+1) = event(2*i+i:end); % move rows down
-
-event(2\*i+i) = Nevent(i); % insert response mark
-
-end
-
-%% save event in case of overwrite
-
-save event\_merge.mat event
-
-%% if the EEG data was currently loaded, simply replace the EEG.event with event, then operate as normal
-
-EEG.event = event;
-
-%replace ERPLAB event if you are using ERPLAB plugin
-
-ERP.EVENTLIST.eventinfo = event;</code></pre>
-
-
-
-<p></p>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
