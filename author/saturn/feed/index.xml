@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/wordpress/author/saturn/feed/" rel="self" type="application/rss+xml" />
 	<link>http://jianch.github.io</link>
 	<description></description>
-	<lastBuildDate>Fri, 23 Jul 2021 03:00:12 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 09 Sep 2021 00:55:18 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,58 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Install Process in SPSS in MacOS Big Sur</title>
+		<link>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/</link>
+					<comments>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 09 Sep 2021 00:54:25 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Process]]></category>
+		<category><![CDATA[SPSS]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/?p=238</guid>
+
+					<description><![CDATA[I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it. It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give…]]></description>
+										<content:encoded><![CDATA[
+<p>I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. </p>
+
+
+
+<p>When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. </p>
+
+
+
+<p>So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it.</p>
+
+
+
+<p>It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give a quite specific permission to SPSS.</p>
+
+
+
+<p>The video below is the solution for this issue.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="How to Fix SPSS File Access issue after Mac Catalina update - new apple update" width="1290" height="726" src="https://www.youtube.com/embed/gmBn5SneX2I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p>After you fix the full disk access issue, then you will be able to install Process. </p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Digit Span Task in Qualtrics</title>
 		<link>http://jianch.github.io/digit-span-task-in-qualtrics/</link>
 					<comments>http://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
@@ -592,56 +644,6 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 ]]></content:encoded>
 					
 					<wfw:commentRss>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Get real-time gaze positions from the eye tracke</title>
-		<link>http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/</link>
-					<comments>http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 30 May 2017 03:39:11 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Eyelink]]></category>
-		<category><![CDATA[gaze]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=126</guid>
-
-					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.]]></description>
-										<content:encoded><![CDATA[
-<p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
-
-
-
-<p>With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.</p>
-
-
-
-<hr class="wp-block-separator"/>
-
-
-
-<pre class="wp-block-code"><code>% make sure participants are fixating on the central
-while isEyeLink  % if Eyelink was connected
-status = Eyelink('newfloatsampleavailable');  % check to see if everything is fine in Eyelink
-if status /=0; % if all is fine
-evt = Eyelink('newestfloatsample'); % get the newest float sample from Eyelink
-realtime.x = evt.gx(1);  % get the x axis of gaze
-realtime.y = evt.gy(1);  % get the y axis of gaze
-end;
-
-if abs(realtime.x-512)\&lt;=50&amp;abs(realtime.y-384)\&lt;=50  % if the gaze falls into  a 50\*50 pixel square around the cross
-break; % jump out the loop and start the trial
-end
-end</code></pre>
-
-
-
-<p></p>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

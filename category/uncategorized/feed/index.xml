@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/wordpress/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
 	<link>http://jianch.github.io</link>
 	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 02:43:03 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 09 Sep 2021 00:55:18 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,58 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Install Process in SPSS in MacOS Big Sur</title>
+		<link>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/</link>
+					<comments>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 09 Sep 2021 00:54:25 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Process]]></category>
+		<category><![CDATA[SPSS]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/?p=238</guid>
+
+					<description><![CDATA[I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it. It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give…]]></description>
+										<content:encoded><![CDATA[
+<p>I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. </p>
+
+
+
+<p>When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. </p>
+
+
+
+<p>So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it.</p>
+
+
+
+<p>It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give a quite specific permission to SPSS.</p>
+
+
+
+<p>The video below is the solution for this issue.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="How to Fix SPSS File Access issue after Mac Catalina update - new apple update" width="1290" height="726" src="https://www.youtube.com/embed/gmBn5SneX2I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p>After you fix the full disk access issue, then you will be able to install Process. </p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>A MATLAB Toolbox for Face Research</title>
 		<link>http://jianch.github.io/a-matlab-toolbox-for-face-research/</link>
 					<comments>http://jianch.github.io/a-matlab-toolbox-for-face-research/#respond</comments>

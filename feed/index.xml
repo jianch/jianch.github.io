@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/wordpress/feed/" rel="self" type="application/rss+xml" />
 	<link>http://jianch.github.io</link>
 	<description></description>
-	<lastBuildDate>Fri, 23 Jul 2021 03:00:12 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 09 Sep 2021 00:55:18 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,58 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Install Process in SPSS in MacOS Big Sur</title>
+		<link>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/</link>
+					<comments>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/#respond</comments>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 09 Sep 2021 00:54:25 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Process]]></category>
+		<category><![CDATA[SPSS]]></category>
+		<guid isPermaLink="false">http://jianch.github.io/?p=238</guid>
+
+					<description><![CDATA[I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it. It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give…]]></description>
+										<content:encoded><![CDATA[
+<p>I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. </p>
+
+
+
+<p>When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. </p>
+
+
+
+<p>So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it.</p>
+
+
+
+<p>It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give a quite specific permission to SPSS.</p>
+
+
+
+<p>The video below is the solution for this issue.</p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="How to Fix SPSS File Access issue after Mac Catalina update - new apple update" width="1290" height="726" src="https://www.youtube.com/embed/gmBn5SneX2I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p>After you fix the full disk access issue, then you will be able to install Process. </p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Digit Span Task in Qualtrics</title>
 		<link>http://jianch.github.io/digit-span-task-in-qualtrics/</link>
 					<comments>http://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
@@ -642,61 +694,6 @@ end</code></pre>
 ]]></content:encoded>
 					
 					<wfw:commentRss>http://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Bootstrapping]]></category>
-		<category><![CDATA[Calibration]]></category>
-		<category><![CDATA[CRT]]></category>
-		<category><![CDATA[Keyboard]]></category>
-		<category><![CDATA[Laser]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
-
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board]]></description>
-										<content:encoded><![CDATA[
-<p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
-
-
-
-<p>Well, let me find the raw data first, since it’s been done for a long time.</p>
-
-
-
-<hr class="wp-block-separator"/>
-
-
-
-<p>Environment: MATLAB with Linux (Ubuntu 14.04)</p>
-
-
-
-<p>Monitor: SONY Triniton at 120Hz</p>
-
-
-
-<p>Keyboard: Mechanic number board</p>
-
-
-
-<hr class="wp-block-separator"/>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
