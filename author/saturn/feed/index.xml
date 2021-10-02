@@ -10,7 +10,7 @@
 <channel>
 	<title>saturn &#8211; Dr Jian Chen</title>
 	<atom:link href="http://localhost/wordpress/author/saturn/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
+	<link>https://jianch.github.io</link>
 	<description></description>
 	<lastBuildDate>Thu, 09 Sep 2021 00:55:18 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,23 +21,23 @@
 	<generator>https://wordpress.org/?v=5.8.1</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
+	<url>https://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
 	<title>saturn &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<link>https://jianch.github.io</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Install Process in SPSS in MacOS Big Sur</title>
-		<link>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/</link>
-					<comments>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/#respond</comments>
+		<link>https://jianch.github.io/install-process-in-spss-in-macos-big-sur/</link>
+					<comments>https://jianch.github.io/install-process-in-spss-in-macos-big-sur/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 09 Sep 2021 00:54:25 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
 		<category><![CDATA[Process]]></category>
 		<category><![CDATA[SPSS]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=238</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=238</guid>
 
 					<description><![CDATA[I don&#8217;t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. When I tried to install Hayes&#8217; Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it. It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give…]]></description>
 										<content:encoded><![CDATA[
@@ -74,15 +74,15 @@
 <p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/install-process-in-spss-in-macos-big-sur/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/install-process-in-spss-in-macos-big-sur/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Digit Span Task in Qualtrics</title>
-		<link>http://jianch.github.io/digit-span-task-in-qualtrics/</link>
-					<comments>http://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
+		<link>https://jianch.github.io/digit-span-task-in-qualtrics/</link>
+					<comments>https://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Fri, 23 Jul 2021 03:00:12 +0000</pubDate>
@@ -91,7 +91,7 @@
 		<category><![CDATA[Javascript]]></category>
 		<category><![CDATA[QRTE]]></category>
 		<category><![CDATA[Qualtrics]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=216</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=216</guid>
 
 					<description><![CDATA[The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the…]]></description>
 										<content:encoded><![CDATA[
@@ -123,7 +123,7 @@
 
 
 
-<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="http://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip" class="wp-block-file__button" download>Download</a></div>
+<div class="wp-block-file"><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip" class="wp-block-file__button" download>Download</a></div>
 
 
 
@@ -134,15 +134,15 @@
 <p>In my case, I have to put the forward and backward parts separately into two Qualtrics surveys, otherwise it just won&#8217;t work. I would recommend you do the same thing. </p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/digit-span-task-in-qualtrics/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/digit-span-task-in-qualtrics/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Replace MATLAB with Octave in MacOS</title>
-		<link>http://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
-					<comments>http://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
+		<link>https://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
+					<comments>https://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
@@ -150,7 +150,7 @@
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[MATLAB]]></category>
 		<category><![CDATA[Octave]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=147</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=147</guid>
 
 					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all. So, I…]]></description>
 										<content:encoded><![CDATA[
@@ -185,15 +185,15 @@
 <p>I feel happy and I love open source.&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
-		<link>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
-					<comments>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
+		<link>https://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
+					<comments>https://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Mon, 06 Apr 2020 03:51:40 +0000</pubDate>
@@ -202,7 +202,7 @@
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[OnlineVideo]]></category>
 		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=141</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=141</guid>
 
 					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos. Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&#160; You will need an…]]></description>
 										<content:encoded><![CDATA[
@@ -254,7 +254,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -349,18 +349,18 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="http://jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="http://jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
+<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="https://jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="https://jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Change the space between paragraphs in Qualtrics</title>
-		<link>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/</link>
-					<comments>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
+		<link>https://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/</link>
+					<comments>https://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Tue, 12 Nov 2019 03:47:26 +0000</pubDate>
@@ -368,7 +368,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 		<category><![CDATA[Javascript]]></category>
 		<category><![CDATA[Padding]]></category>
 		<category><![CDATA[Qualtrics]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=139</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=139</guid>
 
 					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.]]></description>
 										<content:encoded><![CDATA[
@@ -388,21 +388,21 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 <p>Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Characters in The Brothers Karamazov</title>
-		<link>http://jianch.github.io/characters-in-the-brothers-karamazov/</link>
-					<comments>http://jianch.github.io/characters-in-the-brothers-karamazov/#respond</comments>
+		<link>https://jianch.github.io/characters-in-the-brothers-karamazov/</link>
+					<comments>https://jianch.github.io/characters-in-the-brothers-karamazov/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Mon, 02 Apr 2018 03:45:59 +0000</pubDate>
 				<category><![CDATA[SideProject]]></category>
 		<category><![CDATA[Dostoyevsky]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=136</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=136</guid>
 
 					<description><![CDATA[I made a figure to illustrate the many characters in Dostoyevsky’s masterpiece: The Brothers Karamazov]]></description>
 										<content:encoded><![CDATA[
@@ -414,25 +414,25 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="http://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg" alt="" class="wp-image-137" srcset="http://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/Karamazov-300x225.jpeg 300w, http://jianch.github.io/wp-content/uploads/2021/02/Karamazov-768x576.jpeg 768w, http://jianch.github.io/wp-content/uploads/2021/02/Karamazov-850x638.jpeg 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="https://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg" alt="" class="wp-image-137" srcset="https://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg 1024w, https://jianch.github.io/wp-content/uploads/2021/02/Karamazov-300x225.jpeg 300w, https://jianch.github.io/wp-content/uploads/2021/02/Karamazov-768x576.jpeg 768w, https://jianch.github.io/wp-content/uploads/2021/02/Karamazov-850x638.jpeg 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/characters-in-the-brothers-karamazov/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/characters-in-the-brothers-karamazov/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Run Multiple Instances of Dropbox in MAC OS</title>
-		<link>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
-					<comments>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
+		<link>https://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
+					<comments>https://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 21 Mar 2018 03:44:24 +0000</pubDate>
 				<category><![CDATA[SideProject]]></category>
 		<category><![CDATA[Mac]]></category>
 		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=133</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=133</guid>
 
 					<description><![CDATA[When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&#160; See the image for details.]]></description>
 										<content:encoded><![CDATA[
@@ -444,25 +444,25 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="http://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="http://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="https://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="https://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, https://jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, https://jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Plot Heatmap from Eye Tracking Data</title>
-		<link>http://jianch.github.io/plot-heatmap-from-eye-tracking-data/</link>
-					<comments>http://jianch.github.io/plot-heatmap-from-eye-tracking-data/#respond</comments>
+		<link>https://jianch.github.io/plot-heatmap-from-eye-tracking-data/</link>
+					<comments>https://jianch.github.io/plot-heatmap-from-eye-tracking-data/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Thu, 07 Sep 2017 03:42:50 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[Eyelink]]></category>
 		<category><![CDATA[Eyetracking]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=130</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=130</guid>
 
 					<description><![CDATA[There are many ways/toolbox to plot a heat map from eye tracking data. but I prefer DIY Here is the source code:]]></description>
 										<content:encoded><![CDATA[
@@ -549,22 +549,22 @@ view(0,90);
 print('heatmap', '-dtiff','-r300');</code></pre>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/plot-heatmap-from-eye-tracking-data/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/plot-heatmap-from-eye-tracking-data/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Corrected Vision May Still Bias the Gabor Patch Detection</title>
-		<link>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
-					<comments>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/#respond</comments>
+		<link>https://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
+					<comments>https://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/#respond</comments>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
 		<pubDate>Wed, 12 Jul 2017 03:40:14 +0000</pubDate>
 				<category><![CDATA[Research]]></category>
 		<category><![CDATA[astigmatism]]></category>
 		<category><![CDATA[Gabor]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=128</guid>
+		<guid isPermaLink="false">https://jianch.github.io/?p=128</guid>
 
 					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below is my test data from 800 trials of a detection task (error bar represents 1 SE). I gradually increased the Gabor patch contrast from 0 to 100%, I pressed a button when I saw something on the screen (grey background). Session 1 Session 2 I…]]></description>
 										<content:encoded><![CDATA[
@@ -643,7 +643,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 <p>What’s the hint from this observation? Well, it may remind us to make sure that participants who claim a correctly corrected vision should be re-checked, especially in those vision tasks relying on Gabor patch detection.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/feed/</wfw:commentRss>
+					<wfw:commentRss>https://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
