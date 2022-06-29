@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Youtube &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/youtube/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:12:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+
+<image>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>Youtube &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
+		<link>https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2020 00:11:19 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[Inquisit]]></category>
+		<category><![CDATA[Youtube]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=127</guid>
+
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short ... <a title="Embed Youtube video in the Inquisit Web in Windows and Mac" class="read-more" href="https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/" aria-label="More on Embed Youtube video in the Inquisit Web in Windows and Mac">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
+
+
+
+<p>Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&nbsp;</p>
+
+
+
+<p>You will need an embeded video link like this, it can be obtained from Youtube Share.</p>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%26autoplay%3D1
+</div></figure>
+
+
+
+<p>Then you need to add a html element in the Inquisit, it looks like this:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;html demo&gt;
+/ items = videos
+/ select = 1
+/ size = (100%,100%)
+/ showborders = false
+/ showscrollbars = false
+&lt;/html&gt;</code></pre>
+
+
+
+<p>However, this method only works fine in MacOS, it shows blank when you run the Inquisit script in a Windows computer. This is a known issue and there is no official solution yet.&nbsp;</p>
+
+
+
+<p>————————————<br><strong>Q:&nbsp;</strong><br>I’ve used html to embed videos in my experiment that I have uploaded on youtube.<br>The embedded links when directly entered into the browser (firefox, internet explorer) work fine. Within inquisit it also works fine on a mac, but I’m encountering problems on windows (on some windows laptops it only shows a black box rather than the video). Also, there seem to be a difference between windows 10 and windows 7, since it did work on someone’s windows 7 laptop.<br>Is there a difference for html on mac vs windows?</p>
+
+
+
+<p><strong>A:&nbsp;</strong><br>Yes, there are differences between OSX and Windows in how HTML is handled. Essentially, under Windows, Inquisit embeds Internet Explorer (because it is reliably available on all Windows systems) to render HTML. When run in embedded mode like this, however, Internet Explorer enforces various restrictions that may keep embedded / interactive content such as videos from working. The way a given system is set up and what security settings the user or organization applied to Internet Explorer installations also play a role under some circumstances, i.e. content may work on one system, but not on a different one with different settings / restrictions applied.<br><strong>I’m afraid there isn’t a really good or universal solution here.&nbsp;</strong>Ideally, you’d not embed Youtube videos, but instead you’d use standard \&lt;video&gt; elements in Inquisit to play the videos. For online use, you can set the \&lt;video&gt; elements’ /stream attributes to true, that way the won’t have to be downloaded in full before the experiment launches, they’ll be streamed instead at runtime.<br><em><a href="https://www.millisecond.com/forums/Topic25195.aspx" target="_blank" rel="noreferrer noopener">https://www.millisecond.com/forums/Topic25195.aspx</a></em><br>————————————</p>
+
+
+
+<p>A possible workaround is to right click on the black screen and then choose a different encoding, such as “Western European (Windows)”. Then the online video will be loaded and displayed on the Inquisit. There seems to be an encoding issue in running Inquisit script in Windows.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143"/></figure>
+
+
+
+<p>So, is there a “<strong>really good or universal solution</strong>” for this problem? The answer is&nbsp;<strong>YES.</strong></p>
+
+
+
+<p>My idea here is, if the Inquisit is able to handle html element, can we directly insert a DIY html page rather than let the Inquisit build a html page?&nbsp;</p>
+
+
+
+<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>;&nbsp;<a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>;&nbsp;<a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.iframe-container {
+ overflow: hidden;
+ padding-top: 56.25%;
+ position: relative;
+}
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+ padding-top: 75%;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor="black"&gt;
+
+&lt;div class="iframe-container"&gt;
+ &lt;iframe src="<a href="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1">https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1</a>" allowfullscreen=1&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+
+<p>You can create an empty html document and the copy these code into your document, or you can download a html file from&nbsp;<a href="https://jianchen.info/files/inquisitOnlineVideo/demo.html">here</a>.</p>
+
+
+
+<p>When you have the DIY html file, let’s see an Inquisit&nbsp;<a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;html videoDemo&gt;
+/ items = ("demo.html")
+/ size = (100%, 100%) 
+/ erase = true(255, 255, 255)
+/ showborders = false
+/ showscrollbars = false
+&lt;/html&gt;
+
+&lt;trial videoDemo&gt;
+/ stimulustimes = &#91;500=videoDemo]
+/ trialduration = 50000
+/ ontrialend= &#91;trial.videoDemo.resetstimulusframes();]
+&lt;/trial&gt;
+
+&lt;block videoDemo&gt;
+/ trials = &#91;1=videoDemo]
+&lt;/block&gt;
+
+&lt;expt&gt;
+/ blocks = &#91;1=videoDemo]
+&lt;/expt&gt;</code></pre>
+
+
+
+<p>And boom! It works! Now we can display Youtube video in Inquisit in a damn Windows pc!</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" class="wp-image-144"/></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

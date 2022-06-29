@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>face &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/face/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:42:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+
+<image>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>face &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A MATLAB Toolbox for Face Research</title>
+		<link>https://www.jianchen.info/2015/12/28/a-matlab-toolbox-for-face-research/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 28 Dec 2015 23:36:32 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[face]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[toolbox]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=91</guid>
+
+					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: Pupil_faceDownload How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ ... <a title="A MATLAB Toolbox for Face Research" class="read-more" href="https://www.jianchen.info/2015/12/28/a-matlab-toolbox-for-face-research/" aria-label="More on A MATLAB Toolbox for Face Research">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work.</p>
+
+
+
+<p>Here is the source code:</p>
+
+
+
+<p><a href="https://jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Pupil_face</a><a href="https://jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Download</a></p>
+
+
+
+<p>How to use:</p>
+
+
+
+<p>Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file (3 arrow) in the current directory. Remember to connect to the internet as I use some online face analysis tools. After computation, just go to the output_face folder to pick up processed face images (3 arrow).</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50"/></figure>
+
+
+
+<p>Run the pupil_face.m file, then it will automatically recognise the pupil position and resize the face to a grayscale pupil-distance constant face. Remember to connect to the Internet cause I use some online source.</p>
+
+
+
+<p>Results showing as below:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54"/></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

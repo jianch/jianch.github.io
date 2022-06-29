@@ -8,40 +8,37 @@
 	>
 
 <channel>
-	<title>Trigger &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/trigger/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 02:47:05 +0000</lastBuildDate>
+	<title>trigger &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/trigger/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:41:19 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Trigger &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>trigger &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</title>
-		<link>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
-					<comments>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/#respond</comments>
+		<title>Send Triggers via Parallel Port in Linux – using pp &#038; ppMEX.c</title>
+		<link>https://www.jianchen.info/2015/12/30/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Wed, 09 Dec 2015 02:44:39 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Parallel Port]]></category>
-		<category><![CDATA[Trigger]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=65</guid>
+		<pubDate>Wed, 30 Dec 2015 23:40:33 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[trigger]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=97</guid>
 
-					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even&#8230; <a class="more-link" href="http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/">Continue reading <span class="screen-reader-text">Send Triggers via Parallel Port in Linux &#8211; using pp &#038; ppMEX.c</span></a>]]></description>
+					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even ... <a title="Send Triggers via Parallel Port in Linux – using pp &#038; ppMEX.c" class="read-more" href="https://www.jianchen.info/2015/12/30/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/" aria-label="More on Send Triggers via Parallel Port in Linux – using pp &#038; ppMEX.c">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>This method is developed by&nbsp;<a href="https://groups.yahoo.com/neo/groups/psychtoolbox/conversations/messages/13972" target="_blank" rel="noreferrer noopener">Erik Flister</a>. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&nbsp;<em><strong>pp.m</strong></em>&nbsp;and&nbsp;<em><strong>ppMex.c</strong></em>.</p>
 
@@ -51,11 +48,11 @@
 
 
 
-<p>Download all three files at here: </p>
+<p>Download all three files at here:</p>
 
 
 
-<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip" class="wp-block-file__button" download>Download</a></div>
+<p><a href="https://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="https://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">Download</a></p>
 
 
 
@@ -120,16 +117,12 @@ if (63 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 128)
     pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
 end
 
-if sti_trigger > 127
+if sti_trigger &gt; 127
     bin_value = dec2bin(sti_trigger);
     bin_value = fliplr(bin_value);
     bin_value = bin_value - '0' ;
     pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
 end</code></pre>
-
-
-
-<p></p>
 
 
 
@@ -140,8 +133,6 @@ end</code></pre>
 <p><em>An minor error was found in trigger.m and has been fixed.</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

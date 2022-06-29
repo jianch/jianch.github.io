@@ -8,49 +8,292 @@
 	>
 
 <channel>
-	<title>eeglab &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/eeglab/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 02:57:10 +0000</lastBuildDate>
+	<title>eeglab &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/eeglab/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:01:47 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>eeglab &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>eeglab &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>EEG topography sample</title>
-		<link>http://jianch.github.io/eeg-topography-sample/</link>
-					<comments>http://jianch.github.io/eeg-topography-sample/#respond</comments>
+		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
+		<link>https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Sat, 02 Jan 2016 02:56:55 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[dynamic]]></category>
-		<category><![CDATA[EEG]]></category>
+		<pubDate>Wed, 18 Jan 2017 00:01:26 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
 		<category><![CDATA[eeglab]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=78</guid>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=113</guid>
 
-					<description><![CDATA[A sample to illustrate how a period of EEG topography looks like.]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins ... <a title="EEG Processing Steps (based on EEGLAB and ERPLAB)" class="read-more" href="https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/" aria-label="More on EEG Processing Steps (based on EEGLAB and ERPLAB)">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<p>A sample to illustrate how a period of EEG topography looks like.</p>
+<p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="960" height="840" src="http://jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
+<p><strong>1 load raw data</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/809C496A-8039-4D2E-9B13-70B6B7721A10.png" alt=""/></figure>
+
+
+
+<p><strong>2 channel location</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/030CC12C-9735-43A2-AD38-53EBF6240A46.png" alt=""/></figure>
+
+
+
+<p><strong>3 re-reference</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3135436B-A01A-4FED-9B9E-E426C7FA3CB4.png" alt=""/></figure>
+
+
+
+<p><strong>4 filtering</strong>&nbsp;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later)</p>
+
+
+
+<p><strong>5 Create EEG event list (ERPLAB from now on)</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F18A0B75-3355-4EBE-B7CA-E62720858371.png" alt=""/></figure>
+
+
+
+<p><strong>6 Assign bins (how to operate on bins? see&nbsp;<a href="https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial" target="_blank" rel="noreferrer noopener">here</a>)</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/43ABAD39-3E41-4BA7-9607-34EA61FE7D74.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/8A8EC18C-86E4-4AB8-8242-1E6D23716321.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/4AC21F49-0134-4FE3-83E1-12B663C404DF.png" alt=""/></figure>
+
+
+
+<p><strong>7 extract bin-based epoch</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/B1B02461-7F46-4AB1-8371-AF769E9F3E26.png" alt=""/></figure>
+
+
+
+<p><strong>8 artifact rejection</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/40120CE4-073E-4CEF-A35D-98DDB2DDD429.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/9234B231-7612-41D2-9349-5682C3027FD8.png" alt=""/></figure>
+
+
+
+<p><strong>-&gt; choose channel around the eye. -&gt; update and then reject</strong></p>
+
+
+
+<p><strong>9 compute average erps</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/289AC38D-87CF-4234-9B90-D5C01D010D9A.png" alt=""/></figure>
+
+
+
+<p><strong>10 filter if you don’t do it in step 4</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/CD5AD34D-B8EC-4825-B5A8-90EA5C31611D.png" alt=""/></figure>
+
+
+
+<p><strong>11 bin operations if necessary&nbsp;</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/1E8272A4-A250-4471-945D-2D764439AE61.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3FA48AA1-9212-4A49-A8B4-73CEFFB13B38.png" alt=""/></figure>
+
+
+
+<p><strong>12 Plot ERPs</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/AB81310E-9BC5-422B-95FD-B3718883494D.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F1F2CFBD-3018-4E77-B960-35EEFB103226.png" alt=""/></figure>
+
+
+
+<p><strong>13 Save figures if you want</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/14A0D60A-40B2-4697-9F30-84312AFCEEBF.png" alt=""/></figure>
+
+
+
+<p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
+
+
+
+<p><a href="https://jianch.github.io/author/saturn/"></a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/eeg-topography-sample/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Merge Behavioral Data into EEG</title>
+		<link>https://www.jianchen.info/2016/12/16/merge-behavioral-data-into-eeg/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Fri, 16 Dec 2016 23:58:17 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
+		<category><![CDATA[eeglab]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=109</guid>
+
+					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
+										<content:encoded><![CDATA[
+<p>An example code of how I merge behavioral data into EEG</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96"/></figure>
+
+
+
+<p>Code:</p>
+
+
+
+<pre class="wp-block-code"><code>%% merge behavioral data into EEG
+
+% Sometimes, it's hard to lively send behavioral data to EEG system, i.e.
+
+% oral response. Here is a code example to merge behavioral result into EEG
+
+% data.
+
+% Author: Jian Chen
+
+% saturn.jian.chen@gmail.com
+
+% 13/Dec/2016
+
+%+++++++++++++%
+
+%% load EEG data first, finish 'channel location', 're-reference'
+
+% get event data via 'event = EEG.event'
+
+event = EEG.event;
+
+event\_back = event;
+
+%% load behavioral data
+
+fid = fopen('YourResponse\_acc.txt');  % here is a vector with length of 540
+
+acc = textscan(fid,'%d');
+
+fclose(fid);
+
+%% set the latency between target code and inserted code
+
+time = 100;
+
+%% creat response event
+
+for i = 2 : 2 : length(event)
+
+Nevent(i/2).bepoch    = event(i).bepoch;
+
+Nevent(i/2).bini      = event(i).bini;
+
+Nevent(i/2).binlabel  = event(i).binlabel;
+
+Nevent(i/2).codelabel = event(i).codelabel;
+
+Nevent(i/2).duration  = event(i).duration;
+
+Nevent(i/2).enable    = event(i).enable;
+
+Nevent(i/2).flag      = event(i).flag;
+
+Nevent(i/2).item      = event(i).item + 1;
+
+Nevent(i/2).latency   = event(i).latency + time;
+
+Nevent(i/2).type      = acc{1}(i/2);
+
+end
+
+%% add new events to original event list
+
+for i = 1:length(Nevent)
+
+event(2*i+i+1:end+1) = event(2*i+i:end); % move rows down
+
+event(2\*i+i) = Nevent(i); % insert response mark
+
+end
+
+%% save event in case of overwrite
+
+save event\_merge.mat event
+
+%% if the EEG data was currently loaded, simply replace the EEG.event with event, then operate as normal
+
+EEG.event = event;
+
+%replace ERPLAB event if you are using ERPLAB plugin
+
+ERP.EVENTLIST.eventinfo = event;</code></pre>
+]]></content:encoded>
+					
 		
 		
 			</item>

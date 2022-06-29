@@ -8,38 +8,39 @@
 	>
 
 <channel>
-	<title>astigmatism &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/astigmatism/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:40:48 +0000</lastBuildDate>
+	<title>Astigmatism &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/astigmatism/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:08:54 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>astigmatism &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>Astigmatism &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Corrected Vision May Still Bias the Gabor Patch Detection</title>
-		<link>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
-					<comments>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/#respond</comments>
+		<link>https://www.jianchen.info/2017/07/12/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Wed, 12 Jul 2017 03:40:14 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[astigmatism]]></category>
-		<category><![CDATA[Gabor]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=128</guid>
+		<pubDate>Wed, 12 Jul 2017 00:07:57 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[Astigmatism]]></category>
+		<category><![CDATA[corrected vision]]></category>
+		<category><![CDATA[Gabor patch]]></category>
+		<category><![CDATA[vision]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=121</guid>
 
-					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below&#8230; <a class="more-link" href="http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/">Continue reading <span class="screen-reader-text">Corrected Vision May Still Bias the Gabor Patch Detection</span></a>]]></description>
+					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below ... <a title="Corrected Vision May Still Bias the Gabor Patch Detection" class="read-more" href="https://www.jianchen.info/2017/07/12/corrected-vision-may-still-bias-the-gabor-patch-detection/" aria-label="More on Corrected Vision May Still Bias the Gabor Patch Detection">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task.</p>
 
@@ -65,7 +66,7 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -97,7 +98,7 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -109,15 +110,13 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <p>What’s the hint from this observation? Well, it may remind us to make sure that participants who claim a correctly corrected vision should be re-checked, especially in those vision tasks relying on Gabor patch detection.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

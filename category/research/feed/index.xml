@@ -8,100 +8,134 @@
 	>
 
 <channel>
-	<title>Research &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/category/research/feed/" rel="self" type="application/rss+xml" />
-	<link>https://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Fri, 23 Jul 2021 03:00:12 +0000</lastBuildDate>
+	<title>research &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/category/research/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:15:53 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>https://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Research &#8211; Dr Jian Chen</title>
-	<link>https://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>research &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Digit Span Task in Qualtrics</title>
-		<link>https://jianch.github.io/digit-span-task-in-qualtrics/</link>
-					<comments>https://jianch.github.io/digit-span-task-in-qualtrics/#respond</comments>
+		<title>Install Process in SPSS in MacOS Big Sur</title>
+		<link>https://www.jianchen.info/2021/09/09/install-process-in-spss-in-macos-big-sur/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Fri, 23 Jul 2021 03:00:12 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Digit Span Task]]></category>
-		<category><![CDATA[Javascript]]></category>
-		<category><![CDATA[QRTE]]></category>
-		<category><![CDATA[Qualtrics]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=216</guid>
+		<pubDate>Thu, 09 Sep 2021 00:14:18 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[MacOS]]></category>
+		<category><![CDATA[SPSS]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=131</guid>
 
-					<description><![CDATA[The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the…]]></description>
+					<description><![CDATA[I don’t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer. When I tried to install Hayes’ Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying. So the reason is that SPSS has no full disk ... <a title="Install Process in SPSS in MacOS Big Sur" class="read-more" href="https://www.jianchen.info/2021/09/09/install-process-in-spss-in-macos-big-sur/" aria-label="More on Install Process in SPSS in MacOS Big Sur">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<p>The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. </p>
+<p>I don’t like SPSS, but due to the need of teaching, I have to install SPSS in my own computer.</p>
 
 
 
-<p>I don&#8217;t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don&#8217;t see why they don&#8217;t include this feature as many of us already bought their most expensive plans. </p>
+<p>When I tried to install Hayes’ Process add-ons in the SPSS, it always said it has no permission to do so. This is quite annoying.</p>
 
 
 
-<p>Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don&#8217;t like to download and install any software in their personal devices, so we see many participants drop out the study due to this reason. May I say that we are lucky enough if we can have 50% participants complete the Inquisit Web-based cognitive tasks? Other ways to run online cognitive tasks include the PsychoPy and PsyToolkit, but I won&#8217;t talk about them in this article.</p>
+<p>So the reason is that SPSS has no full disk access to the targeted folder. Why? I already gave full access to it.</p>
 
 
 
-<p>The ideal way to run cognitive tasks along with Qualtrics survey, of course, is to run cognitive tasks within Qualtrics. </p>
+<p>It turns out that there are a few things changed since MacOS Catalina, the direct result is that SPSS lost full disk access to many folders in Mac. You have to give a quite specific permission to SPSS.</p>
 
 
 
-<p>Here is an example of running digit span task within Qualtrics. I need to explicitly state that, the code is not from me. I developed my own working version with the help from Dr Becky Gilbert (@BeckyAGilbert). You can find her at https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/. And of course, if you do use the task and the code, it would be appreciated either a citation or acknowledgment. You should also cite the QRTE paper: <a rel="noreferrer noopener" href="https://link.springer.com/article/10.3758/s13428-014-0530-7" target="_blank">https://link.springer.com/article/10.3758/s13428-014-0530-7</a> .</p>
+<p>The video below is the solution for this issue.</p>
 
 
 
-<p></p>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="How to Fix SPSS File Access issue after Mac Catalina update - new apple update" width="1100" height="619" src="https://www.youtube.com/embed/gmBn5SneX2I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
 
 
 
-<p><strong>You can find <meta charset="utf-8">Dr Becky Gilbert&#8217;s Digit Span Task at this link: https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg</strong>. The first half of the task works fine but the second half does not work. This is because <meta charset="utf-8">QRTE JavaScript library is no longer supported. <br><br>Here is the QSF file that exported from Qualtrics. </p>
-
-
-
-<div class="wp-block-file"><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip" class="wp-block-file__button" download>Download</a></div>
-
-
-
-<p>To get it to work properly, you may need to go into the survey settings and remove any default styling that your institution applies to Qualtrics surveys. You&#8217;ll want to use the plain/basic styling option for this task. You can also look at the QRTE documentation for more information about how it works: <a rel="noreferrer noopener" href="http://www.qrtengine.com/" target="_blank">http://www.qrtengine.com/</a></p>
-
-
-
-<p>In my case, I have to put the forward and backward parts separately into two Qualtrics surveys, otherwise it just won&#8217;t work. I would recommend you do the same thing. </p>
+<p>After you fix the full disk access issue, then you will be able to install Process.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/digit-span-task-in-qualtrics/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Digit Span Task in Qualtrics</title>
+		<link>https://www.jianchen.info/2021/07/23/digit-span-task-in-qualtrics/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Fri, 23 Jul 2021 00:13:10 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[digit span task]]></category>
+		<category><![CDATA[Qualtrics]]></category>
+		<category><![CDATA[working memory]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=129</guid>
+
+					<description><![CDATA[The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. I don’t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don’t see why they don’t include this feature as many of us already bought their most expensive plans. Nevertheless, ... <a title="Digit Span Task in Qualtrics" class="read-more" href="https://www.jianchen.info/2021/07/23/digit-span-task-in-qualtrics/" aria-label="More on Digit Span Task in Qualtrics">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics.</p>
+
+
+
+<p>I don’t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don’t see why they don’t include this feature as many of us already bought their most expensive plans.</p>
+
+
+
+<p>Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don’t like to download and install any software in their personal devices, so we see many participants drop out the study due to this reason. May I say that we are lucky enough if we can have 50% participants complete the Inquisit Web-based cognitive tasks? Other ways to run online cognitive tasks include the PsychoPy and PsyToolkit, but I won’t talk about them in this article.</p>
+
+
+
+<p>The ideal way to run cognitive tasks along with Qualtrics survey, of course, is to run cognitive tasks within Qualtrics.</p>
+
+
+
+<p>Here is an example of running digit span task within Qualtrics. I need to explicitly state that, the code is not from me. I developed my own working version with the help from Dr Becky Gilbert (@BeckyAGilbert). You can find her at&nbsp;<a href="https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/">https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/</a>. And of course, if you do use the task and the code, it would be appreciated either a citation or acknowledgment. You should also cite the QRTE paper:&nbsp;<a rel="noreferrer noopener" href="https://link.springer.com/article/10.3758/s13428-014-0530-7" target="_blank">https://link.springer.com/article/10.3758/s13428-014-0530-7</a>&nbsp;.</p>
+
+
+
+<p><strong>You can find&nbsp;Dr Becky Gilbert’s Digit Span Task at this link:&nbsp;<a href="https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg">https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg</a></strong>. The first half of the task works fine but the second half does not work. This is because&nbsp;QRTE JavaScript library is no longer supported.<br><br>Here is the QSF file that exported from Qualtrics.</p>
+
+
+
+<p><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">Download</a></p>
+
+
+
+<p>To get it to work properly, you may need to go into the survey settings and remove any default styling that your institution applies to&nbsp;Qualtrics&nbsp;surveys. You’ll want to use the plain/basic styling option for this task. You can also look at the QRTE documentation for more information about how it works:&nbsp;<a rel="noreferrer noopener" href="http://www.qrtengine.com/" target="_blank">http://www.qrtengine.com/</a></p>
+
+
+
+<p>In my case, I have to put the forward and backward parts separately into two Qualtrics surveys, otherwise it just won’t work. I would recommend you do the same thing.</p>
+]]></content:encoded>
+					
 		
 		
 			</item>
 		<item>
 		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
-		<link>https://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
-					<comments>https://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
+		<link>https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Mon, 06 Apr 2020 03:51:40 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
+		<pubDate>Mon, 06 Apr 2020 00:11:19 +0000</pubDate>
+				<category><![CDATA[research]]></category>
 		<category><![CDATA[Inquisit]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[OnlineVideo]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=141</guid>
+		<category><![CDATA[Youtube]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=127</guid>
 
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos. Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&#160; You will need an…]]></description>
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short ... <a title="Embed Youtube video in the Inquisit Web in Windows and Mac" class="read-more" href="https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/" aria-label="More on Embed Youtube video in the Inquisit Web in Windows and Mac">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
 
@@ -115,7 +149,7 @@
 
 
 
-<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
 https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%26autoplay%3D1
 </div></figure>
 
@@ -125,13 +159,13 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<pre class="wp-block-code"><code>&lt;html demo>
+<pre class="wp-block-code"><code>&lt;html demo&gt;
 / items = videos
 / select = 1
 / size = (100%,100%)
 / showborders = false
 / showscrollbars = false
-&lt;/html></code></pre>
+&lt;/html&gt;</code></pre>
 
 
 
@@ -151,7 +185,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, https://jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143"/></figure>
 
 
 
@@ -163,14 +197,14 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>; <a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>; <a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
+<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>;&nbsp;<a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>;&nbsp;<a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-&lt;style>
+<pre class="wp-block-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
 .iframe-container {
  overflow: hidden;
  padding-top: 56.25%;
@@ -188,17 +222,17 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 .iframe-container-4x3 {
  padding-top: 75%;
 }
-&lt;/style>
-&lt;/head>
+&lt;/style&gt;
+&lt;/head&gt;
 
-&lt;body bgcolor="black">
+&lt;body bgcolor="black"&gt;
 
-&lt;div class="iframe-container">
- &lt;iframe src="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" allowfullscreen=1>&lt;/iframe>
-&lt;/div>
+&lt;div class="iframe-container"&gt;
+ &lt;iframe src="<a href="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1">https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1</a>" allowfullscreen=1&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
-&lt;/body>
-&lt;/html></code></pre>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
 
 
@@ -206,35 +240,31 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p>When you have the DIY html file, let’s see an Inquisit <a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
+<p>When you have the DIY html file, let’s see an Inquisit&nbsp;<a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;html videoDemo>
+<pre class="wp-block-code"><code>&lt;html videoDemo&gt;
 / items = ("demo.html")
 / size = (100%, 100%) 
 / erase = true(255, 255, 255)
 / showborders = false
 / showscrollbars = false
-&lt;/html>
+&lt;/html&gt;
 
-&lt;trial videoDemo>
+&lt;trial videoDemo&gt;
 / stimulustimes = &#91;500=videoDemo]
 / trialduration = 50000
 / ontrialend= &#91;trial.videoDemo.resetstimulusframes();]
-&lt;/trial>
+&lt;/trial&gt;
 
-&lt;block videoDemo>
+&lt;block videoDemo&gt;
 / trials = &#91;1=videoDemo]
-&lt;/block>
+&lt;/block&gt;
 
-&lt;expt>
+&lt;expt&gt;
 / blocks = &#91;1=videoDemo]
-&lt;/expt></code></pre>
-
-
-
-<p></p>
+&lt;/expt&gt;</code></pre>
 
 
 
@@ -242,32 +272,24 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p></p>
-
-
-
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="https://jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="https://jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" class="wp-image-144"/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Change the space between paragraphs in Qualtrics</title>
-		<link>https://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/</link>
-					<comments>https://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
+		<link>https://www.jianchen.info/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 12 Nov 2019 03:47:26 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Javascript]]></category>
-		<category><![CDATA[Padding]]></category>
+		<pubDate>Tue, 12 Nov 2019 00:10:12 +0000</pubDate>
+				<category><![CDATA[research]]></category>
 		<category><![CDATA[Qualtrics]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=139</guid>
+		<category><![CDATA[space]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=125</guid>
 
-					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.]]></description>
+					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even ... <a title="Change the space between paragraphs in Qualtrics" class="read-more" href="https://www.jianchen.info/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/" aria-label="More on Change the space between paragraphs in Qualtrics">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
 
@@ -285,22 +307,19 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 <p>Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Plot Heatmap from Eye Tracking Data</title>
-		<link>https://jianch.github.io/plot-heatmap-from-eye-tracking-data/</link>
-					<comments>https://jianch.github.io/plot-heatmap-from-eye-tracking-data/#respond</comments>
+		<link>https://www.jianchen.info/2017/09/07/plot-heatmap-from-eye-tracking-data/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 07 Sep 2017 03:42:50 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Eyelink]]></category>
-		<category><![CDATA[Eyetracking]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=130</guid>
+		<pubDate>Thu, 07 Sep 2017 00:09:14 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eyetracker]]></category>
+		<category><![CDATA[heatmap]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=123</guid>
 
 					<description><![CDATA[There are many ways/toolbox to plot a heat map from eye tracking data. but I prefer DIY Here is the source code:]]></description>
 										<content:encoded><![CDATA[
@@ -308,7 +327,7 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -367,7 +386,7 @@ gazeDuration = dataEyelink.fixations(:,3) / max(dataEyelink.fixations(:,3)); % r
 
 %% generating data for heatmap
 gazedata = &#91;posX/1024, posY/768](); % rescale to 0-1
-gazedata = gazedata((gazedata(:, 1))\>0, :); % remove possible negative value...
+gazedata = gazedata((gazedata(:, 1))\&gt;0, :); % remove possible negative value...
 
 %% make gaussians
 figure;
@@ -387,24 +406,23 @@ view(0,90);
 print('heatmap', '-dtiff','-r300');</code></pre>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/plot-heatmap-from-eye-tracking-data/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Corrected Vision May Still Bias the Gabor Patch Detection</title>
-		<link>https://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
-					<comments>https://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/#respond</comments>
+		<link>https://www.jianchen.info/2017/07/12/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Wed, 12 Jul 2017 03:40:14 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[astigmatism]]></category>
-		<category><![CDATA[Gabor]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=128</guid>
+		<pubDate>Wed, 12 Jul 2017 00:07:57 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[Astigmatism]]></category>
+		<category><![CDATA[corrected vision]]></category>
+		<category><![CDATA[Gabor patch]]></category>
+		<category><![CDATA[vision]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=121</guid>
 
-					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below is my test data from 800 trials of a detection task (error bar represents 1 SE). I gradually increased the Gabor patch contrast from 0 to 100%, I pressed a button when I saw something on the screen (grey background). Session 1 Session 2 I…]]></description>
+					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below ... <a title="Corrected Vision May Still Bias the Gabor Patch Detection" class="read-more" href="https://www.jianchen.info/2017/07/12/corrected-vision-may-still-bias-the-gabor-patch-detection/" aria-label="More on Corrected Vision May Still Bias the Gabor Patch Detection">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task.</p>
 
@@ -430,7 +448,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -462,7 +480,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -474,31 +492,30 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <p>What’s the hint from this observation? Well, it may remind us to make sure that participants who claim a correctly corrected vision should be re-checked, especially in those vision tasks relying on Gabor patch detection.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/corrected-vision-may-still-bias-the-gabor-patch-detection/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Get real-time gaze positions from the eye tracke</title>
-		<link>https://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/</link>
-					<comments>https://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/#respond</comments>
+		<title>Get real-time gaze positions from the eye tracker</title>
+		<link>https://www.jianchen.info/2017/03/30/get-real-time-gaze-positions-from-the-eye-tracker/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 30 May 2017 03:39:11 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Eyelink]]></category>
+		<pubDate>Thu, 30 Mar 2017 00:06:55 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eyelink]]></category>
+		<category><![CDATA[eyetracker]]></category>
 		<category><![CDATA[gaze]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=126</guid>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=119</guid>
 
-					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.]]></description>
+					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before ... <a title="Get real-time gaze positions from the eye tracker" class="read-more" href="https://www.jianchen.info/2017/03/30/get-real-time-gaze-positions-from-the-eye-tracker/" aria-label="More on Get real-time gaze positions from the eye tracker">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
 
@@ -508,7 +525,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -525,45 +542,30 @@ if abs(realtime.x-512)\&lt;=50&amp;abs(realtime.y-384)\&lt;=50  % if the gaze fa
 break; % jump out the loop and start the trial
 end
 end</code></pre>
-
-
-
-<p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/get-real-time-gaze-positions-from-the-eye-tracke/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>https://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>https://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
+		<link>https://www.jianchen.info/2017/03/09/keyboard-calibration-using-the-damn-laser/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Bootstrapping]]></category>
-		<category><![CDATA[Calibration]]></category>
-		<category><![CDATA[CRT]]></category>
-		<category><![CDATA[Keyboard]]></category>
-		<category><![CDATA[Laser]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=124</guid>
+		<pubDate>Thu, 09 Mar 2017 00:04:34 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[calibration]]></category>
+		<category><![CDATA[keyboard]]></category>
+		<category><![CDATA[laser]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=115</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board In short, the delay ... <a title="Keyboard Calibration Using the Damn Laser" class="read-more" href="https://www.jianchen.info/2017/03/09/keyboard-calibration-using-the-damn-laser/" aria-label="More on Keyboard Calibration Using the Damn Laser">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
 
 
-<p>Well, let me find the raw data first, since it’s been done for a long time.</p>
-
-
-
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -579,32 +581,45 @@ end</code></pre>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>In short, the delay is about 12 ms and the variation is quite small. </p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>https://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-					<comments>https://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/#respond</comments>
+		<link>https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Sat, 18 Feb 2017 03:35:37 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Biosemi]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[Linux]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=122</guid>
+		<pubDate>Wed, 18 Jan 2017 00:01:26 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
+		<category><![CDATA[eeglab]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=113</guid>
 
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins (how to operate on bins? see&#160;here) 7 extract bin-based epoch 8 artifact rejection -&#62; choose channel around the eye. -&#62; update and then reject 9 compute average erps 10 filter if you don’t do it in step 4 11 bin operations if necessary&#160; 12 Plot…]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins ... <a title="EEG Processing Steps (based on EEGLAB and ERPLAB)" class="read-more" href="https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/" aria-label="More on EEG Processing Steps (based on EEGLAB and ERPLAB)">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
@@ -735,34 +750,29 @@ end</code></pre>
 
 
 <p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
+
+
+
+<p><a href="https://jianch.github.io/author/saturn/"></a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/eeg-processing-steps-based-on-eeglab-and-erplab/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Load Eyelink data into R (in a very fast way)</title>
-		<link>https://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/</link>
-					<comments>https://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/#respond</comments>
+		<link>https://www.jianchen.info/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 17 Jan 2017 03:33:52 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[asc]]></category>
-		<category><![CDATA[edf]]></category>
-		<category><![CDATA[Eyelink]]></category>
-		<category><![CDATA[Eyetracking]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=120</guid>
+		<pubDate>Tue, 17 Jan 2017 23:59:15 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eyelink]]></category>
+		<category><![CDATA[R]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=111</guid>
 
 					<description><![CDATA[These scripts are adapted from Dr. Jason Forte’s work in our lab. R]]></description>
 										<content:encoded><![CDATA[
 <p>These scripts are adapted from Dr. Jason Forte’s work in our lab.</p>
-
-
-
-<p></p>
 
 
 
@@ -804,159 +814,8 @@ system(paste("sed -n -e '/SYNCTIMEON/p' -e '/SYNCTIMEOFF/p' ", filenameASC, " | 
 dataEyelink$triggers &amp;lt;- read.table('tmp.txt')
 
 system('rm tmp.txt')</code></pre>
-
-
-
-<p></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/load-eyelink-data-into-r-in-a-very-fast-way/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Merge Behavioral Data into EEG</title>
-		<link>https://jianch.github.io/merge-behavioral-data-into-eeg/</link>
-					<comments>https://jianch.github.io/merge-behavioral-data-into-eeg/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Fri, 16 Dec 2016 03:05:54 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[EEG.event]]></category>
-		<category><![CDATA[ERP]]></category>
-		<category><![CDATA[ERP.EVENTLIST.eventinfo]]></category>
-		<category><![CDATA[ERPLAB]]></category>
-		<category><![CDATA[Event]]></category>
-		<category><![CDATA[EVENTLIST]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=94</guid>
-
-					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
-										<content:encoded><![CDATA[
-<p>An example code of how I merge behavioral data into EEG</p>
-
-
-
-<p></p>
-
-
-
-<p></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="868" height="319" src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95" srcset="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png 868w, https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-300x110.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-768x282.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101-850x312.png 850w" sizes="(max-width: 868px) 100vw, 868px" /></figure>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="922" height="319" src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96" srcset="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png 922w, https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-300x104.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-768x266.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033-850x294.png 850w" sizes="(max-width: 922px) 100vw, 922px" /></figure>
-
-
-
-<p></p>
-
-
-
-<p>Code:</p>
-
-
-
-<p></p>
-
-
-
-<pre class="wp-block-code"><code>%% merge behavioral data into EEG
-
-% Sometimes, it's hard to lively send behavioral data to EEG system, i.e.
-
-% oral response. Here is a code example to merge behavioral result into EEG
-
-% data.
-
-% Author: Jian Chen
-
-% saturn.jian.chen@gmail.com
-
-% 13/Dec/2016
-
-%+++++++++++++%
-
-%% load EEG data first, finish 'channel location', 're-reference'
-
-% get event data via 'event = EEG.event'
-
-event = EEG.event;
-
-event\_back = event;
-
-%% load behavioral data
-
-fid = fopen('YourResponse\_acc.txt');  % here is a vector with length of 540
-
-acc = textscan(fid,'%d');
-
-fclose(fid);
-
-%% set the latency between target code and inserted code
-
-time = 100;
-
-%% creat response event
-
-for i = 2 : 2 : length(event)
-
-Nevent(i/2).bepoch    = event(i).bepoch;
-
-Nevent(i/2).bini      = event(i).bini;
-
-Nevent(i/2).binlabel  = event(i).binlabel;
-
-Nevent(i/2).codelabel = event(i).codelabel;
-
-Nevent(i/2).duration  = event(i).duration;
-
-Nevent(i/2).enable    = event(i).enable;
-
-Nevent(i/2).flag      = event(i).flag;
-
-Nevent(i/2).item      = event(i).item + 1;
-
-Nevent(i/2).latency   = event(i).latency + time;
-
-Nevent(i/2).type      = acc{1}(i/2);
-
-end
-
-%% add new events to original event list
-
-for i = 1:length(Nevent)
-
-event(2*i+i+1:end+1) = event(2*i+i:end); % move rows down
-
-event(2\*i+i) = Nevent(i); % insert response mark
-
-end
-
-%% save event in case of overwrite
-
-save event\_merge.mat event
-
-%% if the EEG data was currently loaded, simply replace the EEG.event with event, then operate as normal
-
-EEG.event = event;
-
-%replace ERPLAB event if you are using ERPLAB plugin
-
-ERP.EVENTLIST.eventinfo = event;</code></pre>
-
-
-
-<p></p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://jianch.github.io/merge-behavioral-data-into-eeg/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

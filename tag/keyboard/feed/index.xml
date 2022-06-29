@@ -8,53 +8,44 @@
 	>
 
 <channel>
-	<title>Keyboard &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/keyboard/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:37:45 +0000</lastBuildDate>
+	<title>keyboard &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/keyboard/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:05:49 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Keyboard &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>keyboard &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
+		<link>https://www.jianchen.info/2017/03/09/keyboard-calibration-using-the-damn-laser/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Bootstrapping]]></category>
-		<category><![CDATA[Calibration]]></category>
-		<category><![CDATA[CRT]]></category>
-		<category><![CDATA[Keyboard]]></category>
-		<category><![CDATA[Laser]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
+		<pubDate>Thu, 09 Mar 2017 00:04:34 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[calibration]]></category>
+		<category><![CDATA[keyboard]]></category>
+		<category><![CDATA[laser]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=115</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board In short, the delay ... <a title="Keyboard Calibration Using the Damn Laser" class="read-more" href="https://www.jianchen.info/2017/03/09/keyboard-calibration-using-the-damn-laser/" aria-label="More on Keyboard Calibration Using the Damn Laser">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
 
 
-<p>Well, let me find the raw data first, since it’s been done for a long time.</p>
-
-
-
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -70,15 +61,120 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>In short, the delay is about 12 ms and the variation is quite small. </p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tips to get USB keyboard index in Matlab while using KbQueueCheck</title>
+		<link>https://www.jianchen.info/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 22 Nov 2016 23:55:58 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[keyboard]]></category>
+		<category><![CDATA[Linux]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=105</guid>
+
+					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“ ... <a title="Tips to get USB keyboard index in Matlab while using KbQueueCheck" class="read-more" href="https://www.jianchen.info/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/" aria-label="More on Tips to get USB keyboard index in Matlab while using KbQueueCheck">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard?</p>
+
+
+
+<p>Credit: Jacob M. Paul in our lab.</p>
+
+
+
+<p>[Linux enviroment]</p>
+
+
+
+<p><strong>1. Check if the keyboard was recognized by the system.</strong></p>
+
+
+
+<p><em>Steps: Plug in your USB keyboard -&gt; Open Terminal -&gt; Input “</em>lsusb<em>“ -&gt; Plug off the USB keyboard -&gt; Input “</em>lsusb<em>“ again in Terminal</em></p>
+
+
+
+<p>Check if there were changes in the list. Here we can recognize a change of “Itron Technology tOne”, which is our USB keyboard. This means that the keyboard can be recognized by the system.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83"/></figure>
+
+
+
+<p><strong>2 Get index in MATLAB</strong></p>
+
+
+
+<p><em>Steps: Plug off the USB keyboard -&gt; Open MATLAB -&gt; Input “[id names info] = GetKeyboardIndeces()”</em></p>
+
+
+
+<p>MATLAB will give out some ids etc… Note that there are only 3, 4, 5 and 7 for now.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84"/></figure>
+
+
+
+<p><em>Steps: Plug in the USB keyboard -&gt; Reopen MATLAB (important) -&gt; Input “[id names info] = GetKeyboardIndeces() again”</em></p>
+
+
+
+<p>Note that there are extra id: 8, 9, and 10.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86"/></figure>
+
+
+
+<p><strong>3 Try these three indices in KbQueueCheck.</strong></p>
+
+
+
+<p>Here, the keyboard index for our USB keyboard is 10.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87"/></figure>
+]]></content:encoded>
+					
 		
 		
 			</item>

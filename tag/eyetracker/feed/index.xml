@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>eyetracker &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/eyetracker/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:09:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+
+<image>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>eyetracker &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Plot Heatmap from Eye Tracking Data</title>
+		<link>https://www.jianchen.info/2017/09/07/plot-heatmap-from-eye-tracking-data/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 07 Sep 2017 00:09:14 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eyetracker]]></category>
+		<category><![CDATA[heatmap]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=123</guid>
+
+					<description><![CDATA[There are many ways/toolbox to plot a heat map from eye tracking data. but I prefer DIY Here is the source code:]]></description>
+										<content:encoded><![CDATA[
+<p>There are many ways/toolbox to plot a heat map from eye tracking data. but I prefer DIY</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Here is the source code:</p>
+
+
+
+<pre class="wp-block-code"><code>%% Data Structure Explanation
+% Explanation from Eyelink Programers Guide 3.0
+
+%--------------------------------------------------------
+% dataEyelink =
+%
+%       samples: &#91;401341x4 double]()
+%     fixations: &#91;3965x6 double]()
+%      saccades: &#91;3964x9 double]()
+%        blinks: &#91;1720x3 double]()
+%      triggers: &#91;1080x3 double]()
+
+%--------------------------------------------------------
+% dataEyelink.samples
+%       column1         column2         column3     column4
+%       timepoint       x               y           pupil size
+%--------------------------------------------------------
+% dataEyelink.fixations
+%       column1         column2         column3     column4 column5 column6
+%       tmepoint_start  timepoint_end   duration    x       y       avg pupil size
+%--------------------------------------------------------
+% dataEyelink.saccades
+%       column1         column2         column3     column4 column5 column6
+%       tmepoint_start  timepoint_end   duration    x_from  y_from  x_to
+%       column7         column8         column9
+%       y_to            amplitude       peak velocity
+%                       in degrees      degr/sec
+%--------------------------------------------------------
+% dataEyelink.blinks
+%       column1         column2         column3
+%       tmepoint_start  timepoint_end   duration
+%--------------------------------------------------------
+% dataEyelink.triggers
+%       column1         column2         column3
+%       tmepoint        1=SYNCON        Trial(I also wrote trial number)
+%                       0=SYNCOFF
+%--------------------------------------------------------
+
+
+
+clear;
+load xxxxEyelink.mat
+
+%% variables
+gaussSigma = 0.05;
+posX = round(dataEyelink.fixations(:,4));
+posY = round(dataEyelink.fixations(:,5));
+gazeDuration = dataEyelink.fixations(:,3) / max(dataEyelink.fixations(:,3)); % rescale to 0-1
+
+%% generating data for heatmap
+gazedata = &#91;posX/1024, posY/768](); % rescale to 0-1
+gazedata = gazedata((gazedata(:, 1))\&gt;0, :); % remove possible negative value...
+
+%% make gaussians
+figure;
+&#91;X,Y]() = meshgrid(0:0.001:1, 0:0.001:1);
+z = zeros(size(X,1),size(X,2));
+
+for i = 1:length(gazedata)
+z = z + gazeDuration(i) * exp(-( ((X - gazedata(i,1)).^2 ./ (2*gaussSigma^2)) + ((Y - gazedata(i,2)).^2 ./ (2*gaussSigma^2)) ) );
+end
+
+mesh(X,Y,z); % plot the heatmap
+colorbar;
+caxis(&#91;0,300]());
+view(0,90);
+
+
+print('heatmap', '-dtiff','-r300');</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Get real-time gaze positions from the eye tracker</title>
+		<link>https://www.jianchen.info/2017/03/30/get-real-time-gaze-positions-from-the-eye-tracker/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 30 Mar 2017 00:06:55 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eyelink]]></category>
+		<category><![CDATA[eyetracker]]></category>
+		<category><![CDATA[gaze]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=119</guid>
+
+					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before ... <a title="Get real-time gaze positions from the eye tracker" class="read-more" href="https://www.jianchen.info/2017/03/30/get-real-time-gaze-positions-from-the-eye-tracker/" aria-label="More on Get real-time gaze positions from the eye tracker">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
+
+
+
+<p>With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<pre class="wp-block-code"><code>% make sure participants are fixating on the central
+while isEyeLink  % if Eyelink was connected
+status = Eyelink('newfloatsampleavailable');  % check to see if everything is fine in Eyelink
+if status /=0; % if all is fine
+evt = Eyelink('newestfloatsample'); % get the newest float sample from Eyelink
+realtime.x = evt.gx(1);  % get the x axis of gaze
+realtime.y = evt.gy(1);  % get the y axis of gaze
+end;
+
+if abs(realtime.x-512)\&lt;=50&amp;abs(realtime.y-384)\&lt;=50  % if the gaze falls into  a 50\*50 pixel square around the cross
+break; % jump out the loop and start the trial
+end
+end</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -2,174 +2,109 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<title>Sublime Text 2 with MATLAB Syntax &#8211; Windows &#8211; Jian Chen</title>
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Sublime Text 2 with MATLAB Syntax – Windows &#8211; Dr. Jian Chen</title>
+<meta name="robots" content="max-image-preview:large">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="Jian Chen &raquo; Feed" href="http://jianch.github.io/jianch.github.io/feed/">
-<link rel="alternate" type="application/rss+xml" title="Jian Chen &raquo; Comments Feed" href="http://jianch.github.io/jianch.github.io/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Jian Chen &raquo; Sublime Text 2 with MATLAB Syntax &#8211; Windows Comments Feed" href="http://jianch.github.io/jianch.github.io/2016/01/07/sublime-text-2-with-matlab-syntax-windows/feed/">
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/jianch.github.io\/jianch.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.1"}};
-			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">img.wp-smiley,
+<link rel="alternate" type="application/rss+xml" title="Dr. Jian Chen &raquo; Feed" href="https://www.jianchen.info/feed/">
+<link rel="alternate" type="application/rss+xml" title="Dr. Jian Chen &raquo; Comments Feed" href="https://www.jianchen.info/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.jianchen.info\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>img.wp-smiley,
 img.emoji {
 	display: inline !important;
 	border: none !important;
 	box-shadow: none !important;
 	height: 1em !important;
 	width: 1em !important;
-	margin: 0 .07em !important;
+	margin: 0 0.07em !important;
 	vertical-align: -0.1em !important;
 	background: none !important;
 	padding: 0 !important;
 }</style>
-	<link rel="stylesheet" id="wp-block-library-css" href="http://jianch.github.io/jianch.github.io/wp-includes/css/dist/block-library/style.min.css?ver=5.6.1" type="text/css" media="all">
-<link rel="stylesheet" id="font-awesome-css" href="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/css/font-awesome.min.css?ver=5.6.1" type="text/css" media="all">
-<link rel="stylesheet" id="ecocoded-style-css" href="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/style.css?ver=5.6.1" type="text/css" media="all">
-<link rel="stylesheet" id="ecocoded-google-fonts-css" href="//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700&#038;ver=5.6.1" type="text/css" media="all">
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<link rel="https://api.w.org/" href="http://jianch.github.io/jianch.github.io/wp-json/">
-<link rel="alternate" type="application/json" href="http://jianch.github.io/jianch.github.io/wp-json/wp/v2/posts/76">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://jianch.github.io/jianch.github.io/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://jianch.github.io/jianch.github.io/wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 5.6.1">
-<link rel="canonical" href="http://jianch.github.io/jianch.github.io/2016/01/07/sublime-text-2-with-matlab-syntax-windows/">
-<link rel="shortlink" href="http://jianch.github.io/jianch.github.io/?p=76">
-<link rel="alternate" type="application/json+oembed" href="http://jianch.github.io/jianch.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjianch.github.io%2Fjianch.github.io%2F2016%2F01%2F07%2Fsublime-text-2-with-matlab-syntax-windows%2F">
-<link rel="alternate" type="text/xml+oembed" href="http://jianch.github.io/jianch.github.io/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjianch.github.io%2Fjianch.github.io%2F2016%2F01%2F07%2Fsublime-text-2-with-matlab-syntax-windows%2F&#038;format=xml">
-<link rel="pingback" href="http://jianch.github.io/jianch.github.io/xmlrpc.php">
-		<style type="text/css">body, .site, .swidgets-wrap h3, .post-data-text { background: ; }
-			.site-title a, .site-description { color: ; }
-			.sheader { background-color:  !important; }
-			.main-navigation ul li a, .main-navigation ul li .sub-arrow, .super-menu .toggle-mobile-menu,.toggle-mobile-menu:before, .mobile-menu-active .smenu-hide { color: ; }
-			#smobile-menu.show .main-navigation ul ul.children.active, #smobile-menu.show .main-navigation ul ul.sub-menu.active, #smobile-menu.show .main-navigation ul li, .smenu-hide.toggle-mobile-menu.menu-toggle, #smobile-menu.show .main-navigation ul li, .primary-menu ul li ul.children li, .primary-menu ul li ul.sub-menu li, .primary-menu .pmenu, .super-menu { border-color: ; border-bottom-color: ; }
-			#secondary .widget h3, #secondary .widget h3 a, #secondary .widget h4, #secondary .widget h1, #secondary .widget h2, #secondary .widget h5, #secondary .widget h6, #secondary .widget h4 a { color: ; }
-			#secondary .widget a, #secondary a, #secondary .widget li a , #secondary span.sub-arrow{ color: ; }
-			#secondary, #secondary .widget, #secondary .widget p, #secondary .widget li, .widget time.rpwe-time.published { color: ; }
-			#secondary .swidgets-wrap, #secondary .widget ul li, .featured-sidebar .search-field { border-color: ; }
-			.site-info, .footer-column-three input.search-submit, .footer-column-three p, .footer-column-three li, .footer-column-three td, .footer-column-three th, .footer-column-three caption { color: ; }
-			footer#colophon h3, footer#colophon h3 *, footer#colophon h4, footer#colophon h4 *, footer#colophon h5, footer#colophon h5 *, footer#colophon h6, footer#colophon h6 *, footer#colophon h1, footer#colophon h1 *, footer#colophon h2, footer#colophon h2 *, footer#colophon h4, footer#colophon h4 *, footer#colophon h3 a { color: ; }
-			.footer-column-three a, .footer-column-three li a, .footer-column-three .widget a, .footer-column-three .sub-arrow, .site-footer a, .site-info a, .site-footer * a, .site-footer a { color: ; }
-			.footer-column-three h3:after { background: ; }
-			.site-info, .widget ul li, .footer-column-three input.search-field, .footer-column-three input.search-submit { border-color: ; }
-			.site-footer { background-color: ; }
-			.content-wrapper h2.entry-title a, .content-wrapper h2.entry-title a:hover, .content-wrapper h2.entry-title a:active, .content-wrapper h2.entry-title a:focus, .archive .page-header h1, .blogposts-list h2 a, .blogposts-list h2 a:hover, .blogposts-list h2 a:active, .search-results h1.page-title { color: ; }
-			.blog .entry-meta{ color: ; }
-			.blogposts-list p { color: ; }
-			.page-numbers li a, .blogposts-list .blogpost-button, span.page-numbers.dots, .page-numbers.current { background: ; }
-			.archive .page-header h1, .search-results h1.page-title, .blogposts-list.fbox, span.page-numbers.dots, .page-numbers li a, .page-numbers.current { border-color: ; }
-			.blogposts-list .post-data-divider { background: ; }
-			.page .comments-area .comment-author, .page .comments-area .comment-author a, .page .comments-area .comments-title, .page .content-area h1, .page .content-area h2, .page .content-area h3, .page .content-area h4, .page .content-area h5, .page .content-area h6, .page .content-area th, .single  .comments-area .comment-author, .single .comments-area .comment-author a, .single .comments-area .comments-title, .single .content-area h1, .single .content-area h2, .single .content-area h3, .single .content-area h4, .single .content-area h5, .single .content-area h6, .single .content-area th, .search-no-results h1, .error404 h1 { color: ; }
-			.single .entry-meta, .page .entry-meta { color: ; }
-			.page .content-area p, .page article, .page .content-area table, .page .content-area dd, .page .content-area dt, .page .content-area address, .page .content-area .entry-content, .page .content-area li, .page .content-area ol, .single .content-area p, .single article, .single .content-area table, .single .content-area dd, .single .content-area dt, .single .content-area address, .single .entry-content, .single .content-area li, .single .content-area ol, .search-no-results .page-content p { color: ; }
-			.single .entry-content a, .page .entry-content a, .comment-content a, .comments-area .reply a, .logged-in-as a, .comments-area .comment-respond a { color: ; }
-			.comments-area p.form-submit input, .error404 input.search-submit, .search-no-results input.search-submit { background: ; }
-			.error404 .page-content p, .error404 input.search-submit, .search-no-results input.search-submit { color: ; }
-			.page .comments-area, .page article.fbox, .page article tr, .page .comments-area ol.comment-list ol.children li, .page .comments-area ol.comment-list .comment, .single .comments-area, .single article.fbox, .single article tr, .comments-area ol.comment-list ol.children li, .comments-area ol.comment-list .comment, .error404 main#main, .error404 .search-form label, .search-no-results .search-form label, .error404 input.search-submit, .search-no-results input.search-submit, .error404 main#main, .search-no-results section.fbox.no-results.not-found{ border-color: ; }
-			.single .post-data-divider, .page .post-data-divider { background: ; }
-			.single .comments-area p.form-submit input, .page .comments-area p.form-submit input, .comments-area p.form-submit input, .error404 input.search-submit, .search-no-results input.search-submit { color: ; }
-			.bottom-header-wrapper { padding-top: px; }
-			.bottom-header-wrapper { padding-bottom: px; }
-			.bottom-header-wrapper { background: ; }
-			.bottom-header-wrapper *{ color: ; }
-			.header-widget a, .header-widget li a, .header-widget i.fa { color: ; }
-			.header-widget, .header-widget p, .header-widget li, .header-widget .textwidget { color: ; }
-			.header-widget .widget-title, .header-widget h1, .header-widget h3, .header-widget h2, .header-widget h4, .header-widget h5, .header-widget h6{ color: ; }
-			.header-widget.swidgets-wrap, .header-widget ul li, .header-widget .search-field { border-color: ; }
-			.bottom-header-title, .bottom-header-paragraph{ color: ; }
-			#secondary .widget-title-lines:after, #secondary .widget-title-lines:before { background: ; }
-			.header-content-wrap { padding-top: px; }
-			.header-content-wrap { padding-bottom: px; }
-			.header-button-solid { border-color: ; }
-			.header-button-solid { color: ; }
-			#smobile-menu, .primary-menu ul li ul.children, .primary-menu ul li ul.sub-menu { background: ; }
-			#smobile-menu.show .toggle-mobile-menu:before, #smobile-menu *, .main-navigation ul.sub-menu li .sub-arrow, .main-navigation ul.sub-menu li a, .primary-menu ul li ul.children, .primary-menu ul li ul.sub-menu { color: ; }
-			.header-widgets-three, .header-widgets-wrapper .swidgets-wrap{ background: ; }
-			.sheader { background-color: ; }
-			#secondary .widget li, #secondary input.search-field, #secondary div#calendar_wrap, #secondary .tagcloud, #secondary .textwidget{ background: ; }
-			#secondary .swidget { border-color: ; }
-			article.blogposts-list { background: ; }
-			.blogposts-list .entry-content a{ color: ; }
-			.blogposts-list .entry-content a{ border-color: ; }
-			#secondary .widget *{ border-color: ; }
-			.error404 #primary .fbox, .single #primary .fbox, .page #primary .fbox { background: ; }
-			.page-numbers li a, .blogposts-list .blogpost-button, span.page-numbers.dots, .page-numbers.current, .page-numbers li a:hover { color: ; }
-			.page-numbers li a, .blogposts-list .blogpost-button, span.page-numbers.dots, .page-numbers.current, .page-numbers li a:hover { border-color: ; }</style>
-	<link rel="icon" href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg" sizes="32x32">
-<link rel="icon" href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-192x192.jpg" sizes="192x192">
-<link rel="apple-touch-icon" href="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-180x180.jpg">
-<meta name="msapplication-TileImage" content="http://jianch.github.io/jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-270x270.jpg">
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.jianchen.info/wp-includes/css/dist/block-library/style.min.css?ver=6.0" media="all">
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="tnado_hidefi_styles-css" href="https://www.jianchen.info/wp-content/plugins/hide-featured-image-on-all-single-pagepost//tnado-styles.css?ver=6.0" media="all">
+<link rel="stylesheet" id="generate-style-grid-css" href="https://www.jianchen.info/wp-content/themes/generatepress/assets/css/unsemantic-grid.min.css?ver=3.1.3" media="all">
+<link rel="stylesheet" id="generate-style-css" href="https://www.jianchen.info/wp-content/themes/generatepress/assets/css/style.min.css?ver=3.1.3" media="all">
+<style id="generate-style-inline-css">body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, a:active{color:#000000;}body .grid-container{max-width:1100px;}.wp-block-group__inner-container{max-width:1100px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:60px;}.generate-back-to-top{font-size:20px;border-radius:3px;position:fixed;bottom:30px;right:30px;line-height:40px;width:40px;text-align:center;z-index:10;transition:opacity 300ms ease-in-out;}.navigation-search{position:absolute;left:-99999px;pointer-events:none;visibility:hidden;z-index:20;width:100%;top:0;transition:opacity 100ms ease-in-out;opacity:0;}.navigation-search.nav-search-active{left:0;right:0;pointer-events:auto;visibility:visible;opacity:1;}.navigation-search input[type="search"]{outline:0;border:0;vertical-align:bottom;line-height:1;opacity:0.9;width:100%;z-index:20;border-radius:0;-webkit-appearance:none;height:60px;}.navigation-search input::-ms-clear{display:none;width:0;height:0;}.navigation-search input::-ms-reveal{display:none;width:0;height:0;}.navigation-search input::-webkit-search-decoration, .navigation-search input::-webkit-search-cancel-button, .navigation-search input::-webkit-search-results-button, .navigation-search input::-webkit-search-results-decoration{display:none;}.main-navigation li.search-item{z-index:21;}li.search-item.active{transition:opacity 100ms ease-in-out;}.nav-left-sidebar .main-navigation li.search-item.active,.nav-right-sidebar .main-navigation li.search-item.active{width:auto;display:inline-block;float:right;}.gen-sidebar-nav .navigation-search{top:auto;bottom:0;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}.has-contrast-color{color:#222222;}.has-contrast-background-color{background-color:#222222;}.has-contrast-2-color{color:#575760;}.has-contrast-2-background-color{background-color:#575760;}.has-contrast-3-color{color:#b2b2be;}.has-contrast-3-background-color{background-color:#b2b2be;}.has-base-color{color:#f0f0f0;}.has-base-background-color{background-color:#f0f0f0;}.has-base-2-color{color:#f7f8f9;}.has-base-2-background-color{background-color:#f7f8f9;}.has-base-3-color{color:#ffffff;}.has-base-3-background-color{background-color:#ffffff;}.has-accent-color{color:#1e73be;}.has-accent-background-color{background-color:#1e73be;}body, button, input, select, textarea{font-family:-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-size:16px;}body{line-height:1.8;}p{margin-bottom:2em;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:2em;}.main-navigation .main-nav ul ul li a{font-size:14px;}.sidebar .widget, .footer-widgets .widget{font-size:17px;}h1{font-weight:300;font-size:40px;}h2{font-weight:300;font-size:30px;}h3{font-size:20px;}h4{font-size:inherit;}h5{font-size:inherit;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a{color:#3a3a3a;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:var(--base-3);}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:var(--contrast);}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:var(--contrast);background-color:var(--base-3);}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:var(--contrast);}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:var(--contrast-3);}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:var(--contrast);background-color:var(--base-3);}.main-navigation ul ul{background-color:var(--base-2);}.main-navigation .main-nav ul ul li a{color:var(--contrast);}.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#4f4f4f;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-meta{color:#595959;}.entry-meta a{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#222222;}.site-info a{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#666666;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width:768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:var(--contrast);}}.inside-top-bar{padding:10px;}.site-main .wp-block-group__inner-container{padding:40px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.container.grid-container{max-width:1180px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.site-info{padding:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.site-info{padding-right:10px;padding-left:10px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}/* End cached CSS */@media (max-width:768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}</style>
+<link rel="stylesheet" id="generate-mobile-style-css" href="https://www.jianchen.info/wp-content/themes/generatepress/assets/css/mobile.min.css?ver=3.1.3" media="all">
+<link rel="stylesheet" id="generate-font-icons-css" href="https://www.jianchen.info/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.1.3" media="all">
+<link rel="https://api.w.org/" href="https://www.jianchen.info/wp-json/">
+<link rel="alternate" type="application/json" href="https://www.jianchen.info/wp-json/wp/v2/posts/103">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.jianchen.info/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.jianchen.info/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0">
+<link rel="canonical" href="https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/">
+<link rel="shortlink" href="https://www.jianchen.info/?p=103">
+<link rel="alternate" type="application/json+oembed" href="https://www.jianchen.info/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jianchen.info%2F2016%2F01%2F07%2Fsublime-text-2-with-matlab-syntax-windows%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jianchen.info/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.jianchen.info%2F2016%2F01%2F07%2Fsublime-text-2-with-matlab-syntax-windows%2F&#038;format=xml">
+<link rel="icon" href="https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-270x270.png">
 </head>
 
-<body class="post-template-default single single-post postid-76 single-format-standard masthead-fixed">
-		<a class="skip-link screen-reader-text" href="#content"> Skip to content</a>
-	<div id="page" class="site ">
-
-		<header id="masthead" class="sheader site-header clearfix">
-			<nav id="primary-site-navigation" class="primary-menu main-navigation clearfix">
-
-				<a href="#" id="pull" class="smenu-hide toggle-mobile-menu menu-toggle" aria-controls="secondary-menu" aria-expanded="false">Menu</a>
-				<div class="top-nav-wrapper">
-					<div class="content-wrap">
-						<div class="logo-container"> 
-
-																<a class="logofont" href="http://jianch.github.io/jianch.github.io/" rel="home">Jian Chen</a>
-															</div>
-							<div class="center-main-menu"> 
-								<div class="menu-menu1-container"><ul id="primary-menu" class="pmenu">
-<li id="menu-item-104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104"><a href="http://jianchen.info/">Home</a></li>
-<li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102"><a href="https://jianchen.info/files/CV_JianChen.pdf">CV</a></li>
-<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://jianch.github.io/jianch.github.io/research/">Research</a></li>
-<li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="http://saturninesaturn.weebly.com/writing">写作</a></li>
-<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="http://jianch.github.io/jianch.github.io/schizophrenia/">Schizophrenia</a></li>
-<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="http://jianch.github.io/jianch.github.io/homepage/">About Me</a></li>
-</ul></div>							</div>
-						</div>
+<body class="post-template-default single single-post postid-103 single-format-standard wp-embed-responsive right-sidebar nav-float-right separate-containers fluid-header active-footer-widgets-3 nav-search-enabled header-aligned-left dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header class="site-header" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container grid-parent">
+				<div class="site-branding">
+						<p class="main-title" itemprop="headline">
+					<a href="https://www.jianchen.info/" rel="home">
+						Dr. Jian Chen
+					</a>
+				</p>
+						<p class="site-description" itemprop="description">
+					陈建博士
+				</p>
+					</div>		<nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Primary" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container grid-parent">
+				<form method="get" class="search-form navigation-search" action="https://www.jianchen.info/">
+					<input type="search" class="search-field" value="" name="s" title="Search">
+				</form>		<div class="mobile-bar-items">
+						<span class="search-item">
+				<a aria-label="Open Search Bar" href="#">
+									</a>
+			</span>
+		</div>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-menu1" class=" menu sf-menu">
+<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="http://www.jianchen.info/">Home</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19">
+<a href="https://www.jianchen.info/research/">Research<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://www.jianchen.info/participate/">Participate</a></li>
+</ul>
+</li>
+<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="https://jianchen.info/files/CV_JianChen.pdf">CV</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://www.jianchen.info/publication/">Publication</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-27"><a href="https://www.jianchen.info/blog/">Blog</a></li>
+<li class="search-item menu-item-align-right"><a aria-label="Open Search Bar" href="#"></a></li>
+</ul></div>			</div>
+		</nav>
 					</div>
-				</nav>
-
-				<div class="super-menu clearfix">
-					<div class="super-menu-inner">
-						
-
-														<a class="logofont" href="http://jianch.github.io/jianch.github.io/" rel="home">Jian Chen</a>
-														<a href="#" id="pull" class="toggle-mobile-menu menu-toggle" aria-controls="secondary-menu" aria-expanded="false"></a>
-						</div>
-					</div>
-					<div id="mobile-menu-overlay"></div>
-
-					<!-- Header bg start-->
-									<!-- Header bg start-->
-			</header>
-
-
-			<!-- Top widgets start -->
-			<div class="content-wrap">
-				<!-- Upper widgets -->
-				<div class="header-widgets-wrapper">
-					
-					
-									</div>
-			</div>
-
-
-			<div id="content" class="site-content clearfix">
-				<div class="content-wrap">
-	<div id="primary" class="featured-content content-area">
-		<main id="main" class="site-main">
-
-		<article id="post-76" class="posts-entry fbox post-76 post type-post status-publish format-standard hentry category-sideproject tag-matlab tag-windows">
-	<header class="entry-header">
-		<h1 class="entry-title">Sublime Text 2 with MATLAB Syntax &#8211; Windows</h1>			<div class="entry-meta">
-				Posted on January 7, 2016			</div>
-				</header><!-- .entry-header -->
-
-	<div class="entry-content">
+		</header>
 		
+	<div class="site grid-container container hfeed grid-parent" id="page">
+				<div class="site-content" id="content">
+			
+	<div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
+		<main class="site-main" id="main">
+			
+<article id="post-103" class="post-103 post type-post status-publish format-standard hentry category-sideproject tag-matlab tag-sublime tag-windows" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+					<header class="entry-header" aria-label="Content">
+				<h1 class="entry-title" itemprop="headline">Sublime Text 2 with MATLAB Syntax – Windows</h1>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2022-06-28T23:55:26+00:00" itemprop="dateModified">June 28, 2022</time><time class="entry-date published" datetime="2016-01-07T23:45:26+00:00" itemprop="datePublished">January 7, 2016</time></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://www.jianchen.info/author/saturn/" title="View all posts by saturn" rel="author" itemprop="url"><span class="author-name" itemprop="name">saturn</span></a></span></span> 		</div>
+					</header>
+			
+		<div class="entry-content" itemprop="text">
+			
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 
 
@@ -182,15 +117,15 @@ img.emoji {
 
 
 
-<hr class="wp-block-separator">
+<hr class="wp-block-separator has-alpha-channel-opacity">
 
 
 
-<p>Select <strong>Preferences -> Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
+<p>Select&nbsp;<strong>Preferences -&gt; Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;string>m&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;m&lt;/string&gt;</code></pre>
 
 
 
@@ -198,7 +133,7 @@ img.emoji {
 
 
 
-<pre class="wp-block-code"><code>&lt;string>M&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;M&lt;/string&gt;</code></pre>
 
 
 
@@ -223,7 +158,7 @@ img.emoji {
 
 
 
-<p>Preference &#8211; User &#8211; above contents &#8211; save it as ‘MATLAB.sublime-settings</p>
+<p>Preference – User – above contents – save it as ‘MATLAB.sublime-settings</p>
 
 
 
@@ -232,161 +167,73 @@ img.emoji {
 
 
 <p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
-
-				<div class="post-tags">
-			<ul>
-<li><a href="http://jianch.github.io/jianch.github.io/tag/matlab/" rel="tag">MATLAB</a></li>
-<li><a href="http://jianch.github.io/jianch.github.io/tag/windows/" rel="tag">Windows</a></li>
-</ul>		</div>
-	</div>
-<!-- .entry-content -->
-</article><!-- #post-76 -->
-
-<div id="comments" class="fbox comments-area">
-
-		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://jianch.github.io/jianch.github.io/2016/01/07/sublime-text-2-with-matlab-syntax-windows/#respond" style="display:none;">Cancel reply</a></small>
-</h3>
-<form action="http://jianch.github.io/jianch.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
-<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
-<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="76" id="comment_post_ID">
-<input type="hidden" name="comment_parent" id="comment_parent" value="0">
-</p>
-</form>	</div>
-<!-- #respond -->
-	
-</div>
-<!-- #comments -->
-
-		</main><!-- #main -->
-	</div>
-<!-- #primary -->
-
-
-<aside id="secondary" class="featured-sidebar widget-area">
-	<section id="search-4" class="fbox swidgets-wrap widget widget_search"><form role="search" method="get" class="search-form" action="http://jianch.github.io/jianch.github.io/">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
-				</label>
-				<input type="submit" class="search-submit" value="Search">
-			</form></section><section id="tag_cloud-3" class="fbox swidgets-wrap widget widget_tag_cloud"><div class="sidebar-headline-wrapper">
-<div class="sidebarlines-wrapper"><div class="widget-title-lines"></div></div>
-<h4 class="widget-title">Tags</h4>
-</div>
-<div class="tagcloud">
-<a href="http://jianch.github.io/jianch.github.io/tag/64-bit/" class="tag-cloud-link tag-link-3 tag-link-position-1" style="font-size: 8pt;" aria-label="64-bit (1 item)">64-bit</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/actiview/" class="tag-cloud-link tag-link-4 tag-link-position-2" style="font-size: 8pt;" aria-label="ActiView (1 item)">ActiView</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/asc/" class="tag-cloud-link tag-link-43 tag-link-position-3" style="font-size: 8pt;" aria-label="asc (1 item)">asc</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/biosemi/" class="tag-cloud-link tag-link-5 tag-link-position-4" style="font-size: 12.581818181818pt;" aria-label="Biosemi (2 items)">Biosemi</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/bp/" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="BP (1 item)">BP</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/calibration/" class="tag-cloud-link tag-link-48 tag-link-position-6" style="font-size: 8pt;" aria-label="Calibration (1 item)">Calibration</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/chrome-extension/" class="tag-cloud-link tag-link-21 tag-link-position-7" style="font-size: 8pt;" aria-label="Chrome Extension (1 item)">Chrome Extension</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/crt/" class="tag-cloud-link tag-link-46 tag-link-position-8" style="font-size: 8pt;" aria-label="CRT (1 item)">CRT</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/database/" class="tag-cloud-link tag-link-24 tag-link-position-9" style="font-size: 8pt;" aria-label="database (1 item)">database</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/dynamic/" class="tag-cloud-link tag-link-28 tag-link-position-10" style="font-size: 8pt;" aria-label="dynamic (1 item)">dynamic</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/edf/" class="tag-cloud-link tag-link-45 tag-link-position-11" style="font-size: 8pt;" aria-label="edf (1 item)">edf</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eeg/" class="tag-cloud-link tag-link-6 tag-link-position-12" style="font-size: 22pt;" aria-label="EEG (6 items)">EEG</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eeg-event/" class="tag-cloud-link tag-link-36 tag-link-position-13" style="font-size: 8pt;" aria-label="EEG.event (1 item)">EEG.event</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eegkiller/" class="tag-cloud-link tag-link-13 tag-link-position-14" style="font-size: 8pt;" aria-label="EEGKiller (1 item)">EEGKiller</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eeglab/" class="tag-cloud-link tag-link-27 tag-link-position-15" style="font-size: 8pt;" aria-label="eeglab (1 item)">eeglab</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/erp/" class="tag-cloud-link tag-link-37 tag-link-position-16" style="font-size: 8pt;" aria-label="ERP (1 item)">ERP</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/erp-eventlist-eventinfo/" class="tag-cloud-link tag-link-38 tag-link-position-17" style="font-size: 8pt;" aria-label="ERP.EVENTLIST.eventinfo (1 item)">ERP.EVENTLIST.eventinfo</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/erplab/" class="tag-cloud-link tag-link-39 tag-link-position-18" style="font-size: 8pt;" aria-label="ERPLAB (1 item)">ERPLAB</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/error-bar/" class="tag-cloud-link tag-link-35 tag-link-position-19" style="font-size: 8pt;" aria-label="Error bar (1 item)">Error bar</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/event/" class="tag-cloud-link tag-link-41 tag-link-position-20" style="font-size: 8pt;" aria-label="Event (1 item)">Event</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eventlist/" class="tag-cloud-link tag-link-40 tag-link-position-21" style="font-size: 8pt;" aria-label="EVENTLIST (1 item)">EVENTLIST</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eyelink/" class="tag-cloud-link tag-link-44 tag-link-position-22" style="font-size: 15.636363636364pt;" aria-label="Eyelink (3 items)">Eyelink</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/eyetracking/" class="tag-cloud-link tag-link-42 tag-link-position-23" style="font-size: 12.581818181818pt;" aria-label="Eyetracking (2 items)">Eyetracking</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/face-research/" class="tag-cloud-link tag-link-10 tag-link-position-24" style="font-size: 8pt;" aria-label="face research (1 item)">face research</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/index/" class="tag-cloud-link tag-link-29 tag-link-position-25" style="font-size: 8pt;" aria-label="Index (1 item)">Index</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/javascript/" class="tag-cloud-link tag-link-22 tag-link-position-26" style="font-size: 12.581818181818pt;" aria-label="Javascript (2 items)">Javascript</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/kbcheck/" class="tag-cloud-link tag-link-31 tag-link-position-27" style="font-size: 8pt;" aria-label="KbCheck (1 item)">KbCheck</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/kbqueuecheck/" class="tag-cloud-link tag-link-30 tag-link-position-28" style="font-size: 8pt;" aria-label="KbQueueCheck (1 item)">KbQueueCheck</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/keyboard/" class="tag-cloud-link tag-link-47 tag-link-position-29" style="font-size: 8pt;" aria-label="Keyboard (1 item)">Keyboard</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/laser/" class="tag-cloud-link tag-link-49 tag-link-position-30" style="font-size: 8pt;" aria-label="Laser (1 item)">Laser</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/library/" class="tag-cloud-link tag-link-25 tag-link-position-31" style="font-size: 8pt;" aria-label="library (1 item)">library</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/linux/" class="tag-cloud-link tag-link-7 tag-link-position-32" style="font-size: 20.218181818182pt;" aria-label="Linux (5 items)">Linux</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/mac/" class="tag-cloud-link tag-link-14 tag-link-position-33" style="font-size: 18.181818181818pt;" aria-label="Mac (4 items)">Mac</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/matlab/" class="tag-cloud-link tag-link-9 tag-link-position-34" style="font-size: 20.218181818182pt;" aria-label="MATLAB (5 items)">MATLAB</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/neuroscan/" class="tag-cloud-link tag-link-15 tag-link-position-35" style="font-size: 8pt;" aria-label="Neuroscan (1 item)">Neuroscan</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/notes/" class="tag-cloud-link tag-link-34 tag-link-position-36" style="font-size: 8pt;" aria-label="Notes (1 item)">Notes</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/parallel-port/" class="tag-cloud-link tag-link-20 tag-link-position-37" style="font-size: 8pt;" aria-label="Parallel Port (1 item)">Parallel Port</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/psychtoolbox/" class="tag-cloud-link tag-link-32 tag-link-position-38" style="font-size: 8pt;" aria-label="Psychtoolbox (1 item)">Psychtoolbox</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/toolbox/" class="tag-cloud-link tag-link-11 tag-link-position-39" style="font-size: 12.581818181818pt;" aria-label="toolbox (2 items)">toolbox</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/tricks/" class="tag-cloud-link tag-link-33 tag-link-position-40" style="font-size: 15.636363636364pt;" aria-label="Tricks (3 items)">Tricks</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/trigger/" class="tag-cloud-link tag-link-19 tag-link-position-41" style="font-size: 8pt;" aria-label="Trigger (1 item)">Trigger</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/tsinghua/" class="tag-cloud-link tag-link-16 tag-link-position-42" style="font-size: 8pt;" aria-label="Tsinghua (1 item)">Tsinghua</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/ubuntu/" class="tag-cloud-link tag-link-8 tag-link-position-43" style="font-size: 8pt;" aria-label="Ubuntu (1 item)">Ubuntu</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/unimelb/" class="tag-cloud-link tag-link-23 tag-link-position-44" style="font-size: 8pt;" aria-label="UniMelb (1 item)">UniMelb</a>
-<a href="http://jianch.github.io/jianch.github.io/tag/windows/" class="tag-cloud-link tag-link-17 tag-link-position-45" style="font-size: 15.636363636364pt;" aria-label="Windows (3 items)">Windows</a>
-</div>
-</section><section id="archives-4" class="fbox swidgets-wrap widget widget_archive"><div class="sidebar-headline-wrapper">
-<div class="sidebarlines-wrapper"><div class="widget-title-lines"></div></div>
-<h4 class="widget-title">Archives</h4>
-</div>
-			<ul>
-					<li><a href="http://jianch.github.io/jianch.github.io/2020/09/">September 2020</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2020/04/">April 2020</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2019/11/">November 2019</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2018/04/">April 2018</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2018/03/">March 2018</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2017/09/">September 2017</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2017/07/">July 2017</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2017/05/">May 2017</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2017/03/">March 2017</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2017/02/">February 2017</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2017/01/">January 2017</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2016/12/">December 2016</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2016/11/">November 2016</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2016/01/">January 2016</a></li>
-	<li><a href="http://jianch.github.io/jianch.github.io/2015/12/">December 2015</a></li>
-			</ul>
-
-			</section></aside><!-- #secondary -->
-</div>
-</div>
-<!-- #content -->
-
-<footer id="colophon" class="site-footer clearfix">
-
-	<div class="content-wrap">
-		
-			
-			
 		</div>
 
-		<div class="site-info">
-			&copy;2021 Jian Chen			<!-- Delete below lines to remove copyright from footer -->
-			<span class="footer-info-right">
-				 | WordPress Theme: <a href="https://superbthemes.com/ecocoded/"> EcoCoded</a>
-			</span>
-			<!-- Delete above lines to remove copyright from footer -->
-		</div>
-<!-- .site-info -->
-	</footer>
+				<footer class="entry-meta" aria-label="Entry meta">
+			<span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://www.jianchen.info/category/sideproject/" rel="category tag">sideProject</a></span> <span class="tags-links"><span class="screen-reader-text">Tags </span><a href="https://www.jianchen.info/tag/matlab/" rel="tag">matlab</a>, <a href="https://www.jianchen.info/tag/sublime/" rel="tag">sublime</a>, <a href="https://www.jianchen.info/tag/windows/" rel="tag">windows</a></span> 		<nav id="nav-below" class="post-navigation" aria-label="Single Post">
+			<span class="screen-reader-text">Post navigation</span>
+
+			<div class="nav-previous"><span class="prev" title="Previous"><a href="https://www.jianchen.info/2016/01/01/eeg-topography-sample/" rel="prev">EEG topography sample</a></span></div>
+<div class="nav-next"><span class="next" title="Next"><a href="https://www.jianchen.info/2016/11/22/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/" rel="next">Tips to get USB keyboard index in Matlab while using KbQueueCheck</a></span></div>		</nav>
+				</footer>
+			</div>
+</article>
+		</main>
+	</div>
+
+	<div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
+	<div class="inside-right-sidebar">
+		<aside id="block-2" class="widget inner-padding widget_block widget_search"><form role="search" method="get" action="https://www.jianchen.info/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
+<label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper ">
+<input type="search" id="wp-block-search__input-1" class="wp-block-search__input " name="s" value="" placeholder="" required><button type="submit" class="wp-block-search__button  ">Search</button>
+</div>
+</form></aside><aside id="block-3" class="widget inner-padding widget_block"><div class="wp-container-1 wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Recent Posts</h2>
+<ul class="wp-block-latest-posts__list wp-block-latest-posts">
+<li><a class="wp-block-latest-posts__post-title" href="https://www.jianchen.info/2021/09/09/install-process-in-spss-in-macos-big-sur/">Install Process in SPSS in MacOS Big Sur</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.jianchen.info/2021/07/23/digit-span-task-in-qualtrics/">Digit Span Task in Qualtrics</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Embed Youtube video in the Inquisit Web in Windows and Mac</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.jianchen.info/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/">Change the space between paragraphs in Qualtrics</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://www.jianchen.info/2017/09/07/plot-heatmap-from-eye-tracking-data/">Plot Heatmap from Eye Tracking Data</a></li>
+</ul>
+</div></div></aside><aside id="block-4" class="widget inner-padding widget_block"><div class="wp-container-2 wp-block-group"><div class="wp-block-group__inner-container">
+<h2>Recent Comments</h2>
+<div class="no-comments wp-block-latest-comments">No comments to show.</div>
+</div></div></aside>	</div>
+</div>
+
+	</div>
 </div>
 
 
+<div class="site-footer">
+			<footer class="site-info" aria-label="Site" itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info grid-container grid-parent">
+								<div class="copyright-bar">
+					<span class="copyright">&copy; 2022 Dr. Jian Chen</span> &bull; Built with <a href="https://www.jianchen.info/" itemprop="url">Love</a>				</div>
+			</div>
+		</footer>
+		</div>
 
-<!-- #colophon -->
-<!-- #page -->
+<a title="Scroll back to top" aria-label="Scroll back to top" rel="nofollow" href="#" class="generate-back-to-top" style="opacity:0;visibility:hidden;" data-scroll-speed="400" data-start-scroll="300">
+					
+				</a><script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><style>.wp-container-1 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-1 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-1 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<!--[if lte IE 11]>
+<script src='https://www.jianchen.info/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.1.3' id='generate-classlist-js'></script>
+<![endif]-->
+<script id="generate-menu-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src="https://www.jianchen.info/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.1.3" id="generate-menu-js"></script>
+<script id="generate-navigation-search-js-extra">
+var generatepressNavSearch = {"open":"Open Search Bar","close":"Close Search Bar"};
+</script>
+<script src="https://www.jianchen.info/wp-content/themes/generatepress/assets/js/navigation-search.min.js?ver=3.1.3" id="generate-navigation-search-js"></script>
+<script id="generate-back-to-top-js-extra">
+var generatepressBackToTop = {"smooth":"1"};
+</script>
+<script src="https://www.jianchen.info/wp-content/themes/generatepress/assets/js/back-to-top.min.js?ver=3.1.3" id="generate-back-to-top-js"></script>
 
-<div id="smobile-menu" class="mobile-only"></div>
-<div id="mobile-menu-overlay"></div>
-
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/js/navigation.min.js?ver=20160720" id="ecocoded-navigation-js"></script>
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/js/script.min.js?ver=20160720" id="ecocoded-script-js"></script>
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-content/themes/ecocoded/js/accessibility.min.js?ver=20160720" id="ecocoded-accessibility-jquery-js"></script>
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/comment-reply.min.js?ver=5.6.1" id="comment-reply-js"></script>
-<script type="text/javascript" src="http://jianch.github.io/jianch.github.io/wp-includes/js/wp-embed.min.js?ver=5.6.1" id="wp-embed-js"></script>
-	<script>
-		/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
-	</script>
-	</body>
+</body>
 </html>

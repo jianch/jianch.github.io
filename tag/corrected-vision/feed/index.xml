@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>corrected vision &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/corrected-vision/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:08:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+
+<image>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>corrected vision &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Corrected Vision May Still Bias the Gabor Patch Detection</title>
+		<link>https://www.jianchen.info/2017/07/12/corrected-vision-may-still-bias-the-gabor-patch-detection/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Wed, 12 Jul 2017 00:07:57 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[Astigmatism]]></category>
+		<category><![CDATA[corrected vision]]></category>
+		<category><![CDATA[Gabor patch]]></category>
+		<category><![CDATA[vision]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=121</guid>
+
+					<description><![CDATA[As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task. This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below ... <a title="Corrected Vision May Still Bias the Gabor Patch Detection" class="read-more" href="https://www.jianchen.info/2017/07/12/corrected-vision-may-still-bias-the-gabor-patch-detection/" aria-label="More on Corrected Vision May Still Bias the Gabor Patch Detection">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>As said in the title, participants with corrected vision (wearing glass or contact lens) may still have distorted vision due to whatever reason, especially in Gabor patch detection task.</p>
+
+
+
+<p>This question comes from my personal experience, I always feel that the vertical Gabor patch is brighter than horizontal ones, and is easier to detect. Below is my test data from 800 trials of a detection task (error bar represents 1 SE).</p>
+
+
+
+<p>I gradually increased the Gabor patch contrast from 0 to 100%, I pressed a button when I saw something on the screen (grey background).</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/CJ04May17a.png" alt=""><br>Session 1</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/CJ04May17b.png" alt=""><br>Session 2</p>
+
+
+
+<p>I am quite curious about why I feel so differently for these two kinds of Gabor patch, am I special? Do I have something wrong with my eye?</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>So I asked two colleague (they don’t wear glass regularly) to do the same task, and it turns out no difference between vertical and horizontal Gabor patches.</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/CV04May17a.png" alt=""><br>Colleague 1</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/JN06May17a.png" alt=""><br>Colleague 2</p>
+
+
+
+<p>Then what’s going on underneath?</p>
+
+
+
+<p>I doubt that although I have a glass to correct my vision, I may not have astigmatism corrected. So I asked a friend, who also wear a glass, to do the same task. As you can see, he has the same problem.</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/ZL28Jun17a.png" alt=""><br>Friend 1</p>
+
+
+
+<p>Insofar, my guess of the explanation for such results is astigmatism. Me and my friend both have inappropriately corrected vision, which leads to the difference in detection task.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>You may have a quick test to see if you have astigmatism. All the bars in below should have similar brightness.</p>
+
+
+
+<p><img src="https://jianchen.info/images/gabor/EYE_astigmatism.gif" alt=""><br>Astigmatism Test</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>What’s the hint from this observation? Well, it may remind us to make sure that participants who claim a correctly corrected vision should be re-checked, especially in those vision tasks relying on Gabor patch detection.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

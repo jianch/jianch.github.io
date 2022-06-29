@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>errorbar &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/errorbar/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:57:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+
+<image>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>errorbar &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Place errorbars on a grouped bar graph in MATLAB</title>
+		<link>https://www.jianchen.info/2016/12/12/place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 12 Dec 2016 23:57:27 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[errorbar]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=107</guid>
+
+					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located ... <a title="Place errorbars on a grouped bar graph in MATLAB" class="read-more" href="https://www.jianchen.info/2016/12/12/place-errorbars-on-a-grouped-bar-graph-in-matlab/" aria-label="More on Place errorbars on a grouped bar graph in MATLAB">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
+
+
+
+<p>We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90"/></figure>
+
+
+
+<p>The error bars are located in the center of each grouped bars, rather than the individual bar in each grouped bars.</p>
+
+
+
+<p>Here is the note I made, the main code is from the link below:</p>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b
+</div></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92"/><figcaption>MATLAB Handle Graphics</figcaption></figure>
+
+
+
+<p>Code example:</p>
+
+
+
+<pre class="wp-block-code"><code>Data set:
+
+mm: 4 by 6 matrix; ci: 4 by 6 matrix
+
+
+
+mm =
+
+&#91;0.2081 0.3440 0.3470 0.7018 0.8422 0.9874
+0.2628 0.3043 0.4032 0.7287 0.8462 1.1055
+0.2928 0.3139 0.4176 0.7241 0.8319 1.0483
+0.2287 0.2538 0.3665 0.4895 0.8999 1.1309]
+
+ci =
+
+&#91;0.0176 0.0473 0.0443 0.0724 0.0855 0.0931
+0.0312 0.0201 0.0407 0.0621 0.0604 0.0874
+0.0291 0.0330 0.0403 0.0756 0.0732 0.0847
+0.0228 0.0150 0.0264 0.0598 0.0922 0.0861]</code></pre>
+
+
+
+<pre class="wp-block-code"><code>figure;
+h = bar(mm');
+set(h,'BarWidth',0.8);    % The bars will now touch each other
+set(gca,'fontsize', 18);
+set(get(gca,'YLabel'),'String','RT in Seconds')
+lh = legend('Valid Left', 'Invalid left', 'Valid right', 'Invalid right');
+set(lh,'Location','BestOutside','Orientation','horizontal')
+hold on;
+
+% Aligning errorbar to individual bar within groups
+% Based on barweb.m by Bolu Ajiboye from MATLAB File Exchange
+groupwidth = min(0.8, 4/(4+1.5));
+for i = 1:4
+x = (1:6) - groupwidth/2 + (2*i-1) * groupwidth / (2*4);
+errorbar(x,mm(i,:),ci(i,:),'k', 'linestyle', 'none');
+end</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -8,39 +8,89 @@
 	>
 
 <channel>
-	<title>Qualtrics &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/qualtrics/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:47:47 +0000</lastBuildDate>
+	<title>Qualtrics &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/qualtrics/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:13:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Qualtrics &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>Qualtrics &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Change the space between paragraphs in Qualtrics</title>
-		<link>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/</link>
-					<comments>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
+		<title>Digit Span Task in Qualtrics</title>
+		<link>https://www.jianchen.info/2021/07/23/digit-span-task-in-qualtrics/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 12 Nov 2019 03:47:26 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Javascript]]></category>
-		<category><![CDATA[Padding]]></category>
+		<pubDate>Fri, 23 Jul 2021 00:13:10 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[digit span task]]></category>
 		<category><![CDATA[Qualtrics]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=139</guid>
+		<category><![CDATA[working memory]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=129</guid>
 
-					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even&#8230; <a class="more-link" href="http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/">Continue reading <span class="screen-reader-text">Change the space between paragraphs in Qualtrics</span></a>]]></description>
+					<description><![CDATA[The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics. I don’t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don’t see why they don’t include this feature as many of us already bought their most expensive plans. Nevertheless, ... <a title="Digit Span Task in Qualtrics" class="read-more" href="https://www.jianchen.info/2021/07/23/digit-span-task-in-qualtrics/" aria-label="More on Digit Span Task in Qualtrics">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>The pandemic makes online psychological experiments very needed in the past few months. One commonly used tool is Qualtrics.</p>
+
+
+
+<p>I don’t have too many complains about Qualtrics except for its ability to DIY cognitive tasks. I don’t see why they don’t include this feature as many of us already bought their most expensive plans.</p>
+
+
+
+<p>Nevertheless, there are alternative ways to run cognitive tasks with Qualtrics surveys. One way is to use Inquisit Web. But we all know that participants really don’t like to download and install any software in their personal devices, so we see many participants drop out the study due to this reason. May I say that we are lucky enough if we can have 50% participants complete the Inquisit Web-based cognitive tasks? Other ways to run online cognitive tasks include the PsychoPy and PsyToolkit, but I won’t talk about them in this article.</p>
+
+
+
+<p>The ideal way to run cognitive tasks along with Qualtrics survey, of course, is to run cognitive tasks within Qualtrics.</p>
+
+
+
+<p>Here is an example of running digit span task within Qualtrics. I need to explicitly state that, the code is not from me. I developed my own working version with the help from Dr Becky Gilbert (@BeckyAGilbert). You can find her at&nbsp;<a href="https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/">https://www.mrc-cbu.cam.ac.uk/people/becky.gilbert/</a>. And of course, if you do use the task and the code, it would be appreciated either a citation or acknowledgment. You should also cite the QRTE paper:&nbsp;<a rel="noreferrer noopener" href="https://link.springer.com/article/10.3758/s13428-014-0530-7" target="_blank">https://link.springer.com/article/10.3758/s13428-014-0530-7</a>&nbsp;.</p>
+
+
+
+<p><strong>You can find&nbsp;Dr Becky Gilbert’s Digit Span Task at this link:&nbsp;<a href="https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg">https://uclpsych.eu.qualtrics.com/jfe/form/SV_55fg8t1Q3MGO8U5?Q_JFE=qdg</a></strong>. The first half of the task works fine but the second half does not work. This is because&nbsp;QRTE JavaScript library is no longer supported.<br><br>Here is the QSF file that exported from Qualtrics.</p>
+
+
+
+<p><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">digit_span_demo.qsf_</a><a href="https://jianch.github.io/wp-content/uploads/2021/07/digit_span_demo.qsf_.zip">Download</a></p>
+
+
+
+<p>To get it to work properly, you may need to go into the survey settings and remove any default styling that your institution applies to&nbsp;Qualtrics&nbsp;surveys. You’ll want to use the plain/basic styling option for this task. You can also look at the QRTE documentation for more information about how it works:&nbsp;<a rel="noreferrer noopener" href="http://www.qrtengine.com/" target="_blank">http://www.qrtengine.com/</a></p>
+
+
+
+<p>In my case, I have to put the forward and backward parts separately into two Qualtrics surveys, otherwise it just won’t work. I would recommend you do the same thing.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Change the space between paragraphs in Qualtrics</title>
+		<link>https://www.jianchen.info/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Tue, 12 Nov 2019 00:10:12 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[Qualtrics]]></category>
+		<category><![CDATA[space]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=125</guid>
+
+					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even ... <a title="Change the space between paragraphs in Qualtrics" class="read-more" href="https://www.jianchen.info/2019/11/12/change-the-space-between-paragraphs-in-qualtrics/" aria-label="More on Change the space between paragraphs in Qualtrics">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
 
@@ -58,8 +108,6 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 <p>Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

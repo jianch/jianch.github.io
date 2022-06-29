@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sublime &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/sublime/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:55:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0</generator>
+
+<image>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>sublime &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Sublime Text 2 with MATLAB Syntax – Windows</title>
+		<link>https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 07 Jan 2016 23:45:26 +0000</pubDate>
+				<category><![CDATA[sideProject]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[sublime]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=103</guid>
+
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select&#160;Preferences -&#62; Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or ... <a title="Sublime Text 2 with MATLAB Syntax – Windows" class="read-more" href="https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/" aria-label="More on Sublime Text 2 with MATLAB Syntax – Windows">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
+
+
+
+<p>Here is the solution:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/sublime/sublime_matlab.png" alt="sublime\_matlab"/></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p>Select&nbsp;<strong>Preferences -&gt; Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;string&gt;m&lt;/string&gt;</code></pre>
+
+
+
+<p>Save the file and close it. Next, open Objective-C++.tmLanguage and do the same thing to Line 8:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;string&gt;M&lt;/string&gt;</code></pre>
+
+
+
+<p>Save and close that file as well.</p>
+
+
+
+<p>Finally, just to make sure your Open all with current extension as… command worked, go to Packages/User and check for the existence of a file called MATLAB.sublime-settings. Open it as a JSON file, and double-check that its contents are as follows:</p>
+
+
+
+<pre class="wp-block-code"><code>{
+     "extensions";
+     &#91;
+         "m"
+     ]
+}</code></pre>
+
+
+
+<p>If for some reason the file doesn’t exist, create it with the above contents and save it.</p>
+
+
+
+<p>Preference – User – above contents – save it as ‘MATLAB.sublime-settings</p>
+
+
+
+<p>You should now be able to open any .m file and have the syntax automatically set to MATLAB.</p>
+
+
+
+<p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -8,205 +8,38 @@
 	>
 
 <channel>
-	<title>Windows &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/windows/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:52:13 +0000</lastBuildDate>
+	<title>windows &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/windows/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:55:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Windows &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>windows &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
-		<link>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
-					<comments>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
+		<title>Sublime Text 2 with MATLAB Syntax – Windows</title>
+		<link>https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Mon, 06 Apr 2020 03:51:40 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Inquisit]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[OnlineVideo]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=141</guid>
-
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
-										<content:encoded><![CDATA[
-<p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
-
-
-
-<p>Thankfully, Inquisit is able to handle html page, which is great. Theoretically, you only need to embed an iframe element in the Inquisit script and it should be able to fetch video from Youtube or other sources.&nbsp;</p>
-
-
-
-<p>You will need an embeded video link like this, it can be obtained from Youtube Share.</p>
-
-
-
-<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
-https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%26autoplay%3D1
-</div></figure>
-
-
-
-<p>Then you need to add a html element in the Inquisit, it looks like this:</p>
-
-
-
-<pre class="wp-block-code"><code>&lt;html demo>
-/ items = videos
-/ select = 1
-/ size = (100%,100%)
-/ showborders = false
-/ showscrollbars = false
-&lt;/html></code></pre>
-
-
-
-<p>However, this method only works fine in MacOS, it shows blank when you run the Inquisit script in a Windows computer. This is a known issue and there is no official solution yet.&nbsp;</p>
-
-
-
-<p>————————————<br><strong>Q:&nbsp;</strong><br>I’ve used html to embed videos in my experiment that I have uploaded on youtube.<br>The embedded links when directly entered into the browser (firefox, internet explorer) work fine. Within inquisit it also works fine on a mac, but I’m encountering problems on windows (on some windows laptops it only shows a black box rather than the video). Also, there seem to be a difference between windows 10 and windows 7, since it did work on someone’s windows 7 laptop.<br>Is there a difference for html on mac vs windows?</p>
-
-
-
-<p><strong>A:&nbsp;</strong><br>Yes, there are differences between OSX and Windows in how HTML is handled. Essentially, under Windows, Inquisit embeds Internet Explorer (because it is reliably available on all Windows systems) to render HTML. When run in embedded mode like this, however, Internet Explorer enforces various restrictions that may keep embedded / interactive content such as videos from working. The way a given system is set up and what security settings the user or organization applied to Internet Explorer installations also play a role under some circumstances, i.e. content may work on one system, but not on a different one with different settings / restrictions applied.<br><strong>I’m afraid there isn’t a really good or universal solution here.&nbsp;</strong>Ideally, you’d not embed Youtube videos, but instead you’d use standard \&lt;video&gt; elements in Inquisit to play the videos. For online use, you can set the \&lt;video&gt; elements’ /stream attributes to true, that way the won’t have to be downloaded in full before the experiment launches, they’ll be streamed instead at runtime.<br><em><a href="https://www.millisecond.com/forums/Topic25195.aspx" target="_blank" rel="noreferrer noopener">https://www.millisecond.com/forums/Topic25195.aspx</a></em><br>————————————</p>
-
-
-
-<p>A possible workaround is to right click on the black screen and then choose a different encoding, such as “Western European (Windows)”. Then the online video will be loaded and displayed on the Inquisit. There seems to be an encoding issue in running Inquisit script in Windows.</p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
-
-
-
-<p>So, is there a “<strong>really good or universal solution</strong>” for this problem? The answer is&nbsp;<strong>YES.</strong></p>
-
-
-
-<p>My idea here is, if the Inquisit is able to handle html element, can we directly insert a DIY html page rather than let the Inquisit build a html page?&nbsp;</p>
-
-
-
-<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>; <a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>; <a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
-
-
-
-<pre class="wp-block-code"><code>&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-&lt;style>
-.iframe-container {
- overflow: hidden;
- padding-top: 56.25%;
- position: relative;
-}
-.iframe-container iframe {
-  border: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-/* 4x3 Aspect Ratio */
-.iframe-container-4x3 {
- padding-top: 75%;
-}
-&lt;/style>
-&lt;/head>
-
-&lt;body bgcolor="black">
-
-&lt;div class="iframe-container">
- &lt;iframe src="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" allowfullscreen=1>&lt;/iframe>
-&lt;/div>
-
-&lt;/body>
-&lt;/html></code></pre>
-
-
-
-<p>You can create an empty html document and the copy these code into your document, or you can download a html file from&nbsp;<a href="https://jianchen.info/files/inquisitOnlineVideo/demo.html">here</a>.</p>
-
-
-
-<p>When you have the DIY html file, let’s see an Inquisit <a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
-
-
-
-<pre class="wp-block-code"><code>&lt;html videoDemo>
-/ items = ("demo.html")
-/ size = (100%, 100%) 
-/ erase = true(255, 255, 255)
-/ showborders = false
-/ showscrollbars = false
-&lt;/html>
-
-&lt;trial videoDemo>
-/ stimulustimes = &#91;500=videoDemo]
-/ trialduration = 50000
-/ ontrialend= &#91;trial.videoDemo.resetstimulusframes();]
-&lt;/trial>
-
-&lt;block videoDemo>
-/ trials = &#91;1=videoDemo]
-&lt;/block>
-
-&lt;expt>
-/ blocks = &#91;1=videoDemo]
-&lt;/expt></code></pre>
-
-
-
-<p></p>
-
-
-
-<p>And boom! It works! Now we can display Youtube video in Inquisit in a damn Windows pc!</p>
-
-
-
-<p></p>
-
-
-
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="http://jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="http://jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Sublime Text 2 with MATLAB Syntax &#8211; Windows</title>
-		<link>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/</link>
-					<comments>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 07 Jan 2016 02:56:00 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=76</guid>
-
-					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or&#8230; <a class="more-link" href="http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/">Continue reading <span class="screen-reader-text">Sublime Text 2 with MATLAB Syntax &#8211; Windows</span></a>]]></description>
+		<pubDate>Thu, 07 Jan 2016 23:45:26 +0000</pubDate>
+				<category><![CDATA[sideProject]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[sublime]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=103</guid>
+
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select&#160;Preferences -&#62; Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or ... <a title="Sublime Text 2 with MATLAB Syntax – Windows" class="read-more" href="https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/" aria-label="More on Sublime Text 2 with MATLAB Syntax – Windows">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 
@@ -220,15 +53,15 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<p>Select <strong>Preferences -> Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
+<p>Select&nbsp;<strong>Preferences -&gt; Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;string>m&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;m&lt;/string&gt;</code></pre>
 
 
 
@@ -236,7 +69,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<pre class="wp-block-code"><code>&lt;string>M&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;M&lt;/string&gt;</code></pre>
 
 
 
@@ -261,7 +94,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p>Preference &#8211; User &#8211; above contents &#8211; save it as ‘MATLAB.sublime-settings</p>
+<p>Preference – User – above contents – save it as ‘MATLAB.sublime-settings</p>
 
 
 
@@ -272,57 +105,6 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 <p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>EEG Toolbox for lazy people</title>
-		<link>http://jianch.github.io/eeg-toolbox-for-lazy-people/</link>
-					<comments>http://jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[BP]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[EEGKiller]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Neuroscan]]></category>
-		<category><![CDATA[toolbox]]></category>
-		<category><![CDATA[Tsinghua]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=41</guid>
-
-					<description><![CDATA[Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely. Download and try it!]]></description>
-										<content:encoded><![CDATA[
-<p>Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely.</p>
-
-
-
-<p></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
-
-
-
-<p>Download and try it!</p>
-
-
-
-<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
-
-
-
-<p></p>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

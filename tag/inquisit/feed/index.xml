@@ -8,40 +8,37 @@
 	>
 
 <channel>
-	<title>Inquisit &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/inquisit/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:52:13 +0000</lastBuildDate>
+	<title>Inquisit &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/inquisit/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:12:07 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Inquisit &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>Inquisit &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Embed Youtube video in the Inquisit Web in Windows and Mac</title>
-		<link>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
-					<comments>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/#respond</comments>
+		<link>https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Mon, 06 Apr 2020 03:51:40 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
+		<pubDate>Mon, 06 Apr 2020 00:11:19 +0000</pubDate>
+				<category><![CDATA[research]]></category>
 		<category><![CDATA[Inquisit]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[OnlineVideo]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=141</guid>
+		<category><![CDATA[Youtube]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=127</guid>
 
-					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short&#8230; <a class="more-link" href="http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/">Continue reading <span class="screen-reader-text">Embed Youtube video in the Inquisit Web in Windows and Mac</span></a>]]></description>
+					<description><![CDATA[It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short ... <a title="Embed Youtube video in the Inquisit Web in Windows and Mac" class="read-more" href="https://www.jianchen.info/2020/04/06/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/" aria-label="More on Embed Youtube video in the Inquisit Web in Windows and Mac">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>It is necessary to use online video source when you want to present long video clips in an Inquisit Web script. This is because the Inquisit Web server only provides 60MB space for you, although we all pay them a big amount of money, such a small storage space can only host a few short and low resolution videos.</p>
 
@@ -55,7 +52,7 @@
 
 
 
-<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler"><div class="wp-block-embed__wrapper">
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
 https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%26autoplay%3D1
 </div></figure>
 
@@ -65,13 +62,13 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<pre class="wp-block-code"><code>&lt;html demo>
+<pre class="wp-block-code"><code>&lt;html demo&gt;
 / items = videos
 / select = 1
 / size = (100%,100%)
 / showborders = false
 / showscrollbars = false
-&lt;/html></code></pre>
+&lt;/html&gt;</code></pre>
 
 
 
@@ -91,7 +88,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="473" src="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143" srcset="http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-300x139.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-768x355.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-1536x709.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-2048x946.png 2048w, http://jianch.github.io/wp-content/uploads/2021/02/rightClick-850x393.png 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143"/></figure>
 
 
 
@@ -103,14 +100,14 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>; <a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>; <a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
+<p>Here, I created a html page with some help from W3Schools and other resources:_(<a rel="noreferrer noopener" href="https://benmarshall.me/responsive-iframes/" target="_blank">https://benmarshall.me/responsive-iframes/</a>;&nbsp;<a rel="noreferrer noopener" href="https://www.w3schools.com/tags/att_body_bgcolor.asp" target="_blank">https://www.w3schools.com/tags/att_body_bgcolor.asp</a>;&nbsp;<a rel="noreferrer noopener" href="https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width" target="_blank">https://stackoverflow.com/questions/15844500/shrink-a-youtube-video-to-responsive-width</a>)_</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-&lt;style>
+<pre class="wp-block-code"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
 .iframe-container {
  overflow: hidden;
  padding-top: 56.25%;
@@ -128,17 +125,17 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 .iframe-container-4x3 {
  padding-top: 75%;
 }
-&lt;/style>
-&lt;/head>
+&lt;/style&gt;
+&lt;/head&gt;
 
-&lt;body bgcolor="black">
+&lt;body bgcolor="black"&gt;
 
-&lt;div class="iframe-container">
- &lt;iframe src="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" allowfullscreen=1>&lt;/iframe>
-&lt;/div>
+&lt;div class="iframe-container"&gt;
+ &lt;iframe src="<a href="https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1">https://www.youtube.com/embed/LW2oswdWs4Q?~~start=10&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1</a>" allowfullscreen=1&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
-&lt;/body>
-&lt;/html></code></pre>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
 
 
@@ -146,35 +143,31 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p>When you have the DIY html file, let’s see an Inquisit <a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
+<p>When you have the DIY html file, let’s see an Inquisit&nbsp;<a href="https://jianchen.info/files/inquisitOnlineVideo/demo.iqx">demo</a>. This demo is extracted and modified from somewhere in the Inquisit forum. Nevertheless, it’s quite easy to make your own one.</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;html videoDemo>
+<pre class="wp-block-code"><code>&lt;html videoDemo&gt;
 / items = ("demo.html")
 / size = (100%, 100%) 
 / erase = true(255, 255, 255)
 / showborders = false
 / showscrollbars = false
-&lt;/html>
+&lt;/html&gt;
 
-&lt;trial videoDemo>
+&lt;trial videoDemo&gt;
 / stimulustimes = &#91;500=videoDemo]
 / trialduration = 50000
 / ontrialend= &#91;trial.videoDemo.resetstimulusframes();]
-&lt;/trial>
+&lt;/trial&gt;
 
-&lt;block videoDemo>
+&lt;block videoDemo&gt;
 / trials = &#91;1=videoDemo]
-&lt;/block>
+&lt;/block&gt;
 
-&lt;expt>
+&lt;expt&gt;
 / blocks = &#91;1=videoDemo]
-&lt;/expt></code></pre>
-
-
-
-<p></p>
+&lt;/expt&gt;</code></pre>
 
 
 
@@ -182,15 +175,9 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<p></p>
-
-
-
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img loading="lazy" width="1024" height="583" src="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" data-id="144" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png" data-link="http://jianch.github.io/?attachment_id=144" class="wp-image-144" srcset="http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-300x171.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-768x437.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-850x484.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot.png 1425w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></li><li class="blocks-gallery-item"><figure><img loading="lazy" width="930" height="713" src="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" alt="" data-id="145" data-full-url="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png" data-link="http://jianch.github.io/?attachment_id=145" class="wp-image-145" srcset="http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot.png 930w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-300x230.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-768x589.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/iqxScreenshot-850x652.png 850w" sizes="(max-width: 930px) 100vw, 930px" /></figure></li></ul></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" class="wp-image-144"/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/embed-youtube-video-in-the-inquisit-web-in-windows-and-mac/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

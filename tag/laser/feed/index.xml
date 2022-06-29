@@ -8,53 +8,44 @@
 	>
 
 <channel>
-	<title>Laser &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/laser/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:37:45 +0000</lastBuildDate>
+	<title>laser &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/laser/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:05:49 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Laser &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>laser &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Keyboard Calibration Using the Damn Laser</title>
-		<link>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/</link>
-					<comments>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/#respond</comments>
+		<link>https://www.jianchen.info/2017/03/09/keyboard-calibration-using-the-damn-laser/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 09 Mar 2017 03:37:30 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Bootstrapping]]></category>
-		<category><![CDATA[Calibration]]></category>
-		<category><![CDATA[CRT]]></category>
-		<category><![CDATA[Keyboard]]></category>
-		<category><![CDATA[Laser]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[Photodiode]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=124</guid>
+		<pubDate>Thu, 09 Mar 2017 00:04:34 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[calibration]]></category>
+		<category><![CDATA[keyboard]]></category>
+		<category><![CDATA[laser]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=115</guid>
 
-					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Well, let me find the raw data first, since it’s been done for a long time. Environment: MATLAB with&#8230; <a class="more-link" href="http://jianch.github.io/keyboard-calibration-using-the-damn-laser/">Continue reading <span class="screen-reader-text">Keyboard Calibration Using the Damn Laser</span></a>]]></description>
+					<description><![CDATA[Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms. Environment: MATLAB with Linux (Ubuntu 14.04) Monitor: SONY Triniton at 120Hz Keyboard: Mechanic number board In short, the delay ... <a title="Keyboard Calibration Using the Damn Laser" class="read-more" href="https://www.jianchen.info/2017/03/09/keyboard-calibration-using-the-damn-laser/" aria-label="More on Keyboard Calibration Using the Damn Laser">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Almost no one care about how precise/reliable the keyboard pressing is, here, we built a damn cool equipment to examine this question. Broadly speaking, the time precision is good, mean variance is less than 0.2 ms.</p>
 
 
 
-<p>Well, let me find the raw data first, since it’s been done for a long time.</p>
-
-
-
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -70,15 +61,29 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>In short, the delay is about 12 ms and the variation is quite small. </p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/keyboard-calibration-using-the-damn-laser/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

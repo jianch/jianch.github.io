@@ -8,48 +8,41 @@
 	>
 
 <channel>
-	<title>ActiView &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/actiview/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 02:43:23 +0000</lastBuildDate>
+	<title>Actiview &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/actiview/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:41:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>ActiView &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>Actiview &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Install Biosemi Actiview on 64-bit Linux (Ubuntu)</title>
-		<link>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
-					<comments>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/#respond</comments>
+		<link>https://www.jianchen.info/2015/12/29/install-biosemi-actiview-on-64-bit-linux-ubuntu/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 08 Dec 2015 02:36:20 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[64-bit]]></category>
-		<category><![CDATA[ActiView]]></category>
+		<pubDate>Tue, 29 Dec 2015 23:38:46 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[Actiview]]></category>
 		<category><![CDATA[Biosemi]]></category>
-		<category><![CDATA[EEG]]></category>
 		<category><![CDATA[Linux]]></category>
 		<category><![CDATA[Ubuntu]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=60</guid>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=93</guid>
 
-					<description><![CDATA[Biosemi is a lazy EEG company… Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series&#8230; <a class="more-link" href="http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/">Continue reading <span class="screen-reader-text">Install Biosemi Actiview on 64-bit Linux (Ubuntu)</span></a>]]></description>
+					<description><![CDATA[Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series of experimental equipment based on Ubuntu ... <a title="Install Biosemi Actiview on 64-bit Linux (Ubuntu)" class="read-more" href="https://www.jianchen.info/2015/12/29/install-biosemi-actiview-on-64-bit-linux-ubuntu/" aria-label="More on Install Biosemi Actiview on 64-bit Linux (Ubuntu)">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="575" src="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61" srcset="http://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-768x431.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/actiview-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/actiview.png 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
-
-
-
-<p>Biosemi is a lazy EEG company…</p>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61"/></figure>
 
 
 
@@ -65,7 +58,7 @@
 
 
 
-<p>Here is the solution for sharing.<br></p>
+<p>Here is the solution for sharing.</p>
 
 
 
@@ -77,11 +70,7 @@
 
 
 
-<p><em>Reference: INSTALL 32BIT SOFTWARE ON 64BIT UBUNTU. <a rel="noreferrer noopener" href="http://psgplacement.blogspot.com.au/2013/09/installing-i386-32-bit-rpm-files-in-amd.html" target="_blank">http://psgplacement.blogspot.com.au/2013/09/installing-i386-32-bit-rpm-files-in-amd.html</a></em></p>
-
-
-
-<p></p>
+<p><em>Reference: INSTALL 32BIT SOFTWARE ON 64BIT UBUNTU.&nbsp;<a rel="noreferrer noopener" href="http://psgplacement.blogspot.com.au/2013/09/installing-i386-32-bit-rpm-files-in-amd.html" target="_blank">http://psgplacement.blogspot.com.au/2013/09/installing-i386-32-bit-rpm-files-in-amd.html</a></em></p>
 
 
 
@@ -93,7 +82,7 @@
 
 
 
-<p>3, Then we need to convert the rpm to tgz (tar.gz) format.<br><em>Straightforward conversion from rpm to deb format can cause issues if the package was meant for i386 and you are trying to install in amd64 bit. It will say architecture is incompatible like “&lt;filename.rpm> is for architecture i386 ; the package cannot be built on this system”. This is because the package is built for i386 but we are trying to install in amd 64 bit. To overcome this, we need to first perform the conversion from rpm to tgz.</em></p>
+<p>3, Then we need to convert the rpm to tgz (tar.gz) format.<br><em>Straightforward conversion from rpm to deb format can cause issues if the package was meant for i386 and you are trying to install in amd64 bit. It will say architecture is incompatible like “&lt;filename.rpm&gt; is for architecture i386 ; the package cannot be built on this system”. This is because the package is built for i386 but we are trying to install in amd 64 bit. To overcome this, we need to first perform the conversion from rpm to tgz.</em></p>
 
 
 
@@ -135,10 +124,6 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 
 
 
-<p></p>
-
-
-
 <p>Tips:</p>
 
 
@@ -162,8 +147,6 @@ sudo alien --to-deb labview-rte-aal-1.1.tgz</code></pre>
 <p>4, run the program,</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/install-biosemi-actiview-on-64-bit-linux-ubuntu/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

@@ -8,148 +8,38 @@
 	>
 
 <channel>
-	<title>SideProject &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/category/sideproject/feed/" rel="self" type="application/rss+xml" />
-	<link>https://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
+	<title>sideProject &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/category/sideproject/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:55:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>https://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>SideProject &#8211; Dr Jian Chen</title>
-	<link>https://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>sideProject &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Replace MATLAB with Octave in MacOS</title>
-		<link>https://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
-					<comments>https://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
+		<title>Sublime Text 2 with MATLAB Syntax – Windows</title>
+		<link>https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Octave]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=147</guid>
+		<pubDate>Thu, 07 Jan 2016 23:45:26 +0000</pubDate>
+				<category><![CDATA[sideProject]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[sublime]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=103</guid>
 
-					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all. So, I…]]></description>
-										<content:encoded><![CDATA[
-<p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
-
-
-
-<p>Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all.</p>
-
-
-
-<p>So, I decide to replace MATLAB with Octave in my research.&nbsp;</p>
-
-
-
-<p><strong>1, unisntall MATLAB from your system</strong><br>OMG, so relief. Such a huge and unresponsive app! My computer will thank me for this.</p>
-
-
-
-<p><strong>2, MATLAB -&gt; Octave&nbsp;</strong><br>Follow instructions on this webpage, you will find it’s pretty easy to install Octave in your mac.<br><a href="https://wiki.octave.org/Octave_for_macOS" target="_blank" rel="noreferrer noopener">https://wiki.octave.org/Octave_for_macOS</a></p>
-
-
-
-<p><strong>3, PsychToolbox -&gt; PsychToolbox</strong><br>PsychToolbox supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="http://psychtoolbox.org/download" target="_blank" rel="noreferrer noopener">http://psychtoolbox.org/download</a></p>
-
-
-
-<p><strong>4, EEGLAB -&gt; EEGLAB</strong><br>EEGLAB supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="https://sccn.ucsd.edu/wiki/Running/_EEGLAB/_on/_Octave" target="_blank" rel="noreferrer noopener">https://sccn.ucsd.edu/wiki/Running\_EEGLAB\_on\_Octave</a></p>
-
-
-
-<p>I feel happy and I love open source.&nbsp;</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Characters in The Brothers Karamazov</title>
-		<link>https://jianch.github.io/characters-in-the-brothers-karamazov/</link>
-					<comments>https://jianch.github.io/characters-in-the-brothers-karamazov/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Mon, 02 Apr 2018 03:45:59 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[Dostoyevsky]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=136</guid>
-
-					<description><![CDATA[I made a figure to illustrate the many characters in Dostoyevsky’s masterpiece: The Brothers Karamazov]]></description>
-										<content:encoded><![CDATA[
-<p>I made a figure to illustrate the many characters in Dostoyevsky’s masterpiece: <em>The Brothers Karamazov</em></p>
-
-
-
-<p></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="768" src="https://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg" alt="" class="wp-image-137" srcset="https://jianch.github.io/wp-content/uploads/2021/02/Karamazov.jpeg 1024w, https://jianch.github.io/wp-content/uploads/2021/02/Karamazov-300x225.jpeg 300w, https://jianch.github.io/wp-content/uploads/2021/02/Karamazov-768x576.jpeg 768w, https://jianch.github.io/wp-content/uploads/2021/02/Karamazov-850x638.jpeg 850w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://jianch.github.io/characters-in-the-brothers-karamazov/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Run Multiple Instances of Dropbox in MAC OS</title>
-		<link>https://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/</link>
-					<comments>https://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Wed, 21 Mar 2018 03:44:24 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=133</guid>
-
-					<description><![CDATA[When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&#160; See the image for details.]]></description>
-										<content:encoded><![CDATA[
-<p>When you want to run more than one instance of Dropbox in your MAC, you only need to add a command line in the system built-in app Automator.&nbsp;</p>
-
-
-
-<p>See the image for details.</p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="614" src="https://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png" alt="" class="wp-image-134" srcset="https://jianch.github.io/wp-content/uploads/2021/02/automator-1024x614.png 1024w, https://jianch.github.io/wp-content/uploads/2021/02/automator-300x180.png 300w, https://jianch.github.io/wp-content/uploads/2021/02/automator-768x460.png 768w, https://jianch.github.io/wp-content/uploads/2021/02/automator-850x510.png 850w, https://jianch.github.io/wp-content/uploads/2021/02/automator.png 1151w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://jianch.github.io/run-multiple-instances-of-dropbox-in-mac-os/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>Sublime Text 2 with MATLAB Syntax &#8211; Windows</title>
-		<link>https://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/</link>
-					<comments>https://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 07 Jan 2016 02:56:00 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=76</guid>
-
-					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7: Save the file and close it. Next, open Objective-C++.tmLanguage and do the same thing to Line 8: Save and close that file as well. Finally, just to make sure your Open all with current extension as… command worked, go to Packages/User…]]></description>
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select&#160;Preferences -&#62; Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or ... <a title="Sublime Text 2 with MATLAB Syntax – Windows" class="read-more" href="https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/" aria-label="More on Sublime Text 2 with MATLAB Syntax – Windows">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 
@@ -163,15 +53,15 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<p>Select <strong>Preferences -> Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
+<p>Select&nbsp;<strong>Preferences -&gt; Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;string>m&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;m&lt;/string&gt;</code></pre>
 
 
 
@@ -179,7 +69,7 @@
 
 
 
-<pre class="wp-block-code"><code>&lt;string>M&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;M&lt;/string&gt;</code></pre>
 
 
 
@@ -204,7 +94,7 @@
 
 
 
-<p>Preference &#8211; User &#8211; above contents &#8211; save it as ‘MATLAB.sublime-settings</p>
+<p>Preference – User – above contents – save it as ‘MATLAB.sublime-settings</p>
 
 
 
@@ -215,37 +105,27 @@
 <p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Chrome Extension for the library of the University of Melbourne</title>
-		<link>https://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
-					<comments>https://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
+		<link>https://www.jianchen.info/2015/12/31/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 10 Dec 2015 02:49:00 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[Chrome Extension]]></category>
-		<category><![CDATA[database]]></category>
-		<category><![CDATA[Javascript]]></category>
-		<category><![CDATA[library]]></category>
-		<category><![CDATA[UniMelb]]></category>
-		<guid isPermaLink="false">https://jianch.github.io/?p=70</guid>
+		<pubDate>Thu, 31 Dec 2015 23:42:50 +0000</pubDate>
+				<category><![CDATA[sideProject]]></category>
+		<category><![CDATA[Chrome]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=99</guid>
 
-					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob). Here is the method: I add “ezp.lib.unimelb.edu.au” to the end of the target database address after I found a paper in Google Scholar, then it will redirect to the library login page. For example, one of the paper’s addresses is: 1 http://www.sciencedirect.com/science/article/pii/S0006899315008550 I modified it…]]></description>
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob). ... <a title="Chrome Extension for the library of the University of Melbourne" class="read-more" href="https://www.jianchen.info/2015/12/31/chrome-extension-for-the-library-of-the-university-of-melbourne/" aria-label="More on Chrome Extension for the library of the University of Melbourne">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<p><em>This extension is no longer working since the university introduces new systems in. </em></p>
+<p><em>This extension is no longer working since the university introduces new systems in.</em></p>
 
 
 
-<p></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="https://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="https://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, https://jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, https://jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, https://jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, https://jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71"/></figure>
 
 
 
@@ -257,7 +137,7 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -273,7 +153,7 @@
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>http://www.sciencedirect.com/science/article/pii/S0006899315008550</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td><a href="http://www.sciencedirect.com/science/article/pii/S0006899315008550">http://www.sciencedirect.com/science/article/pii/S0006899315008550</a></td></tr></tbody></table></figure>
 
 
 
@@ -281,7 +161,7 @@
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td><a href="http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550">http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550</a></td></tr></tbody></table></figure>
 
 
 
@@ -305,11 +185,11 @@
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td><a href="https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib">https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib</a></td></tr></tbody></table></figure>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -329,7 +209,7 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -357,15 +237,13 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <p>That’s it!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

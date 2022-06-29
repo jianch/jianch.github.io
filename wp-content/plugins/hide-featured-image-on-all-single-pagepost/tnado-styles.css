@@ -1,0 +1,5 @@
+// This plugin is supposed to prevent featured image from loading, but in case the theme did an end run around us and found the
+// featured image anyway, the second line of defence is to hide it with styles.
+body.page .post-thumbnail, body.single-post .post-thumbnail, body.page .featured-image, body.single-post .featured-image, .site-header.featured-image, .entry-cover-thumbnail {
+    display: none;
+}

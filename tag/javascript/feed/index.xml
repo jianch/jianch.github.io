@@ -8,87 +8,43 @@
 	>
 
 <channel>
-	<title>Javascript &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/javascript/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:47:47 +0000</lastBuildDate>
+	<title>javascript &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Tue, 28 Jun 2022 23:43:46 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>Javascript &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>javascript &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Change the space between paragraphs in Qualtrics</title>
-		<link>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/</link>
-					<comments>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/#respond</comments>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 12 Nov 2019 03:47:26 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Javascript]]></category>
-		<category><![CDATA[Padding]]></category>
-		<category><![CDATA[Qualtrics]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=139</guid>
-
-					<description><![CDATA[The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&#160; One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph. Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even&#8230; <a class="more-link" href="http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/">Continue reading <span class="screen-reader-text">Change the space between paragraphs in Qualtrics</span></a>]]></description>
-										<content:encoded><![CDATA[
-<p>The space between paragraphs in the Qualtrics might be too large, how to reduce the space?&nbsp;</p>
-
-
-
-<p>One solution is to add JS code in the “Question JavaScript” to change the padding size or margin size before and after one paragraph.</p>
-
-
-
-<pre class="wp-block-code"><code>jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-bottom", "0px");
-jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px");</code></pre>
-
-
-
-<p>Note, Qualtrics appears to set up some kind of minimum space between paragraphs so even if you change the padding value to 0, the space might still be large.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>http://jianch.github.io/change-the-space-between-paragraphs-in-qualtrics/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
 		<title>Chrome Extension for the library of the University of Melbourne</title>
-		<link>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
-					<comments>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/#respond</comments>
+		<link>https://www.jianchen.info/2015/12/31/chrome-extension-for-the-library-of-the-university-of-melbourne/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 10 Dec 2015 02:49:00 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[Chrome Extension]]></category>
-		<category><![CDATA[database]]></category>
-		<category><![CDATA[Javascript]]></category>
-		<category><![CDATA[library]]></category>
-		<category><![CDATA[UniMelb]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=70</guid>
+		<pubDate>Thu, 31 Dec 2015 23:42:50 +0000</pubDate>
+				<category><![CDATA[sideProject]]></category>
+		<category><![CDATA[Chrome]]></category>
+		<category><![CDATA[javascript]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=99</guid>
 
-					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob).&#8230; <a class="more-link" href="http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/">Continue reading <span class="screen-reader-text">Chrome Extension for the library of the University of Melbourne</span></a>]]></description>
+					<description><![CDATA[This extension is no longer working since the university introduces new systems in. The university libraries provide the access to many databases but you need to use library search engine and log in every time. How to avoid this? Quite annoying. I found a way to avoid jumping around the pages (Thanks for St. Jacob). ... <a title="Chrome Extension for the library of the University of Melbourne" class="read-more" href="https://www.jianchen.info/2015/12/31/chrome-extension-for-the-library-of-the-university-of-melbourne/" aria-label="More on Chrome Extension for the library of the University of Melbourne">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<p><em>This extension is no longer working since the university introduces new systems in. </em></p>
+<p><em>This extension is no longer working since the university introduces new systems in.</em></p>
 
 
 
-<p></p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="688" src="http://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71" srcset="http://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-300x202.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-768x516.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0-850x571.jpg 850w, http://jianch.github.io/wp-content/uploads/2021/02/chrome0.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/chrome0-1024x688.jpg" alt="" class="wp-image-71"/></figure>
 
 
 
@@ -100,7 +56,7 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -116,7 +72,7 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>http://www.sciencedirect.com/science/article/pii/S0006899315008550</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td><a href="http://www.sciencedirect.com/science/article/pii/S0006899315008550">http://www.sciencedirect.com/science/article/pii/S0006899315008550</a></td></tr></tbody></table></figure>
 
 
 
@@ -124,7 +80,7 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td><a href="http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550">http://www.sciencedirect.com.ezp.lib.unimelb.edu.au/science/article/pii/S000689315008550</a></td></tr></tbody></table></figure>
 
 
 
@@ -148,11 +104,11 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>1</td><td>https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><tbody><tr><td>1</td><td><a href="https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib">https://chrome.google.com/webstore/detail/damn-take-me-to-the-libra/nilhdnlkbmljjgfaogmnngihbmdkneib</a></td></tr></tbody></table></figure>
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -172,7 +128,7 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
@@ -200,15 +156,13 @@ jQuery("#"+this.questionId).find('.QuestionText:first').css("padding-top", "0px"
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
 <p>That’s it!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/chrome-extension-for-the-library-of-the-university-of-melbourne/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>

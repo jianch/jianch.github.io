@@ -7,15 +7,15 @@
 	>
 <channel>
 	<title>
-	Comments for Dr Jian Chen	</title>
-	<atom:link href="http://localhost/wordpress/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Thu, 09 Sep 2021 00:55:18 +0000</lastBuildDate>
+	Comments for Dr. Jian Chen	</title>
+	<atom:link href="http://localhost/jianchen/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:52:55 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 </channel>
 </rss>

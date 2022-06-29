@@ -8,188 +8,443 @@
 	>
 
 <channel>
-	<title>MATLAB &#8211; Dr Jian Chen</title>
-	<atom:link href="http://localhost/wordpress/tag/matlab/feed/" rel="self" type="application/rss+xml" />
-	<link>http://jianch.github.io</link>
-	<description></description>
-	<lastBuildDate>Wed, 10 Feb 2021 03:53:45 +0000</lastBuildDate>
+	<title>matlab &#8211; Dr. Jian Chen</title>
+	<atom:link href="http://localhost/jianchen/tag/matlab/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.jianchen.info</link>
+	<description>陈建博士</description>
+	<lastBuildDate>Wed, 29 Jun 2022 00:07:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 
 <image>
-	<url>http://jianch.github.io/wp-content/uploads/2021/02/cropped-Frued_Cartoon-32x32.jpg</url>
-	<title>MATLAB &#8211; Dr Jian Chen</title>
-	<link>http://jianch.github.io</link>
+	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
+	<title>matlab &#8211; Dr. Jian Chen</title>
+	<link>https://www.jianchen.info</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Replace MATLAB with Octave in MacOS</title>
-		<link>http://jianch.github.io/replace-matlab-with-octave-in-macos/</link>
-					<comments>http://jianch.github.io/replace-matlab-with-octave-in-macos/#respond</comments>
+		<title>Get real-time gaze positions from the eye tracker</title>
+		<link>https://www.jianchen.info/2017/03/30/get-real-time-gaze-positions-from-the-eye-tracker/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 03 Sep 2020 03:53:22 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Octave]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=147</guid>
+		<pubDate>Thu, 30 Mar 2017 00:06:55 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eyelink]]></category>
+		<category><![CDATA[eyetracker]]></category>
+		<category><![CDATA[gaze]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=119</guid>
 
-					<description><![CDATA[It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened? Fortunately there&#8230; <a class="more-link" href="http://jianch.github.io/replace-matlab-with-octave-in-macos/">Continue reading <span class="screen-reader-text">Replace MATLAB with Octave in MacOS</span></a>]]></description>
+					<description><![CDATA[If I want to make sure the participants are fixating on the cross before starting each trial, how should I do? With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before ... <a title="Get real-time gaze positions from the eye tracker" class="read-more" href="https://www.jianchen.info/2017/03/30/get-real-time-gaze-positions-from-the-eye-tracker/" aria-label="More on Get real-time gaze positions from the eye tracker">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<p>It becomes my concern when MATLAB was banned in some Chinese universitites early this year. I am a bit worried that MATLAB might also be banned in every Chinese university in one day. After all, we live in such an uncertain time. How do we run experiment and analyse data if this happened?</p>
+<p>If I want to make sure the participants are fixating on the cross before starting each trial, how should I do?</p>
 
 
 
-<p>Fortunately there are plenty of altenative tools for MATLAB and many of them are open source. Octave is one of them. In fact, with this thought, I suddenly realise that why the hell should I use MATLAB. I don’t have to do that at all.</p>
+<p>With the help of Eyetracker (Eyelink in this case), we can get the realtime gaze position and therefore we can monitor the gaze position to make sure it falls into a certain area before the participants start the trial.</p>
 
 
 
-<p>So, I decide to replace MATLAB with Octave in my research.&nbsp;</p>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<p><strong>1, unisntall MATLAB from your system</strong><br>OMG, so relief. Such a huge and unresponsive app! My computer will thank me for this.</p>
+<pre class="wp-block-code"><code>% make sure participants are fixating on the central
+while isEyeLink  % if Eyelink was connected
+status = Eyelink('newfloatsampleavailable');  % check to see if everything is fine in Eyelink
+if status /=0; % if all is fine
+evt = Eyelink('newestfloatsample'); % get the newest float sample from Eyelink
+realtime.x = evt.gx(1);  % get the x axis of gaze
+realtime.y = evt.gy(1);  % get the y axis of gaze
+end;
 
-
-
-<p><strong>2, MATLAB -&gt; Octave&nbsp;</strong><br>Follow instructions on this webpage, you will find it’s pretty easy to install Octave in your mac.<br><a href="https://wiki.octave.org/Octave_for_macOS" target="_blank" rel="noreferrer noopener">https://wiki.octave.org/Octave_for_macOS</a></p>
-
-
-
-<p><strong>3, PsychToolbox -&gt; PsychToolbox</strong><br>PsychToolbox supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="http://psychtoolbox.org/download" target="_blank" rel="noreferrer noopener">http://psychtoolbox.org/download</a></p>
-
-
-
-<p><strong>4, EEGLAB -&gt; EEGLAB</strong><br>EEGLAB supports both MATLAB and Octave, so, hey, big problem solved.<br><a href="https://sccn.ucsd.edu/wiki/Running/_EEGLAB/_on/_Octave" target="_blank" rel="noreferrer noopener">https://sccn.ucsd.edu/wiki/Running\_EEGLAB\_on\_Octave</a></p>
-
-
-
-<p>I feel happy and I love open source.&nbsp;</p>
+if abs(realtime.x-512)\&lt;=50&amp;abs(realtime.y-384)\&lt;=50  % if the gaze falls into  a 50\*50 pixel square around the cross
+break; % jump out the loop and start the trial
+end
+end</code></pre>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/replace-matlab-with-octave-in-macos/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Tips to get USB keyboard index in Matlab while using KbQueueCheck</title>
-		<link>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/</link>
-					<comments>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/#respond</comments>
+		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
+		<link>https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 22 Nov 2016 03:00:03 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[Index]]></category>
-		<category><![CDATA[KbCheck]]></category>
-		<category><![CDATA[KbQueueCheck]]></category>
-		<category><![CDATA[Linux]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Psychtoolbox]]></category>
-		<category><![CDATA[Tricks]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=81</guid>
+		<pubDate>Wed, 18 Jan 2017 00:01:26 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
+		<category><![CDATA[eeglab]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=113</guid>
 
-					<description><![CDATA[A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard? Credit: Jacob M. Paul in our lab. [Linux enviroment] 1. Check if the keyboard was recognized by the system. Steps: Plug in your USB keyboard -&#62; Open Terminal -&#62; Input “lsusb“&#8230; <a class="more-link" href="http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/">Continue reading <span class="screen-reader-text">Tips to get USB keyboard index in Matlab while using KbQueueCheck</span></a>]]></description>
+					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins ... <a title="EEG Processing Steps (based on EEGLAB and ERPLAB)" class="read-more" href="https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/" aria-label="More on EEG Processing Steps (based on EEGLAB and ERPLAB)">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<p>A keyboard index is necessary when using KbQueueCheck instead of KbCheck. So how to get a valid keyboard index of your desired USB keyboard?</p>
+<p>Here are the basic steps I used to process BioSemi EEG data.</p>
 
 
 
-<p>Credit: Jacob M. Paul in our lab.</p>
+<p><strong>1 load raw data</strong></p>
 
 
 
-<p>[Linux enviroment]</p>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/809C496A-8039-4D2E-9B13-70B6B7721A10.png" alt=""/></figure>
 
 
 
-<p><strong>1. Check if the keyboard was recognized by the system.</strong></p>
+<p><strong>2 channel location</strong></p>
 
 
 
-<p><em>Steps: Plug in your USB keyboard -&gt; Open Terminal -&gt; Input “</em>lsusb<em>“ -&gt; Plug off the USB keyboard -&gt; Input “</em>lsusb<em>“ again in Terminal</em></p>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/030CC12C-9735-43A2-AD38-53EBF6240A46.png" alt=""/></figure>
 
 
 
-<p>Check if there were changes in the list. Here we can recognize a change of “Itron Technology tOne”, which is our USB keyboard. This means that the keyboard can be recognized by the system.</p>
+<p><strong>3 re-reference</strong></p>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3135436B-A01A-4FED-9B9E-E426C7FA3CB4.png" alt=""/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<p><strong>4 filtering</strong>&nbsp;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later)</p>
 
 
 
-<p><strong>2 Get index in MATLAB</strong></p>
+<p><strong>5 Create EEG event list (ERPLAB from now on)</strong></p>
 
 
 
-<p><em>Steps: Plug off the USB keyboard -&gt; Open MATLAB -&gt; Input “[id names info] = GetKeyboardIndeces()”</em></p>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F18A0B75-3355-4EBE-B7CA-E62720858371.png" alt=""/></figure>
 
 
 
-<p>MATLAB will give out some ids etc… Note that there are only 3, 4, 5 and 7 for now.</p>
+<p><strong>6 Assign bins (how to operate on bins? see&nbsp;<a href="https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial" target="_blank" rel="noreferrer noopener">here</a>)</strong></p>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84" srcset="http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/43ABAD39-3E41-4BA7-9607-34EA61FE7D74.png" alt=""/></figure>
 
 
 
-<p><em>Steps: Plug in the USB keyboard -&gt; Reopen MATLAB (important) -&gt; Input “[id names info] = GetKeyboardIndeces() again”</em></p>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/8A8EC18C-86E4-4AB8-8242-1E6D23716321.png" alt=""/></figure>
 
 
 
-<p>Note that there are extra id: 8, 9, and 10.</p>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/4AC21F49-0134-4FE3-83E1-12B663C404DF.png" alt=""/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<p><strong>7 extract bin-based epoch</strong></p>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/B1B02461-7F46-4AB1-8371-AF769E9F3E26.png" alt=""/></figure>
 
 
 
-<p><strong>3 Try these three indices in KbQueueCheck.</strong></p>
+<p><strong>8 artifact rejection</strong></p>
 
 
 
-<p>Here, the keyboard index for our USB keyboard is 10.</p>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/40120CE4-073E-4CEF-A35D-98DDB2DDD429.png" alt=""/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="576" src="http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87" srcset="http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-300x169.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-768x432.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1536x864.png 1536w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code-850x478.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/matlab_code.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/9234B231-7612-41D2-9349-5682C3027FD8.png" alt=""/></figure>
+
+
+
+<p><strong>-&gt; choose channel around the eye. -&gt; update and then reject</strong></p>
+
+
+
+<p><strong>9 compute average erps</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/289AC38D-87CF-4234-9B90-D5C01D010D9A.png" alt=""/></figure>
+
+
+
+<p><strong>10 filter if you don’t do it in step 4</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/CD5AD34D-B8EC-4825-B5A8-90EA5C31611D.png" alt=""/></figure>
+
+
+
+<p><strong>11 bin operations if necessary&nbsp;</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/1E8272A4-A250-4471-945D-2D764439AE61.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3FA48AA1-9212-4A49-A8B4-73CEFFB13B38.png" alt=""/></figure>
+
+
+
+<p><strong>12 Plot ERPs</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/AB81310E-9BC5-422B-95FD-B3718883494D.png" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F1F2CFBD-3018-4E77-B960-35EEFB103226.png" alt=""/></figure>
+
+
+
+<p><strong>13 Save figures if you want</strong></p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/14A0D60A-40B2-4697-9F30-84312AFCEEBF.png" alt=""/></figure>
+
+
+
+<p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
+
+
+
+<p><a href="https://jianch.github.io/author/saturn/"></a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/tips-to-get-usb-keyboard-index-in-matlab-while-using-kbqueuecheck/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Sublime Text 2 with MATLAB Syntax &#8211; Windows</title>
-		<link>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/</link>
-					<comments>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/#respond</comments>
+		<title>Merge Behavioral Data into EEG</title>
+		<link>https://www.jianchen.info/2016/12/16/merge-behavioral-data-into-eeg/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Thu, 07 Jan 2016 02:56:00 +0000</pubDate>
-				<category><![CDATA[SideProject]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=76</guid>
+		<pubDate>Fri, 16 Dec 2016 23:58:17 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
+		<category><![CDATA[eeglab]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=109</guid>
 
-					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select Preferences -> Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or&#8230; <a class="more-link" href="http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/">Continue reading <span class="screen-reader-text">Sublime Text 2 with MATLAB Syntax &#8211; Windows</span></a>]]></description>
+					<description><![CDATA[An example code of how I merge behavioral data into EEG Code:]]></description>
+										<content:encoded><![CDATA[
+<p>An example code of how I merge behavioral data into EEG</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192101.png" alt="" class="wp-image-95"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161213-192033.png" alt="" class="wp-image-96"/></figure>
+
+
+
+<p>Code:</p>
+
+
+
+<pre class="wp-block-code"><code>%% merge behavioral data into EEG
+
+% Sometimes, it's hard to lively send behavioral data to EEG system, i.e.
+
+% oral response. Here is a code example to merge behavioral result into EEG
+
+% data.
+
+% Author: Jian Chen
+
+% saturn.jian.chen@gmail.com
+
+% 13/Dec/2016
+
+%+++++++++++++%
+
+%% load EEG data first, finish 'channel location', 're-reference'
+
+% get event data via 'event = EEG.event'
+
+event = EEG.event;
+
+event\_back = event;
+
+%% load behavioral data
+
+fid = fopen('YourResponse\_acc.txt');  % here is a vector with length of 540
+
+acc = textscan(fid,'%d');
+
+fclose(fid);
+
+%% set the latency between target code and inserted code
+
+time = 100;
+
+%% creat response event
+
+for i = 2 : 2 : length(event)
+
+Nevent(i/2).bepoch    = event(i).bepoch;
+
+Nevent(i/2).bini      = event(i).bini;
+
+Nevent(i/2).binlabel  = event(i).binlabel;
+
+Nevent(i/2).codelabel = event(i).codelabel;
+
+Nevent(i/2).duration  = event(i).duration;
+
+Nevent(i/2).enable    = event(i).enable;
+
+Nevent(i/2).flag      = event(i).flag;
+
+Nevent(i/2).item      = event(i).item + 1;
+
+Nevent(i/2).latency   = event(i).latency + time;
+
+Nevent(i/2).type      = acc{1}(i/2);
+
+end
+
+%% add new events to original event list
+
+for i = 1:length(Nevent)
+
+event(2*i+i+1:end+1) = event(2*i+i:end); % move rows down
+
+event(2\*i+i) = Nevent(i); % insert response mark
+
+end
+
+%% save event in case of overwrite
+
+save event\_merge.mat event
+
+%% if the EEG data was currently loaded, simply replace the EEG.event with event, then operate as normal
+
+EEG.event = event;
+
+%replace ERPLAB event if you are using ERPLAB plugin
+
+ERP.EVENTLIST.eventinfo = event;</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Place errorbars on a grouped bar graph in MATLAB</title>
+		<link>https://www.jianchen.info/2016/12/12/place-errorbars-on-a-grouped-bar-graph-in-matlab/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 12 Dec 2016 23:57:27 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[errorbar]]></category>
+		<category><![CDATA[matlab]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=107</guid>
+
+					<description><![CDATA[Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier. We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example: The error bars are located ... <a title="Place errorbars on a grouped bar graph in MATLAB" class="read-more" href="https://www.jianchen.info/2016/12/12/place-errorbars-on-a-grouped-bar-graph-in-matlab/" aria-label="More on Place errorbars on a grouped bar graph in MATLAB">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>Well, although MATLAB is not great for plotting, a few tricks can make it drawing easier.</p>
+
+
+
+<p>We often use errorbar function to plot errorbar but it’s impossible for Matlab to put error bars on a grouped bar graph. Matlab simply gives a shit if you command it straightforwardly. For example:</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90"/></figure>
+
+
+
+<p>The error bars are located in the center of each grouped bars, rather than the individual bar in each grouped bars.</p>
+
+
+
+<p>Here is the note I made, the main code is from the link below:</p>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-on-my-grouped-bar-graph-using-function-errorbar-in-matlab-7-13-r2011b
+</div></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92"/><figcaption>MATLAB Handle Graphics</figcaption></figure>
+
+
+
+<p>Code example:</p>
+
+
+
+<pre class="wp-block-code"><code>Data set:
+
+mm: 4 by 6 matrix; ci: 4 by 6 matrix
+
+
+
+mm =
+
+&#91;0.2081 0.3440 0.3470 0.7018 0.8422 0.9874
+0.2628 0.3043 0.4032 0.7287 0.8462 1.1055
+0.2928 0.3139 0.4176 0.7241 0.8319 1.0483
+0.2287 0.2538 0.3665 0.4895 0.8999 1.1309]
+
+ci =
+
+&#91;0.0176 0.0473 0.0443 0.0724 0.0855 0.0931
+0.0312 0.0201 0.0407 0.0621 0.0604 0.0874
+0.0291 0.0330 0.0403 0.0756 0.0732 0.0847
+0.0228 0.0150 0.0264 0.0598 0.0922 0.0861]</code></pre>
+
+
+
+<pre class="wp-block-code"><code>figure;
+h = bar(mm');
+set(h,'BarWidth',0.8);    % The bars will now touch each other
+set(gca,'fontsize', 18);
+set(get(gca,'YLabel'),'String','RT in Seconds')
+lh = legend('Valid Left', 'Invalid left', 'Valid right', 'Invalid right');
+set(lh,'Location','BestOutside','Orientation','horizontal')
+hold on;
+
+% Aligning errorbar to individual bar within groups
+% Based on barweb.m by Bolu Ajiboye from MATLAB File Exchange
+groupwidth = min(0.8, 4/(4+1.5));
+for i = 1:4
+x = (1:6) - groupwidth/2 + (2*i-1) * groupwidth / (2*4);
+errorbar(x,mm(i,:),ci(i,:),'k', 'linestyle', 'none');
+end</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Sublime Text 2 with MATLAB Syntax – Windows</title>
+		<link>https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Thu, 07 Jan 2016 23:45:26 +0000</pubDate>
+				<category><![CDATA[sideProject]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[sublime]]></category>
+		<category><![CDATA[windows]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=103</guid>
+
+					<description><![CDATA[Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it? Here is the solution: Select&#160;Preferences -&#62; Browse Packages… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or ... <a title="Sublime Text 2 with MATLAB Syntax – Windows" class="read-more" href="https://www.jianchen.info/2016/01/07/sublime-text-2-with-matlab-syntax-windows/" aria-label="More on Sublime Text 2 with MATLAB Syntax – Windows">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>Sublime text does not recognize .m file from MATLAB after installation and show it in Object-c syntax. How to fix it?</p>
 
@@ -203,15 +458,15 @@
 
 
 
-<hr class="wp-block-separator"/>
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
 
 
 
-<p>Select <strong>Preferences -> Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
+<p>Select&nbsp;<strong>Preferences -&gt; Browse Packages</strong>… to open your Packages folder, and open the Objective-C subfolder. Open Objective-C.tmLanguage in Sublime as an XML file (open it in sublime), and comment out (or remove entirely) Line 7:</p>
 
 
 
-<pre class="wp-block-code"><code>&lt;string>m&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;m&lt;/string&gt;</code></pre>
 
 
 
@@ -219,7 +474,7 @@
 
 
 
-<pre class="wp-block-code"><code>&lt;string>M&lt;/string></code></pre>
+<pre class="wp-block-code"><code>&lt;string&gt;M&lt;/string&gt;</code></pre>
 
 
 
@@ -244,7 +499,7 @@
 
 
 
-<p>Preference &#8211; User &#8211; above contents &#8211; save it as ‘MATLAB.sublime-settings</p>
+<p>Preference – User – above contents – save it as ‘MATLAB.sublime-settings</p>
 
 
 
@@ -255,43 +510,165 @@
 <p><em>(This solution mainly come from&nbsp;<a href="http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work" target="_blank" rel="noreferrer noopener">http://stackoverflow.com/questions/24016186/setting-default-syntax-for-sublime-doesnt-work</a>)</em></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/sublime-text-2-with-matlab-syntax-windows/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>EEG topography sample</title>
+		<link>https://www.jianchen.info/2016/01/01/eeg-topography-sample/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Fri, 01 Jan 2016 23:44:53 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[topography]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=101</guid>
+
+					<description><![CDATA[A sample to illustrate how a period of EEG topography looks like.]]></description>
+										<content:encoded><![CDATA[
+<p>A sample to illustrate how a period of EEG topography looks like.</p>
+
+
+
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/topo.gif" alt="" class="wp-image-79"/></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Send Triggers via Parallel Port in Linux – using pp &#038; ppMEX.c</title>
+		<link>https://www.jianchen.info/2015/12/30/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Wed, 30 Dec 2015 23:40:33 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[matlab]]></category>
+		<category><![CDATA[trigger]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=97</guid>
+
+					<description><![CDATA[This method is developed by&#160;Erik Flister. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&#160;pp.m&#160;and&#160;ppMex.c. The way to implement this method is easy, just to insert a line of code in your matlab script. To even ... <a title="Send Triggers via Parallel Port in Linux – using pp &#038; ppMEX.c" class="read-more" href="https://www.jianchen.info/2015/12/30/send-triggers-via-parallel-port-in-linux-using-pp-ppmex-c/" aria-label="More on Send Triggers via Parallel Port in Linux – using pp &#038; ppMEX.c">Read more</a>]]></description>
+										<content:encoded><![CDATA[
+<p>This method is developed by&nbsp;<a href="https://groups.yahoo.com/neo/groups/psychtoolbox/conversations/messages/13972" target="_blank" rel="noreferrer noopener">Erik Flister</a>. It is designed to read/write TTL levels on parallel port pins under Linux, win32 (using porttalk), or matlab32 on win64 (using io32). This method includes two code files:&nbsp;<em><strong>pp.m</strong></em>&nbsp;and&nbsp;<em><strong>ppMex.c</strong></em>.</p>
+
+
+
+<p>The way to implement this method is easy, just to insert a line of code in your matlab script. To even simplify the triggering job, I wrote a function here to share. So you basically only need to input the triggers you want to send into the trigger.m function. For example, trigger(1); trigger(2).</p>
+
+
+
+<p>Download all three files at here:</p>
+
+
+
+<p><a href="https://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">pp_ppMex</a><a href="https://jianch.github.io/wp-content/uploads/2021/02/pp_ppMex.zip">Download</a></p>
+
+
+
+<p><em><strong>trigger.m</strong></em></p>
+
+
+
+<pre class="wp-block-code"><code>function trigger(sti_trigger)
+
+% &#91;input] = pp(pins,&#91;output],&#91;slowChecks],&#91;port],&#91;address])
+% pp(uint8(&#91;2 3 4 5 6 7 8 9]), &#91;0 0 0 0 0 0 0 0], 0, uint8(0), uint64(53248));
+
+if sti_trigger == 0
+    bin_value = &#91;0 0 0 0 0 0 0 0];
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if sti_trigger == 1
+    bin_value = &#91;1 0 0 0 0 0 0 0];
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if (1 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 4)
+    bin_value = strcat('000000',dec2bin(sti_trigger));
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if (3 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 8)
+    bin_value = strcat('00000',dec2bin(sti_trigger));
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if (7 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 16)
+    bin_value = strcat('0000',dec2bin(sti_trigger));
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if (15 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 32)
+    bin_value = strcat('000',dec2bin(sti_trigger));
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if (31 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 64)
+    bin_value = strcat('00',dec2bin(sti_trigger));
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if (63 &lt; sti_trigger)&amp;&amp;(sti_trigger &lt; 128)
+    bin_value = strcat('0',dec2bin(sti_trigger));
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end
+
+if sti_trigger &gt; 127
+    bin_value = dec2bin(sti_trigger);
+    bin_value = fliplr(bin_value);
+    bin_value = bin_value - '0' ;
+    pp(uint8(&#91;2 3 4 5 6 7 8 9]), bin_value, 0, uint8(0), uint64(53248));
+end</code></pre>
+
+
+
+<p><em>[update 2/12/2016]</em></p>
+
+
+
+<p><em>An minor error was found in trigger.m and has been fixed.</em></p>
+]]></content:encoded>
+					
 		
 		
 			</item>
 		<item>
 		<title>A MATLAB Toolbox for Face Research</title>
-		<link>http://jianch.github.io/a-matlab-toolbox-for-face-research/</link>
-					<comments>http://jianch.github.io/a-matlab-toolbox-for-face-research/#respond</comments>
+		<link>https://www.jianchen.info/2015/12/28/a-matlab-toolbox-for-face-research/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Mon, 07 Dec 2015 02:24:20 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<category><![CDATA[face research]]></category>
-		<category><![CDATA[MATLAB]]></category>
+		<pubDate>Mon, 28 Dec 2015 23:36:32 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[face]]></category>
+		<category><![CDATA[matlab]]></category>
 		<category><![CDATA[toolbox]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=47</guid>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=91</guid>
 
-					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ file&#8230; <a class="more-link" href="http://jianch.github.io/a-matlab-toolbox-for-face-research/">Continue reading <span class="screen-reader-text">A MATLAB Toolbox for Face Research</span></a>]]></description>
+					<description><![CDATA[This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work. Here is the source code: Pupil_faceDownload How to use: Just feed face images into the source_face folder (1 arrow) and then open and run the ‘pupil_face.m’ ... <a title="A MATLAB Toolbox for Face Research" class="read-more" href="https://www.jianchen.info/2015/12/28/a-matlab-toolbox-for-face-research/" aria-label="More on A MATLAB Toolbox for Face Research">Read more</a>]]></description>
 										<content:encoded><![CDATA[
 <p>This toolbox can resize the face and then rotate the face. I’m working on a function that can automatically crop the face and then do the luminance balance work.</p>
 
 
 
-<p></p>
+<p>Here is the source code:</p>
 
 
 
-<p>Here is the source code:  </p>
-
-
-
-<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Pupil_face</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip" class="wp-block-file__button" download>Download</a></div>
-
-
-
-<p></p>
+<p><a href="https://jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Pupil_face</a><a href="https://jianch.github.io/wp-content/uploads/2021/02/Pupil_face.zip">Download</a></p>
 
 
 
@@ -303,7 +680,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="598" height="229" src="http://jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50" srcset="http://jianch.github.io/wp-content/uploads/2021/02/2.jpg 598w, http://jianch.github.io/wp-content/uploads/2021/02/2-300x115.jpg 300w" sizes="(max-width: 598px) 100vw, 598px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50"/></figure>
 
 
 
@@ -315,48 +692,39 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="380" height="381" src="http://jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49" srcset="http://jianch.github.io/wp-content/uploads/2021/02/1.png 380w, http://jianch.github.io/wp-content/uploads/2021/02/1-300x301.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/1-150x150.png 150w" sizes="(max-width: 380px) 100vw, 380px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49"/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1001" height="531" src="http://jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51" srcset="http://jianch.github.io/wp-content/uploads/2021/02/3.jpg 1001w, http://jianch.github.io/wp-content/uploads/2021/02/3-300x159.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/3-768x407.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/3-850x451.jpg 850w" sizes="(max-width: 1001px) 100vw, 1001px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51"/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1001" height="531" src="http://jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52" srcset="http://jianch.github.io/wp-content/uploads/2021/02/4.jpg 1001w, http://jianch.github.io/wp-content/uploads/2021/02/4-300x159.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/4-768x407.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/4-850x451.jpg 850w" sizes="(max-width: 1001px) 100vw, 1001px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52"/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="638" src="http://jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53" srcset="http://jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg 1024w, http://jianch.github.io/wp-content/uploads/2021/02/5-300x187.jpg 300w, http://jianch.github.io/wp-content/uploads/2021/02/5-768x478.jpg 768w, http://jianch.github.io/wp-content/uploads/2021/02/5-850x529.jpg 850w, http://jianch.github.io/wp-content/uploads/2021/02/5.jpg 1100w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53"/></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="731" src="http://jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54" srcset="http://jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png 1024w, http://jianch.github.io/wp-content/uploads/2021/02/6-300x214.png 300w, http://jianch.github.io/wp-content/uploads/2021/02/6-768x548.png 768w, http://jianch.github.io/wp-content/uploads/2021/02/6-850x607.png 850w, http://jianch.github.io/wp-content/uploads/2021/02/6.png 1091w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54"/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/a-matlab-toolbox-for-face-research/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>EEG Toolbox for lazy people</title>
-		<link>http://jianch.github.io/eeg-toolbox-for-lazy-people/</link>
-					<comments>http://jianch.github.io/eeg-toolbox-for-lazy-people/#respond</comments>
+		<link>https://www.jianchen.info/2015/12/06/eeg-toolbox-for-lazy-people/</link>
 		
 		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Sun, 06 Dec 2015 02:11:33 +0000</pubDate>
-				<category><![CDATA[Research]]></category>
-		<category><![CDATA[BP]]></category>
-		<category><![CDATA[EEG]]></category>
-		<category><![CDATA[EEGKiller]]></category>
-		<category><![CDATA[Mac]]></category>
-		<category><![CDATA[MATLAB]]></category>
-		<category><![CDATA[Neuroscan]]></category>
+		<pubDate>Sun, 06 Dec 2015 04:53:24 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[eeg]]></category>
+		<category><![CDATA[matlab]]></category>
 		<category><![CDATA[toolbox]]></category>
-		<category><![CDATA[Tsinghua]]></category>
-		<category><![CDATA[Windows]]></category>
-		<guid isPermaLink="false">http://jianch.github.io/?p=41</guid>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=12</guid>
 
 					<description><![CDATA[Shichun Guo and I developed a toolbox (based on MATLAB) to analyze EEG data, we called it ”EEGKiller” because it meets our demands so nicely. Download and try it!]]></description>
 										<content:encoded><![CDATA[
@@ -364,27 +732,13 @@
 
 
 
-<p></p>
+<p><a href="https://www.jianchen.info/wp-content/uploads/2022/06/EEGKiller.zip" data-type="URL" data-id="https://www.jianchen.info/wp-content/uploads/2022/06/EEGKiller.zip">Download</a> and try it!</p>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="502" height="483" src="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg" alt="" class="wp-image-42" srcset="http://jianch.github.io/wp-content/uploads/2021/02/interface.jpg 502w, http://jianch.github.io/wp-content/uploads/2021/02/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
-
-
-
-<p>Download and try it!</p>
-
-
-
-<div class="wp-block-file"><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip">EEGKiller</a><a href="http://jianch.github.io/wp-content/uploads/2021/02/EEGKiller.zip" class="wp-block-file__button" download>Download</a></div>
-
-
-
-<p></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="502" height="483" src="https://www.jianchen.info/wp-content/uploads/2022/06/interface.jpg" alt="" class="wp-image-13" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/interface.jpg 502w, https://www.jianchen.info/wp-content/uploads/2022/06/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>http://jianch.github.io/eeg-toolbox-for-lazy-people/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
 		
 		
 			</item>
