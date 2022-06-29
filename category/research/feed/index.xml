@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/jianchen/category/research/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.jianchen.info</link>
 	<description>陈建博士</description>
-	<lastBuildDate>Wed, 29 Jun 2022 00:15:53 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 29 Jun 2022 01:36:41 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,34 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Dot Enumeration Task with jsPsych</title>
+		<link>https://www.jianchen.info/2022/06/29/dot-enumeration-task-with-jspsych/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Wed, 29 Jun 2022 01:36:40 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<category><![CDATA[dotEnumeration]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[jsPsych]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=163</guid>
+
+					<description><![CDATA[This task was coded with jsPsych v7.2. The source code and materials are available in my GitHub Dr Jian Chen https://github.com/jianch/dotEnumerationTask]]></description>
+										<content:encoded><![CDATA[
+<p></p>
+
+
+
+<blockquote class="wp-block-quote"><p>This task was coded with jsPsych v7.2. The source code and materials are available in my GitHub </p><cite>Dr Jian Chen</cite></blockquote>
+
+
+
+<p><a href="https://github.com/jianch/dotEnumerationTask">https://github.com/jianch/dotEnumerationTask</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Install Process in SPSS in MacOS Big Sur</title>
 		<link>https://www.jianchen.info/2021/09/09/install-process-in-spss-in-macos-big-sur/</link>
 		
@@ -754,66 +782,6 @@ end</code></pre>
 
 
 <p><a href="https://jianch.github.io/author/saturn/"></a></p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Load Eyelink data into R (in a very fast way)</title>
-		<link>https://www.jianchen.info/2017/01/17/load-eyelink-data-into-r-in-a-very-fast-way/</link>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Tue, 17 Jan 2017 23:59:15 +0000</pubDate>
-				<category><![CDATA[research]]></category>
-		<category><![CDATA[eyelink]]></category>
-		<category><![CDATA[R]]></category>
-		<guid isPermaLink="false">https://www.jianchen.info/?p=111</guid>
-
-					<description><![CDATA[These scripts are adapted from Dr. Jason Forte’s work in our lab. R]]></description>
-										<content:encoded><![CDATA[
-<p>These scripts are adapted from Dr. Jason Forte’s work in our lab.</p>
-
-
-
-<p>R</p>
-
-
-
-<pre class="wp-block-code"><code>## eyelink data analysis 
-setwd('/Users/JianChen/Dropbox/PhD/Exp1/')
-filenameASC = 'xxxxxx.asc'
-dataEyelink
-# extract all numeric lines &amp;amp; replace blink (.) with 0.0\. Hack: sed
-# ''s/\.//g'' gets rid of all decimal points. We correct for that in the line dataEyelink$samples$V2 &amp;amp; V3
-# system command in this case = sed -n '/^\&#91;0-9]/p' PH12J17a.asc | sed 's/ \./0.0/g' | sed 's/\.//g' &amp;gt; tmp.txt
-system(paste("sed -n '/^\&#91;0-9]/p'", filenameASC, " | sed 's/\\./0.0/g' "," | sed 's/\\.//g' &amp;gt; tmp.txt"))
-# read samples into data structure
-dataEyelink$samples &amp;lt;- read.table('tmp.txt')
-# correct for above hack to resote pixel values....
-dataEyelink$samples$V2 &amp;lt;- dataEyelink$samples$V2 / 10
-dataEyelink$samples$V3 &amp;lt;- dataEyelink$samples$V3 / 10
-# extract gaze event for "EFIX" &amp;amp; remove "EFIX R" (Here I tracked right eye)
-system(paste("sed -n -e '/^EFIX/p' ", filenameASC, " | sed 's/EFIX R //g' &amp;gt; tmp.txt"))
-# read fixations into data structure
-dataEyelink$fixations &amp;lt;- read.table('tmp.txt')
-
-# extract gaze event for "ESACC" &amp;amp; remove "ESACC R"
-system(paste("sed -n -e '/^ESACC/p' ", filenameASC, " | sed 's/ESACC R //g' &amp;gt; tmp.txt"))
-# read saccades into data structure
-dataEyelink$saccades &amp;lt;- read.table('tmp.txt')
-
-# extract gaze event for "EBLINK" &amp;amp; remove "EBLINK R"
-system(paste("sed -n -e '/^EBLINK/p' ", filenameASC," | sed 's/EBLINK R //g' &amp;gt; tmp.txt"))
-# read blinks into data structure
-dataEyelink$blinks &amp;lt;- read.table('tmp.txt')
-
-# extract trigger event for "SYNCTIMEON" &amp;amp; "SYNCTIMEOFF" convert "SYNCTIMEON" to 1 &amp;amp; "SYNCTIMEOFF" to 0 and remove MSG
-system(paste("sed -n -e '/SYNCTIMEON/p' -e '/SYNCTIMEOFF/p' ", filenameASC, " | sed 's/SYNCTIMEON/1/g' | sed 's/SYNCTIMEOFF/0/g' | sed 's/MSG //g' &amp;gt; tmp.txt"))
-# read triggers into data structure
-dataEyelink$triggers &amp;lt;- read.table('tmp.txt')
-
-system('rm tmp.txt')</code></pre>
 ]]></content:encoded>
 					
 		
