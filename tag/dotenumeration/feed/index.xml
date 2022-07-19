@@ -12,13 +12,13 @@
 	<atom:link href="http://localhost/jianchen/tag/dotenumeration/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.jianchen.info</link>
 	<description>陈建博士</description>
-	<lastBuildDate>Fri, 01 Jul 2022 06:00:13 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 19 Jul 2022 07:13:34 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0</generator>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -39,13 +39,13 @@
 		<category><![CDATA[jsPsych]]></category>
 		<guid isPermaLink="false">https://www.jianchen.info/?p=163</guid>
 
-					<description><![CDATA[This task was coded with jsPsych v7.2. The source code and materials are available in my GitHub Dr Jian Chen https://github.com/jianch/dotEnumerationTask Here is the key javascript.]]></description>
+					<description><![CDATA[This task was coded with jsPsych v7.2. The source code and materials are available in my GitHub https://github.com/jianch/dotEnumerationTask Here is the key javascript.]]></description>
 										<content:encoded><![CDATA[
 <p></p>
 
 
 
-<blockquote class="wp-block-quote"><p>This task was coded with jsPsych v7.2. The source code and materials are available in my GitHub </p><cite>Dr Jian Chen</cite></blockquote>
+<blockquote class="wp-block-quote"><p>This task was coded with jsPsych v7.2. The source code and materials are available in my GitHub </p></blockquote>
 
 
 
@@ -97,7 +97,7 @@ var pic_size = 400;
 
 var FullScreenOn = {
     type: jsPsychFullscreen,
-    message: "&lt;p>The experiment will be in full screen mode once you click on the button.&lt;/p>",
+    message: "&lt;p&gt;The experiment will be in full screen mode once you click on the button.&lt;/p&gt;",
     button_label: 'Full Screen Mode',
     fullscreen_mode: true
 }
@@ -106,11 +106,11 @@ timeline.push(FullScreenOn)
 /* instructions */
 var welcome = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '&lt;p>Welcome to the Dot Enumeration Task.&lt;/p>' +
-            '&lt;p>In this task, we would like to know, as fast as you can and without making any mistakes, how many dots you see on the screen.&lt;/p>'+
-            '&lt;p>A cross will appear on the screen followed by a display of dots. &lt;/p>'+ 
-            'Press the SPACE BAR as soon as you identify how many dots there are on the screen, and then select your answer immediately.&lt;p>'+
-            '&lt;p>&lt;b>Please respond as accurately and quickly as possible.&lt;/b>&lt;/p>'+
+  stimulus: '&lt;p&gt;Welcome to the Dot Enumeration Task.&lt;/p&gt;' +
+            '&lt;p&gt;In this task, we would like to know, as fast as you can and without making any mistakes, how many dots you see on the screen.&lt;/p&gt;'+
+            '&lt;p&gt;A cross will appear on the screen followed by a display of dots. &lt;/p&gt;'+ 
+            'Press the SPACE BAR as soon as you identify how many dots there are on the screen, and then select your answer immediately.&lt;p&gt;'+
+            '&lt;p&gt;&lt;b&gt;Please respond as accurately and quickly as possible.&lt;/b&gt;&lt;/p&gt;'+
             'Press SPACEBAR to begin practice trials',
   choices: &#91;' '],
 };
@@ -133,7 +133,7 @@ var prac_stimuli = &#91;
   
 var fixation = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '&lt;div style="font-size:48px;">+&lt;/div>',
+  stimulus: '&lt;div style="font-size:48px;"&gt;+&lt;/div&gt;',
   choices: "NO_KEYS",
   trial_duration: jsPsych.randomization.sampleWithReplacement(fix_duration, 1),
   data: {phase: 'fixation',},
@@ -156,9 +156,9 @@ var prac_stimulus = {
 var msg;
 var prac_response = {
   type: jsPsychHtmlButtonResponse,
-  stimulus: '&lt;p>How many dots were on the screen?&lt;/p>',
+  stimulus: '&lt;p&gt;How many dots were on the screen?&lt;/p&gt;',
   choices: &#91;'1','2','3','4','5','6','7','8','9','10'],
-  prompt: "&lt;p>Select a number&lt;/p>",
+  prompt: "&lt;p&gt;Select a number&lt;/p&gt;",
   data:{
     phase: 'practice_resp',
     correct_responses: jsPsych.timelineVariable('correct_response'),
@@ -166,9 +166,9 @@ var prac_response = {
   on_finish: function(data){
     data.correct = data.response==jsPsych.timelineVariable('correct_response');
     if (data.correct){
-      msg = "&lt;p style='font-size:22px; color:green;'>Correct!&lt;/p>";
+      msg = "&lt;p style='font-size:22px; color:green;'&gt;Correct!&lt;/p&gt;";
     } else {
-      msg = "&lt;p style='font-size:22px; color:red;'>Incorrect!&lt;/p>";
+      msg = "&lt;p style='font-size:22px; color:red;'&gt;Incorrect!&lt;/p&gt;";
     }
   }
 };
@@ -198,9 +198,9 @@ timeline.push(practice_procedure);
 
 var pre_test = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '&lt;p>This is the end of the practice trials. You will now begin the experiment trials.  &lt;/p> '+
-            'Feedback will NOT be provided&lt;/p> ' + 
-            'Press Spacebar to begin.&lt;/p>',
+  stimulus: '&lt;p&gt;This is the end of the practice trials. You will now begin the experiment trials.  &lt;/p&gt; '+
+            'Feedback will NOT be provided&lt;/p&gt; ' + 
+            'Press Spacebar to begin.&lt;/p&gt;',
   choices: &#91;' '],
 }; 
 timeline.push(pre_test);
@@ -301,8 +301,8 @@ var trial_count = 0;
 
 var break_trial = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus:  "&lt;p style='font-size: 18px'>Please take a short break if needed.&lt;/p>" + 
-          "&lt;p style='font-size: 18px'>When you are ready, continue by pressing the SPACEBAR.&lt;/p>",
+  stimulus:  "&lt;p style='font-size: 18px'&gt;Please take a short break if needed.&lt;/p&gt;" + 
+          "&lt;p style='font-size: 18px'&gt;When you are ready, continue by pressing the SPACEBAR.&lt;/p&gt;",
 };
 
 
@@ -340,9 +340,9 @@ var test_stimulus = {
 
 var test_response = {
   type: jsPsychHtmlButtonResponse,
-  stimulus: '&lt;p>How many dots were on the screen?&lt;/p>',
+  stimulus: '&lt;p&gt;How many dots were on the screen?&lt;/p&gt;',
   choices: &#91;'1','2','3','4','5','6','7','8','9','10'],
-  prompt: "&lt;p>Select a number&lt;/p>",
+  prompt: "&lt;p&gt;Select a number&lt;/p&gt;",
   data:{
     phase: 'test_resp',
     correct_responses: jsPsych.timelineVariable('correct_response'),
@@ -366,8 +366,8 @@ timeline.push(test_procedure);
 
 var post_test = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '&lt;p>You have finished the Dot Enumeration Task.&lt;/p> '+
-            'Press Spacebar to start next task.&lt;/p>',
+  stimulus: '&lt;p&gt;You have finished the Dot Enumeration Task.&lt;/p&gt; '+
+            'Press Spacebar to start next task.&lt;/p&gt;',
   choices: &#91;' '],
 }; 
 timeline.push(post_test);
