@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/jianchen/author/saturn/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.jianchen.info</link>
 	<description>陈建博士</description>
-	<lastBuildDate>Tue, 19 Jul 2022 07:13:34 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 25 Jul 2022 06:05:48 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,630 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Corsi Blocks Task with jsPsych</title>
+		<link>https://www.jianchen.info/2022/07/25/corsi-blocks-task-with-jspsych/</link>
+		
+		<dc:creator><![CDATA[saturn]]></dc:creator>
+		<pubDate>Mon, 25 Jul 2022 06:03:56 +0000</pubDate>
+				<category><![CDATA[research]]></category>
+		<guid isPermaLink="false">https://www.jianchen.info/?p=211</guid>
+
+					<description><![CDATA[This piece of code is revised by Dr Jian Chen based on the published code from R. Gibeau (2021) The Corsi Blocks Task: Variations and coding with jsPsych. The Quantitative Methods for Psychology. 10.20982/tqmp.17.3.p299 In this version, I follow the classical Corsi task in which 9 sequences are presented in a fixed order. Blocks are ... <a title="Corsi Blocks Task with jsPsych" class="read-more" href="https://www.jianchen.info/2022/07/25/corsi-blocks-task-with-jspsych/" aria-label="More on Corsi Blocks Task with jsPsych">Read more</a>]]></description>
+										<content:encoded><![CDATA[<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="792" src="https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1024x792.png" alt="" class="wp-image-212" srcset="https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1024x792.png 1024w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-300x232.png 300w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-768x594.png 768w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1536x1188.png 1536w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement.png 1652w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<p>This piece of code is revised by Dr Jian Chen based on the published code from <a href="https://www.tqmp.org/RegularArticles/vol17-3/p299/p299.pdf" data-type="URL" data-id="https://www.tqmp.org/RegularArticles/vol17-3/p299/p299.pdf">R. Gibeau (2021) The Corsi Blocks Task: Variations and coding with jsPsych. The Quantitative Methods for Psychology. 10.20982/tqmp.17.3.p299</a></p>
+
+
+
+<p>In this version, I follow the classical Corsi task in which 9 sequences are presented in a fixed order. Blocks are presented in fixed positions. For each sequence has two trials. Participants need to pass at least one trial to get to the next sequence.</p>
+
+
+
+<p>Please notice, given this piece code is based on a exisiting task, so some code look dumb here and there. There are better ways to achieve this but for the moment this is the most time efficient way for me. I will look into the possibility to recode it into a more neat way using the newest version of jsPsych.</p>
+
+
+
+<p>This task runs in jsPsych v6.1.0. It does not work in other versions.</p>
+
+
+
+<p>Updates:</p>
+
+
+
+<ul><li>25.7.2022 add termination if two continuous errors in one sequence.</li></ul>
+
+
+
+<p></p>
+
+
+
+<p>Here is the main code (also available on my GitHub page (https://github.com/jianch/Corsi-Block-Task). You will also need a specific plugin to run this task:<a href="https://github.com/jianch/Corsi-Block-Task/blob/main/jspsych-html-keyboard-response-noerase.js" data-type="URL" data-id="https://github.com/jianch/Corsi-Block-Task/blob/main/jspsych-html-keyboard-response-noerase.js"> jspsych-html-keyboard-response-noerase.js</a>. </p>
+
+
+
+<p>Have fun. </p>
+
+
+
+<pre class="wp-block-code"><code>/* url parameters*/
+var id = jsPsych.data.getURLVariable("subjectid");
+var debrifurl = "https://jianchen.info/?subjectid=".concat(id) // simple reaction task
+
+// ****************************** 
+// *   Defining general stuff   * 
+// ****************************** 
+console.log('Begining of the parameter definitions')
+
+// Experiment parameters 
+var nItems              = 9       // total number of squares on the display. Fixed in this experiment
+// the sequence lengths to test the participant with, with the variable "OneSequenceLength"
+var sequenceLengths_prac = &#91;{OneSequenceLength: 2}];
+var sequenceLengths     = &#91;{OneSequenceLength: 2},{OneSequenceLength: 3},{OneSequenceLength: 4},{OneSequenceLength: 5},
+                            {OneSequenceLength: 6},{OneSequenceLength: 7},{OneSequenceLength: 8},{OneSequenceLength: 9}];
+var sequenceRandomOrder = false   // true for "random" or false for "sequential"
+var sequenceRepetition  = 2       // how many times each length is tested
+
+// Trial parameters 
+var InterTrialDuration   = 100  // e.g., REF
+var FixationDuration     = 400  // e.g., REF
+var MouseToBeHidden      = false 
+var PreBlinkDuration     = 500  // e.g., REF
+var BlinkDuration        = 400  // e.g., REF
+var PostBlinkDuration    = 500  // e.g., REF
+var InterBlinkDuration   = 400  // e.g., REF
+var RecallSignal         = 'https://raw.githubusercontent.com/RMG2424/Dr.-Mid-Nite/master/CorsiBlockjsPsych/500hz-400ms.wav'
+var RecallSignalDuration = 400
+var AcknowledgeDuration  = 200  // e.g., REF
+
+// Item parameters; assembled using makeItem
+var BackgroundColor   = "white"        // accept the HTML-defined colors
+var TextColor         = "black"        					// 
+var OneItemShape      = "rect"             // one of the svg primitive
+var OneItemShownColor = "rgb(0,0,0)"       // black
+var OneItemBlinkColor = "rgb(128,128,128)" // gray
+var OneItemClickColor = "rgb(0,0,255)"     // blue
+var OneItemSize       = 1/10               // proportion of the item relative to minscreen 
+var OneItemMargin     = 1/50               // margin to leave empty around the item, relative to minscreen 
+
+console.log('End of the parameter definitions')
+
+var preload = {
+  type: 'preload',
+  auto_preload: true} 
+
+// set the background color
+document.body.style.backgroundColor = BackgroundColor; 
+document.body.style.color = TextColor; 
+
+// these two lines convert the relative sizes into pixel sizes LEAVE UNCHANGED
+var OneItemSizePX     = Math.floor(OneItemSize * Math.min(screen.width, screen.height))
+var OneItemMarginPX   = Math.floor(OneItemMargin * Math.min(screen.width, screen.height))
+console.log(`Item dimensions in pixels are: (size) ${OneItemSizePX}, (margins) ${OneItemMarginPX}`);
+
+// Function that builts an HTML svg (scalable vector graphic) image
+// may need to be adapted if a different shape is chosen
+var makeItem = function(color) {
+    return(`&lt;svg width="${OneItemSizePX}" height="${OneItemSizePX}"&gt;&lt;${OneItemShape} width="${OneItemSizePX}" height="${OneItemSizePX}" style="fill:${color};stroke-width:0;"&gt;&lt;/svg&gt;`);
+}
+
+// Empty lists of items; are to be populated by PositionFunction 
+var ListOfItems         = new Array(nItems); // the array is full length bcse jsPsych updates it too slow 
+var ListOfBlinkingItems = new Array(nItems); // idem                                                      
+var ListOfButtons       = new Array(0);
+var nBlinkingItems      = null;
+var nBlinkingItems      = null;
+var acc_accumulation    = null;
+
+// create items positions
+// relative X position of items
+ListOfItems&#91;0] = &#91;]; ListOfItems&#91;1] = &#91;]; ListOfItems&#91;2] = &#91;]; ListOfItems&#91;3] = &#91;];
+ListOfItems&#91;4] = &#91;]; ListOfItems&#91;5] = &#91;]; ListOfItems&#91;6] = &#91;]; ListOfItems&#91;7] = &#91;]; ListOfItems&#91;8] = &#91;];
+
+ListOfItems&#91;0].x = 0.5 * screen.width;  
+ListOfItems&#91;1].x = 0.27 * screen.width; 
+ListOfItems&#91;2].x = 0.64 * screen.width; 
+ListOfItems&#91;3].x = 0.31 * screen.width; 
+ListOfItems&#91;4].x = 0.55 * screen.width; 
+ListOfItems&#91;5].x = 0.70 * screen.width; 
+ListOfItems&#91;6].x = 0.23 * screen.width; 
+ListOfItems&#91;7].x = 0.38 * screen.width; 
+ListOfItems&#91;8].x = 0.52 * screen.width; 
+
+ListOfItemsXPositions = &#91;ListOfItems&#91;0].x, ListOfItems&#91;1].x, ListOfItems&#91;2].x, ListOfItems&#91;3].x, ListOfItems&#91;4].x,
+                        ListOfItems&#91;5].x,ListOfItems&#91;6].x,ListOfItems&#91;7].x, ListOfItems&#91;8].x]
+
+
+// relative Y position of items
+ListOfItems&#91;0].y = 0.25 * screen.height;  
+ListOfItems&#91;1].y = 0.14 * screen.height;  
+ListOfItems&#91;2].y = 0.29 * screen.height;  
+ListOfItems&#91;3].y = 0.35 * screen.height;  
+ListOfItems&#91;4].y = 0.42 * screen.height;  
+ListOfItems&#91;5].y = 0.51 * screen.height;  
+ListOfItems&#91;6].y = 0.52 * screen.height;  
+ListOfItems&#91;7].y = 0.63 * screen.height;  
+ListOfItems&#91;8].y = 0.58 * screen.height;  
+
+
+ListOfItems&#91;0].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;0].x}px; top: ${ListOfItems&#91;0].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;0].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;0].x}px; top: ${ListOfItems&#91;0].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;0].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;0].x}px; top: ${ListOfItems&#91;0].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+ListOfItems&#91;1].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;1].x}px; top: ${ListOfItems&#91;1].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;1].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;1].x}px; top: ${ListOfItems&#91;1].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;1].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;1].x}px; top: ${ListOfItems&#91;1].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+ListOfItems&#91;2].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;2].x}px; top: ${ListOfItems&#91;2].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;2].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;2].x}px; top: ${ListOfItems&#91;2].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;2].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;2].x}px; top: ${ListOfItems&#91;2].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+ListOfItems&#91;3].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;3].x}px; top: ${ListOfItems&#91;3].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;3].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;3].x}px; top: ${ListOfItems&#91;3].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;3].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;3].x}px; top: ${ListOfItems&#91;3].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+ListOfItems&#91;4].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;4].x}px; top: ${ListOfItems&#91;4].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;4].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;4].x}px; top: ${ListOfItems&#91;4].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;4].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;4].x}px; top: ${ListOfItems&#91;4].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+ListOfItems&#91;5].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;5].x}px; top: ${ListOfItems&#91;5].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;5].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;5].x}px; top: ${ListOfItems&#91;5].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;5].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;5].x}px; top: ${ListOfItems&#91;5].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+
+ListOfItems&#91;6].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;6].x}px; top: ${ListOfItems&#91;6].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;6].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;6].x}px; top: ${ListOfItems&#91;6].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;6].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;6].x}px; top: ${ListOfItems&#91;6].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+                                        
+ListOfItems&#91;7].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;7].x}px; top: ${ListOfItems&#91;7].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;7].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;7].x}px; top: ${ListOfItems&#91;7].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;7].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;7].x}px; top: ${ListOfItems&#91;7].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+ListOfItems&#91;8].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;8].x}px; top: ${ListOfItems&#91;8].y}px"&gt;`+ `${makeItem(OneItemShownColor)} &lt;/p&gt;`;
+ListOfItems&#91;8].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;8].x}px; top: ${ListOfItems&#91;8].y}px"&gt;`+ `${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;
+ListOfItems&#91;8].ItemACKNW = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfItems&#91;8].x}px; top: ${ListOfItems&#91;8].y}px"&gt;`+ `${makeItem(OneItemClickColor)}&lt;/p&gt;`;
+
+console.log('List of items done.')
+console.log(ListOfItems)
+console.log(ListOfItems&#91;1].x)
+
+
+// list of blinking items
+ListOfBlinkingItems&#91;0] = &#91;];
+ListOfBlinkingItems&#91;0].x = ListOfItems&#91;0].x;
+ListOfBlinkingItems&#91;0].y = ListOfItems&#91;0].y;
+ListOfBlinkingItems&#91;0].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;0].x}px; top: ${ListOfBlinkingItems&#91;0].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;0].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;0].x}px; top: ${ListOfBlinkingItems&#91;0].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;                                       
+
+ListOfBlinkingItems&#91;1] = &#91;];
+ListOfBlinkingItems&#91;1].x = ListOfItems&#91;1].x;
+ListOfBlinkingItems&#91;1].y = ListOfItems&#91;1].y;
+ListOfBlinkingItems&#91;1].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;1].x}px; top: ${ListOfBlinkingItems&#91;1].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;1].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;1].x}px; top: ${ListOfBlinkingItems&#91;1].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;2] = &#91;];
+ListOfBlinkingItems&#91;2].x = ListOfItems&#91;2].x;
+ListOfBlinkingItems&#91;2].y = ListOfItems&#91;2].y;
+ListOfBlinkingItems&#91;2].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;2].x}px; top: ${ListOfBlinkingItems&#91;2].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;2].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;2].x}px; top: ${ListOfBlinkingItems&#91;2].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;3] = &#91;];
+ListOfBlinkingItems&#91;3].x = ListOfItems&#91;3].x;
+ListOfBlinkingItems&#91;3].y = ListOfItems&#91;3].y;
+ListOfBlinkingItems&#91;3].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;3].x}px; top: ${ListOfBlinkingItems&#91;3].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;3].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;3].x}px; top: ${ListOfBlinkingItems&#91;3].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;4] = &#91;];
+ListOfBlinkingItems&#91;4].x = ListOfItems&#91;4].x;
+ListOfBlinkingItems&#91;4].y = ListOfItems&#91;4].y;
+ListOfBlinkingItems&#91;4].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;4].x}px; top: ${ListOfBlinkingItems&#91;4].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;4].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;4].x}px; top: ${ListOfBlinkingItems&#91;4].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;5] = &#91;];
+ListOfBlinkingItems&#91;5].x = ListOfItems&#91;5].x;
+ListOfBlinkingItems&#91;5].y = ListOfItems&#91;5].y;
+ListOfBlinkingItems&#91;5].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;5].x}px; top: ${ListOfBlinkingItems&#91;5].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;5].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;5].x}px; top: ${ListOfBlinkingItems&#91;5].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;6] = &#91;];
+ListOfBlinkingItems&#91;6].x = ListOfItems&#91;6].x;
+ListOfBlinkingItems&#91;6].y = ListOfItems&#91;6].y;
+ListOfBlinkingItems&#91;6].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;6].x}px; top: ${ListOfBlinkingItems&#91;6].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;6].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;6].x}px; top: ${ListOfBlinkingItems&#91;6].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;7] = &#91;];
+ListOfBlinkingItems&#91;7].x = ListOfItems&#91;7].x;
+ListOfBlinkingItems&#91;7].y = ListOfItems&#91;7].y;
+ListOfBlinkingItems&#91;7].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;7].x}px; top: ${ListOfBlinkingItems&#91;7].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;7].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;7].x}px; top: ${ListOfBlinkingItems&#91;7].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+ListOfBlinkingItems&#91;8] = &#91;];
+ListOfBlinkingItems&#91;8].x = ListOfItems&#91;8].x;
+ListOfBlinkingItems&#91;8].y = ListOfItems&#91;8].y;
+ListOfBlinkingItems&#91;8].ItemHTML  = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;8].x}px; top: ${ListOfBlinkingItems&#91;8].y}px"&gt;${makeItem(OneItemShownColor)}&lt;/p&gt;`;
+ListOfBlinkingItems&#91;8].ItemBLANK = `&lt;p style = "position:absolute; margin-top: 0em; left: ${ListOfBlinkingItems&#91;8].x}px; top: ${ListOfBlinkingItems&#91;8].y}px"&gt;${makeItem(OneItemBlinkColor)}&lt;/p&gt;`;   
+
+console.log('List of bliking items done.')
+console.log('End of the items definitions')
+console.log(ListOfBlinkingItems)
+
+
+
+// they are also concatenated in a list of buttons 
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;0].x}px; top: ${ListOfItems&#91;0].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;1].x}px; top: ${ListOfItems&#91;1].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;2].x}px; top: ${ListOfItems&#91;2].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;3].x}px; top: ${ListOfItems&#91;3].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;4].x}px; top: ${ListOfItems&#91;4].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;5].x}px; top: ${ListOfItems&#91;5].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;6].x}px; top: ${ListOfItems&#91;6].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;7].x}px; top: ${ListOfItems&#91;7].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+ListOfButtons.push(`&lt;button type=button style = "position:absolute; `+ `margin-top: 0px; padding: 0px; background: none; `+ 
+`border: none; left: ${ListOfItems&#91;8].x}px; top: ${ListOfItems&#91;8].y}px"&gt;`+ `${makeItem(OneItemShownColor)}&lt;/button&gt;` )
+
+console.log('List of buttons done.')
+console.log(ListOfButtons)
+
+
+
+
+
+// mouse pointer functions 
+var HideMouse = function() { if (MouseToBeHidden) {
+        document.querySelector('head').insertAdjacentHTML('beforeend', '&lt;style id="cursor-toggle"&gt; html { cursor: none; } &lt;/style&gt;');
+    }
+}
+var ShowMouse = function() { if (MouseToBeHidden) {
+        document.querySelector('#cursor-toggle').remove();
+    }
+}
+
+console.log('hide mouse ')
+
+// *************************************** 
+// *   Defining experiment-level events  * 
+// *************************************** 
+
+// // Toggle full screen on or off 
+// var FullScreenOn = {
+//     type: 'fullscreen',
+//     message: "&lt;p&gt;The experiment will be in full screen mode once you click on the button.&lt;/p&gt;",
+//     button_label: 'Full Screen Mode',
+//     fullscreen_mode: true
+// }
+// var FullScreenOff = {
+//     type: 'fullscreen',
+//     fullscreen_mode: false
+// }
+// the Welcome and Bye object descriptions 
+var SayWelcome = {
+    type: 'html-button-response',
+    stimulus: 'Welcome to the Corsi Task. &lt;/p&gt; In this task, we would like to know how well you can reproduce the order of blocks highlighted on the screen. &lt;/p&gt; '+
+    'First, you will be shown the order of blocks highlighted one by one on the screen and you should try to remember the order of the blocks highlighted as accurately as possible.&lt;/p&gt;' +
+    'You will then immediately reproduce the same order of blocks highlighted by clicking on the blocks in exactly the same order as shown before.&lt;/p&gt;' +
+    'Click on the Next button to begin the practice trials.',
+    choices: &#91;'Next'],
+}
+
+var SayFormal = {
+    type: 'html-button-response',
+    stimulus: 'This is the end of the practice trials. You will now begin the experiment trials. &lt;/p&gt;Click on the Next button to begin.',
+    choices: &#91;'Next'],
+}
+
+var SayBye = {
+    type: 'html-button-response',
+    stimulus: 'Thank you for your participation.&lt;/p&gt; Click on Next button to start next task.',
+    choices: &#91;'Next'],
+}
+
+
+// *************************************** 
+// *     Defining trial-level events     * 
+// *************************************** 
+
+var SetnBlinkingItems = {
+    type: 'call-function',
+    func: function() {
+            nBlinkingItems =  jsPsych.timelineVariable("OneSequenceLength", true); 
+            console.log("&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;number of blinking items:", nBlinkingItems);
+            console.log(nBlinkingItems);
+            currentBlinkingItem = 0;  // counter that will count the number of blinks    
+            currentResponse = 0;      // counter that will count the number of responses  
+        },
+}
+
+
+var WaitInterTrialDuration = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: '',
+    choices: "NO_KEYS",
+    trial_duration: InterTrialDuration
+}
+
+
+var WaitPreBlinkDuration = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: '',
+    choices: "NO_KEYS",
+    trial_duration: PreBlinkDuration
+}
+
+
+var WaitBlinkDuration = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: '',
+    choices: "NO_KEYS",
+    trial_duration: BlinkDuration
+}
+
+
+var WaitInterBlinkDuration = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: '',
+    choices: "NO_KEYS",
+    trial_duration: InterBlinkDuration
+}
+
+
+var WaitPostBlinkDuration = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: '',
+    choices: "NO_KEYS",
+    trial_duration: PostBlinkDuration,
+}
+
+
+var ShowFixation = {
+    type: 'html-keyboard-response',
+    stimulus: '+',
+    choices: "NO_KEYS",
+    trial_duration: FixationDuration,
+    on_start: HideMouse
+}
+
+
+var ShowOneItem = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: jsPsych.timelineVariable('ItemHTML'),
+    choices: "NO_KEYS",
+    trial_duration: 0
+}
+
+
+var ShowAllItems = {
+    timeline: &#91; ShowOneItem ],
+    timeline_variables: ListOfItems
+}
+
+
+var BlinkOneItem = {
+    type: 'html-keyboard-response-noerase',
+    stimulus: jsPsych.timelineVariable('ItemBLANK'),
+    choices: jsPsych.NO_KEYS,
+    trial_duration: 0,
+    data: {phase: 'BlinkedItemsPhase'},
+}
+
+
+var BlinkAllItems = {
+    timeline: &#91; BlinkOneItem, WaitBlinkDuration, ShowOneItem, WaitInterBlinkDuration ],
+    timeline_variables: ListOfBlinkingItems,
+    sample: {type: 'without-replacement'},
+    conditional_function: function() {if(currentBlinkingItem++ &lt; nBlinkingItems) {return true;} else {return false;}}
+}
+
+
+
+var StartResponding = {
+    type: 'audio-keyboard-response',
+    stimulus: RecallSignal,
+    choices: jsPsych.NO_KEYS,
+    trial_duration: RecallSignalDuration,
+    on_start: ShowMouse
+}
+
+
+var BlinkThatResponse = {
+    type: 'html-button-response',
+    stimulus: '',
+    button_html: function() {
+                    var choice = jsPsych.data.get().last(1).values()&#91;0].button_pressed; 
+                    if (choice !== null) {return ListOfButtons.concat(ListOfItems&#91;choice].ItemACKNW);} 
+                    else {return "";}
+                },
+    trial_duration: AcknowledgeDuration,
+    choices: function() {return &#91;...Array(ListOfButtons.length+1).keys()]}
+}
+
+
+
+var ReadOneResponse = {
+    type: 'html-button-response',
+    stimulus: '',
+    button_html: ListOfButtons,
+    choices: function() {return &#91;...Array(ListOfButtons.length).keys()] },
+    trial_duration: 5000
+}
+
+
+
+var ReadAllResponses = {
+    timeline: &#91; ReadOneResponse, BlinkThatResponse ], 
+    timeline_variables: ListOfBlinkingItems,
+    conditional_function: function() {if(currentResponse++ &lt; nBlinkingItems) {return true;} else {return false;}}
+}
+
+let j = 1;
+let terminate = false;
+var GatherResponses = {
+    // jsPsych.data collects everything, so needs to filter
+    // the odd button presses on the last 2*nBlinkingItems events
+    type: 'call-function',
+    func: function() {
+        
+        // Find the blink positions. 
+        var blinkedItems = jsPsych.data.get().filter({phase: 'BlinkedItemsPhase'}).last(nBlinkingItems).select('stimulus').values;
+        let xPositions = "";
+        let xPositions_index = "";
+        for (let i = 0; i &lt; blinkedItems.length; i++) {
+            xPositions = blinkedItems&#91;i].match(/(-\d+|\d+)(,\d+)*(\.\d+)*/g)&#91;1] // extract X position numbers;
+            xPositions_index = xPositions_index + &#91;ListOfItemsXPositions.findIndex(element =&gt; element == xPositions)]
+        }
+
+
+        var stem = jsPsych.data.get().filter({trial_type: 'html-button-response'}).last(2*nBlinkingItems);
+        var responses = stem.select('button_pressed').values.filter((a,i)=&gt;i%2===0);
+        responses = responses.map(Number);
+        jsPsych.data.addProperties({resp: responses});
+        console.log("click order: ", responses )
+
+        var correct   =  Array.from(String(xPositions_index), Number);
+        jsPsych.data.addProperties({stimuli: correct});
+        console.log("Correct: ", correct)
+        
+        var acc       = responses.every(function(value, index) { return value === correct&#91;index]});
+        jsPsych.data.addProperties({accuracy: acc});
+        
+        var rts = stem.select('rt').values.filter((a,i)=&gt;i%2===0);
+        jsPsych.data.addProperties({RT: rts});
+        
+        console.log("Responses: ", responses, " accuracty: ", acc, " RT: ", rts);
+
+        // calculate acc for two trials in one sequence
+        if (j%2===0 &amp;&amp; j!=0) {
+            acc_accumulation = acc_accumulation+acc;
+            // console.log("acc_accumulation 1: ",acc_accumulation)
+            if (acc_accumulation==0){terminate = true;} else {terminate = false}
+            // console.log("termination status 1:", terminate)
+            acc_accumulation = 0;
+            j = 1;
+        } else {
+            acc_accumulation = acc_accumulation+acc;
+            j++;                    
+        }
+
+        // console.log("acc_accumulation: ",acc_accumulation, "j ",j, "termination status:", terminate)
+    }
+}
+
+
+
+var break_trial = {
+    type: 'html-button-response',
+    stimulus:  " ",
+    choices: " ",
+    trial_duration: 1000,
+  };
+  
+  var break_conditional = {
+      timeline: &#91;break_trial],
+      // terminate experiment if two errors in a row. 
+      conditional_function: function() {
+          if (terminate==true) {
+            return jsPsych.endExperiment('This task has been terminated.');;
+          } else {
+            return null;
+          }
+    }
+  };
+
+
+
+  var RunOneTrial_prac = {
+    timeline: &#91; SetnBlinkingItems,
+                WaitInterTrialDuration,
+                ShowFixation, 
+                ShowAllItems, 
+                WaitPreBlinkDuration, 
+                BlinkAllItems, 
+                WaitPostBlinkDuration,
+                StartResponding,
+                ReadAllResponses,
+                //GatherResponses,
+            ],
+    randomize_order:    false,
+    repetitions:        sequenceRepetition
+}
+
+
+
+var RunOneTrial = {
+    timeline: &#91; SetnBlinkingItems,
+                WaitInterTrialDuration,
+                ShowFixation, 
+                ShowAllItems, 
+                WaitPreBlinkDuration, 
+                BlinkAllItems, 
+                WaitPostBlinkDuration,
+                StartResponding,
+                ReadAllResponses,
+                GatherResponses,
+                break_conditional // break if fails both trials in one sequence. 
+            ],
+    randomize_order:    false,
+    repetitions:        sequenceRepetition
+}
+
+
+var RunPractice = {
+    timeline:           &#91; RunOneTrial_prac ],
+    timeline_variables: sequenceLengths_prac,
+    randomize_order:    sequenceRandomOrder
+}
+
+var RunAllTrials = {
+    timeline:           &#91; RunOneTrial ],
+    timeline_variables: sequenceLengths,
+    randomize_order:    sequenceRandomOrder
+}
+
+
+jsPsych.init({
+    use_webaudio: false,
+    timeline: &#91;SayWelcome, RunPractice, SayFormal, RunAllTrials, SayBye],
+    on_finish: function(){
+      window.location.href = debrifurl},
+    })</code></pre>
+
+
+
+<p></p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://raw.githubusercontent.com/RMG2424/Dr.-Mid-Nite/master/CorsiBlockjsPsych/500hz-400ms.wav" length="6444" type="audio/wav" />
+
+			</item>
+		<item>
 		<title>Dot Enumeration Task with jsPsych</title>
 		<link>https://www.jianchen.info/2022/06/29/dot-enumeration-task-with-jspsych/</link>
 		
@@ -417,7 +1041,7 @@ jsPsych.run(timeline);</code></pre>
 
 
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<iframe title="How to Fix SPSS File Access issue after Mac Catalina update - new apple update" width="1100" height="619" src="https://www.youtube.com/embed/gmBn5SneX2I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading="lazy" title="How to Fix SPSS File Access issue after Mac Catalina update - new apple update" width="1100" height="619" src="https://www.youtube.com/embed/gmBn5SneX2I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></figure>
 
 
@@ -958,158 +1582,6 @@ end</code></pre>
 
 
 <p>In short, the delay is about 12 ms and the variation is quite small. </p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>EEG Processing Steps (based on EEGLAB and ERPLAB)</title>
-		<link>https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/</link>
-		
-		<dc:creator><![CDATA[saturn]]></dc:creator>
-		<pubDate>Wed, 18 Jan 2017 00:01:26 +0000</pubDate>
-				<category><![CDATA[research]]></category>
-		<category><![CDATA[eeg]]></category>
-		<category><![CDATA[eeglab]]></category>
-		<category><![CDATA[matlab]]></category>
-		<guid isPermaLink="false">https://www.jianchen.info/?p=113</guid>
-
-					<description><![CDATA[Here are the basic steps I used to process BioSemi EEG data. 1 load raw data 2 channel location 3 re-reference 4 filtering&#160;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later) 5 Create EEG event list (ERPLAB from now on) 6 Assign bins ... <a title="EEG Processing Steps (based on EEGLAB and ERPLAB)" class="read-more" href="https://www.jianchen.info/2017/01/18/eeg-processing-steps-based-on-eeglab-and-erplab/" aria-label="More on EEG Processing Steps (based on EEGLAB and ERPLAB)">Read more</a>]]></description>
-										<content:encoded><![CDATA[
-<p>Here are the basic steps I used to process BioSemi EEG data.</p>
-
-
-
-<p><strong>1 load raw data</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/809C496A-8039-4D2E-9B13-70B6B7721A10.png" alt=""/></figure>
-
-
-
-<p><strong>2 channel location</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/030CC12C-9735-43A2-AD38-53EBF6240A46.png" alt=""/></figure>
-
-
-
-<p><strong>3 re-reference</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3135436B-A01A-4FED-9B9E-E426C7FA3CB4.png" alt=""/></figure>
-
-
-
-<p><strong>4 filtering</strong>&nbsp;(sometimes the data is very huge and therefore the filtering will be very slow, so we can do the filtering later)</p>
-
-
-
-<p><strong>5 Create EEG event list (ERPLAB from now on)</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F18A0B75-3355-4EBE-B7CA-E62720858371.png" alt=""/></figure>
-
-
-
-<p><strong>6 Assign bins (how to operate on bins? see&nbsp;<a href="https://github.com/lucklab/erplab/wiki/Assigning-Events-to-Bins-with-BINLISTER:-Tutorial" target="_blank" rel="noreferrer noopener">here</a>)</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/43ABAD39-3E41-4BA7-9607-34EA61FE7D74.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/8A8EC18C-86E4-4AB8-8242-1E6D23716321.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/4AC21F49-0134-4FE3-83E1-12B663C404DF.png" alt=""/></figure>
-
-
-
-<p><strong>7 extract bin-based epoch</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/B1B02461-7F46-4AB1-8371-AF769E9F3E26.png" alt=""/></figure>
-
-
-
-<p><strong>8 artifact rejection</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/40120CE4-073E-4CEF-A35D-98DDB2DDD429.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/9234B231-7612-41D2-9349-5682C3027FD8.png" alt=""/></figure>
-
-
-
-<p><strong>-&gt; choose channel around the eye. -&gt; update and then reject</strong></p>
-
-
-
-<p><strong>9 compute average erps</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/289AC38D-87CF-4234-9B90-D5C01D010D9A.png" alt=""/></figure>
-
-
-
-<p><strong>10 filter if you don’t do it in step 4</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/CD5AD34D-B8EC-4825-B5A8-90EA5C31611D.png" alt=""/></figure>
-
-
-
-<p><strong>11 bin operations if necessary&nbsp;</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/1E8272A4-A250-4471-945D-2D764439AE61.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/3FA48AA1-9212-4A49-A8B4-73CEFFB13B38.png" alt=""/></figure>
-
-
-
-<p><strong>12 Plot ERPs</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/AB81310E-9BC5-422B-95FD-B3718883494D.png" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/F1F2CFBD-3018-4E77-B960-35EEFB103226.png" alt=""/></figure>
-
-
-
-<p><strong>13 Save figures if you want</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://jianchen.info/images/eegsteps/14A0D60A-40B2-4697-9F30-84312AFCEEBF.png" alt=""/></figure>
-
-
-
-<p>Remember, these are basic steps to illustrate how to process the EEG data using EEGLAB and ERPLAB toolbox, you’re suggested not to strictly follow these steps.</p>
-
-
-
-<p><a href="https://jianch.github.io/author/saturn/"></a></p>
 ]]></content:encoded>
 					
 		
