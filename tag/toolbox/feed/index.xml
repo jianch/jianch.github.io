@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -61,7 +61,7 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/2.jpg" alt="" class="wp-image-50"/></figure>
 
 
 
@@ -73,23 +73,23 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/1.png" alt="" class="wp-image-49"/></figure>
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/3.jpg" alt="" class="wp-image-51"/></figure>
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/4.jpg" alt="" class="wp-image-52"/></figure>
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/5-1024x638.jpg" alt="" class="wp-image-53"/></figure>
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/6-1024x731.png" alt="" class="wp-image-54"/></figure>
 ]]></content:encoded>
 					
 		
@@ -117,7 +117,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="502" height="483" src="https://www.jianchen.info/wp-content/uploads/2022/06/interface.jpg" alt="" class="wp-image-13" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/interface.jpg 502w, https://www.jianchen.info/wp-content/uploads/2022/06/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
+<figure class="wp-block-image size-full"><img decoding="async" loading="lazy" width="502" height="483" src="https://www.jianchen.info/wp-content/uploads/2022/06/interface.jpg" alt="" class="wp-image-13" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/interface.jpg 502w, https://www.jianchen.info/wp-content/uploads/2022/06/interface-300x289.jpg 300w" sizes="(max-width: 502px) 100vw, 502px" /></figure>
 ]]></content:encoded>
 					
 		

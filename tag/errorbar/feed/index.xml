@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -48,7 +48,7 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/WX20161212-171137.png" alt="" class="wp-image-90"/></figure>
 
 
 
@@ -66,7 +66,7 @@ https://au.mathworks.com/matlabcentral/answers/102220-how-do-i-place-errorbars-o
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92"/><figcaption>MATLAB Handle Graphics</figcaption></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/GG01Dec16a_rt_visual-field-copy-1024x732.jpg" alt="" class="wp-image-92"/><figcaption>MATLAB Handle Graphics</figcaption></figure>
 
 
 

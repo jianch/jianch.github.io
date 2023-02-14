@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -65,7 +65,7 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
 
 
 
@@ -77,7 +77,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -124,11 +124,11 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlist-1024x576.png" alt="" class="wp-image-82"/></figure>
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-1024x576.png" alt="" class="wp-image-83"/></figure>
 
 
 
@@ -144,7 +144,7 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/systemUSBlistWithoutNumberPad-2-1024x576.png" alt="" class="wp-image-84"/></figure>
 
 
 
@@ -156,11 +156,11 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist-1024x576.png" alt="" class="wp-image-85"/></figure>
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/matlabUSBlist_3-1024x576.png" alt="" class="wp-image-86"/></figure>
 
 
 
@@ -172,7 +172,7 @@
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/matlab_code-1024x576.png" alt="" class="wp-image-87"/></figure>
 ]]></content:encoded>
 					
 		

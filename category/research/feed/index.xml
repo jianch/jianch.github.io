@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -38,7 +38,7 @@
 
 					<description><![CDATA[This piece of code is revised by Dr Jian Chen based on the published code from R. Gibeau (2021) The Corsi Blocks Task: Variations and coding with jsPsych. The Quantitative Methods for Psychology. 10.20982/tqmp.17.3.p299 In this version, I follow the classical Corsi task in which 9 sequences are presented in a fixed order. Blocks are ... <a title="Corsi Blocks Task with jsPsych" class="read-more" href="https://www.jianchen.info/2022/07/25/corsi-blocks-task-with-jspsych/" aria-label="More on Corsi Blocks Task with jsPsych">Read more</a>]]></description>
 										<content:encoded><![CDATA[<div class="wp-block-image">
-<figure class="aligncenter size-large"><img width="1024" height="792" src="https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1024x792.png" alt="" class="wp-image-212" srcset="https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1024x792.png 1024w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-300x232.png 300w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-768x594.png 768w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1536x1188.png 1536w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement.png 1652w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="792" src="https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1024x792.png" alt="" class="wp-image-212" srcset="https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1024x792.png 1024w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-300x232.png 300w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-768x594.png 768w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement-1536x1188.png 1536w, https://www.jianchen.info/wp-content/uploads/2022/07/blockArrangement.png 1652w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
 
 
 <p>This piece of code is revised by Dr Jian Chen based on the published code from <a href="https://www.tqmp.org/RegularArticles/vol17-3/p299/p299.pdf" data-type="URL" data-id="https://www.tqmp.org/RegularArticles/vol17-3/p299/p299.pdf">R. Gibeau (2021) The Corsi Blocks Task: Variations and coding with jsPsych. The Quantitative Methods for Psychology. 10.20982/tqmp.17.3.p299</a></p>
@@ -1165,7 +1165,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/rightClick-1024x473.png" alt="" class="wp-image-143"/></figure>
 
 
 
@@ -1252,7 +1252,7 @@ https://youtube.com/watch?v=LW2oswdWs4Q%3Frel%3D0%26controls%3D0%26showinfo%3D0%
 
 
 
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" class="wp-image-144"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/htmlScreenshot-1024x583.png" alt="" class="wp-image-144"/></figure>
 ]]></content:encoded>
 					
 		
@@ -1416,11 +1416,11 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/CJ04May17a.png" alt=""><br>Session 1</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/CJ04May17a.png" alt=""><br>Session 1</p>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/CJ04May17b.png" alt=""><br>Session 2</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/CJ04May17b.png" alt=""><br>Session 2</p>
 
 
 
@@ -1436,11 +1436,11 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/CV04May17a.png" alt=""><br>Colleague 1</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/CV04May17a.png" alt=""><br>Colleague 1</p>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/JN06May17a.png" alt=""><br>Colleague 2</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/JN06May17a.png" alt=""><br>Colleague 2</p>
 
 
 
@@ -1452,7 +1452,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/ZL28Jun17a.png" alt=""><br>Friend 1</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/ZL28Jun17a.png" alt=""><br>Friend 1</p>
 
 
 
@@ -1468,7 +1468,7 @@ print('heatmap', '-dtiff','-r300');</code></pre>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/EYE_astigmatism.gif" alt=""><br>Astigmatism Test</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/EYE_astigmatism.gif" alt=""><br>Astigmatism Test</p>
 
 
 
@@ -1565,7 +1565,7 @@ end</code></pre>
 
 
 
-<figure class="wp-block-image"><img src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianchen.info/images/laser/illustration.png" alt=""/></figure>
 
 
 
@@ -1577,7 +1577,7 @@ end</code></pre>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="481" src="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg" alt="" class="wp-image-116" srcset="https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1024x481.jpg 1024w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-300x141.jpg 300w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-768x361.jpg 768w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-1536x722.jpg 1536w, https://www.jianchen.info/wp-content/uploads/2022/06/Figure.2.3_figure-2048x962.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 

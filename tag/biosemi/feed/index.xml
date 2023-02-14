@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -42,7 +42,7 @@
 
 					<description><![CDATA[Biosemi developed their Linux recording software (Actiview) based on Labview 8.5 (32-bit). Actiview, therefore, has to run in a LabVIEW run-time engine (8.5) environment. It seems that they didn’t update this after release. A big problem is, who still use a 32-bit system? My lab currently builds a series of experimental equipment based on Ubuntu ... <a title="Install Biosemi Actiview on 64-bit Linux (Ubuntu)" class="read-more" href="https://www.jianchen.info/2015/12/29/install-biosemi-actiview-on-64-bit-linux-ubuntu/" aria-label="More on Install Biosemi Actiview on 64-bit Linux (Ubuntu)">Read more</a>]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image"><img src="https://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61"/></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://jianch.github.io/wp-content/uploads/2021/02/actiview-1024x575.png" alt="" class="wp-image-61"/></figure>
 
 
 

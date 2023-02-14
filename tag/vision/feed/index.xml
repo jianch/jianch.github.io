@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.1</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>https://www.jianchen.info/wp-content/uploads/2022/06/cropped-Frued_Cartoon-32x32.png</url>
@@ -54,11 +54,11 @@
 
 
 
-<p><img src="https://jianchen.info/images/gabor/CJ04May17a.png" alt=""><br>Session 1</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/CJ04May17a.png" alt=""><br>Session 1</p>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/CJ04May17b.png" alt=""><br>Session 2</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/CJ04May17b.png" alt=""><br>Session 2</p>
 
 
 
@@ -74,11 +74,11 @@
 
 
 
-<p><img src="https://jianchen.info/images/gabor/CV04May17a.png" alt=""><br>Colleague 1</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/CV04May17a.png" alt=""><br>Colleague 1</p>
 
 
 
-<p><img src="https://jianchen.info/images/gabor/JN06May17a.png" alt=""><br>Colleague 2</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/JN06May17a.png" alt=""><br>Colleague 2</p>
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-<p><img src="https://jianchen.info/images/gabor/ZL28Jun17a.png" alt=""><br>Friend 1</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/ZL28Jun17a.png" alt=""><br>Friend 1</p>
 
 
 
@@ -106,7 +106,7 @@
 
 
 
-<p><img src="https://jianchen.info/images/gabor/EYE_astigmatism.gif" alt=""><br>Astigmatism Test</p>
+<p><img decoding="async" src="https://jianchen.info/images/gabor/EYE_astigmatism.gif" alt=""><br>Astigmatism Test</p>
 
 
 
